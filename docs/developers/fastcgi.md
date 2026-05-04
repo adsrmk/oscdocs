@@ -5,39 +5,35 @@ FastCGI Cache slaat de output van PHP-pagina's op zodat herhaalde requests direc
 ## Hoe het werkt
 
 ```mermaid
-flowchart TD
-    A[HTTP Request] --> B[NGINX<br/>port 80]
-    B -->|redirect| C[NGINX<br/>port 443]
-    A2[HTTPS Request] --> C
-    C --> D{FastCGI Cache<br/>HIT?}
-    D -->|YES| E[HTTPS Response]
-    D -->|NO| F[PHP-FPM<br/>WordPress]
-    F <--> G[(MariaDB<br/>MySQL)]
-    F --> C
-    C --> E
+flowchart LR
+    A([HTTP Request]) --> B[NGINX :80]
+    A2([HTTPS Request]) --> C[NGINX :443]
+    B -. redirect .-> C
+    C --> D{FastCGI<br/>Cache?}
+    D -- HIT --> E([HTTPS Response])
+    D -- MISS --> F[PHP-FPM]
+    F <--> G[(MariaDB)]
+    F --> E
 
-    style A fill:#22c55e,stroke:#15803d,color:#fff
-    style A2 fill:#22c55e,stroke:#15803d,color:#fff
-    style E fill:#22c55e,stroke:#15803d,color:#fff
-    style B fill:#1e293b,stroke:#0f172a,color:#fff
-    style C fill:#1e293b,stroke:#0f172a,color:#fff
-    style F fill:#1e293b,stroke:#0f172a,color:#fff
-    style G fill:#1e293b,stroke:#0f172a,color:#fff
-    style D fill:#f59e0b,stroke:#d97706,color:#fff
+    classDef entry fill:#bc3411,stroke:#8a2509,stroke-width:2px,color:#fff,rx:8,ry:8
+    classDef server fill:#1e293b,stroke:#0f172a,stroke-width:2px,color:#fff,rx:6,ry:6
+    classDef decision fill:#fef3c7,stroke:#bc3411,stroke-width:2px,color:#1e293b
+    classDef db fill:#334155,stroke:#1e293b,stroke-width:2px,color:#fff
+    classDef response fill:#bc3411,stroke:#8a2509,stroke-width:2px,color:#fff,rx:8,ry:8
+
+    class A,A2 entry
+    class B,C,F server
+    class D decision
+    class G db
+    class E response
+
+    linkStyle default stroke:#94a3b8,stroke-width:2px
 ```
-
-## De flow uitgelegd
-
-1. **HTTP requests** komen binnen op NGINX poort 80 en worden direct geredirect naar HTTPS.
-2. **HTTPS requests** worden afgehandeld door NGINX op poort 443.
-3. NGINX checkt of de pagina al **gecached** is in FastCGI Cache:
-   - **HIT** → de gecachte response wordt direct teruggestuurd. Snel, geen PHP nodig.
-   - **MISS** → de request gaat door naar PHP-FPM, die WordPress draait en eventueel de database raadpleegt.
-4. De gegenereerde response wordt via NGINX teruggestuurd én gecached voor volgende requests.
 
 ::: tip Waarom is dit snel?
 Een cache HIT levert pagina's binnen milliseconden — geen PHP execution, geen database queries. Voor sites met hoge traffic kan dit het verschil zijn tussen een trage en een razendsnelle ervaring.
 :::
+
 
 <br>
 
