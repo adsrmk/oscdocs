@@ -50,9 +50,7 @@ Open Gmail, klik op het ⚙️ tandwiel-icoon rechtsboven en kies **Alle instell
 
 ## Stap 4 — Importinstellingen afronden
 
-Vink alle selectievakjes aan **behalve de laatste**. Als alles correct is geconfigureerd, voegt Gmail je account toe en begint het automatisch met het importeren van je e-mails. Je configuratie zou er ongeveer zo uit moeten zien:
-
-<img width="1100" height="916" alt="image" src="https://github.com/user-attachments/assets/239286ef-edf2-4fb2-a9d0-01686339468c" />
+Vink alle selectievakjes aan **behalve de laatste**. Als alles correct is geconfigureerd, voegt Gmail je account toe en begint het automatisch met het importeren van je e-mails. 
 
 <br>
 
