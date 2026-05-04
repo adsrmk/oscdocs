@@ -51,4 +51,8 @@ Pas <b>geen</b> <code>444</code>-machtiging toe op de <code>wp-includes</code>-m
 
 Je kunt de machtigingen van een bestand of map aanpassen door er met de **rechtermuisknop** op te klikken en in het menu **Machtigingen** te kiezen.
 
-<img width="935" height="491" alt="image" src="https://github.com/user-attachments/assets/30334757-0643-425e-941d-27d0ad63e458" />
+<br>
+
+<img width="1060" height="542" alt="image" src="https://github.com/user-attachments/assets/40b5f7b8-9ebe-42da-8d2b-a4a1c6d308f3" />
+
+<br>
