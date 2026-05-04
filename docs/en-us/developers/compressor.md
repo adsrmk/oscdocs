@@ -11,5 +11,5 @@ Changing image formats is the next step to achieve additional file size reductio
 </div>
 
 <br>
-<img width="726" height="461" alt="image" src="https://github.com/user-attachments/assets/92270ddc-7b53-4342-9595-064e42549a90" />
+<img width="1036" height="557" alt="image" src="https://github.com/user-attachments/assets/dd6a79fd-1eb8-4e82-a2ea-19a07474dd0a" />
 
