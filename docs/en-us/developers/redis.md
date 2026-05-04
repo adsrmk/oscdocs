@@ -21,17 +21,21 @@
 
 Once enabled, Redis will start running automatically inside your PHP container.
 
-<img width="805" height="174" alt="image" src="https://github.com/user-attachments/assets/7928cc33-b0b7-427d-9b48-a3816489d2cb" />
+<br>
+
+<img width="1316" height="517" alt="image" src="https://github.com/user-attachments/assets/464a6b22-3274-44df-a980-4d02b90fd8c7" />
 
 <br>
 
 ## Connect Redis to WordPress
 
-If your site runs on WordPress, one more step is needed.
-
 1. Log in to WordPress, go to **Plugins**, search for **Redis Object Cache**, and install it.
 
-<img width="828" height="375" alt="image" src="https://github.com/user-attachments/assets/a2632e91-fb09-420b-9739-19bc4eaa6638" />
+<br>
+
+<img width="565" height="274" alt="image" src="https://github.com/user-attachments/assets/224568ed-ba77-4e00-9ae7-4cc3531720de" />
+
+<br>
 
 2. In WordPress, go to **Settings → Redis**.
 3. Click **Enable Object Cache**.
