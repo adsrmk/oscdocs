@@ -19,4 +19,3 @@ Elke plugin krijgt een statusbadge die de huidige status laat zien:
 - **Verwijderen** — Verwijder de pluginbestanden definitief van je site.
 - **Auto-updates inschakelen** — Werk de plugin automatisch bij zodra de ontwikkelaar een nieuwe versie uitbrengt. Is een plugin verouderd? Dan verschijnt er een melding die aangeeft dat er een nieuwe versie beschikbaar is.
 
-<img width="692" height="71" alt="image" src="https://github.com/user-attachments/assets/5010d0b5-413a-4c4f-a6d0-60b306f2e86c" />
