@@ -209,6 +209,7 @@ export default defineConfig({
   lang: 'nl-NL',
   cleanUrls: true,
   lastUpdated: true,
+  appearance: false,
 
   locales: {
     root: {
