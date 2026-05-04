@@ -4,7 +4,6 @@ Schema markup is een gestandaardiseerd microdata-vocabulaire dat je toevoegt aan
 
 Deze extra context maakt het mogelijk dat zoekmachines je content tonen als een **Rich Snippet** in de zoekresultaten — wat doorgaans leidt tot een hogere doorklikratio.
 
-<img width="720" height="344" alt="image" src="https://github.com/user-attachments/assets/0088f4a8-eed9-40fd-86a8-1f91a90082bc" />
 
 <br>
 
