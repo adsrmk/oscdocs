@@ -12,7 +12,9 @@ We recommend using the latest stable PHP version for optimal performance and sec
 PHP versions older than 8.0 are not supported due to security and performance concerns. If you need an older version, you can request it — but we are <b>not responsible</b> for any issues or vulnerabilities that may result from using outdated PHP versions.
 </div>
 
-<img width="844" height="105" alt="image" src="https://github.com/user-attachments/assets/a52a0028-9a8b-4593-9e2e-14de3ad5c608" />
+<br>
+
+<img width="1323" height="221" alt="image" src="https://github.com/user-attachments/assets/9cbf1605-c940-4f71-a2ef-16f725b16641" />
 
 <br>
 
@@ -42,20 +44,18 @@ You can find the log in your website's home directory as `php-error.log`.
 Since panel version <b>12.0+</b>, you can also view the log directly within the <b>PHP section</b> in the panel.
 </div>
 
-<img width="836" height="436" alt="image" src="https://github.com/user-attachments/assets/2e767c22-cd56-463e-aca0-dce89e52263d" />
+<br>
+
+<img width="1243" height="298" alt="image" src="https://github.com/user-attachments/assets/b8f6be9b-17aa-4fb3-bafb-be597cec042e" />
 
 <br>
 
-## PHP.ini editor  <Badge type="info" text="Enterprise" />
+## PHP.ini editor  <Badge type="info" text="op aanvraag" />
 
 <div class="tip custom-block" style="padding-top: 8px">
-This feature is only available for Enterprise customers on the <b>Managed VPS</b> plan. The default values are optimised for most use cases — only edit them if you know what you're doing.
+The default values are optimized for each server to ensure the best performance. If you’d like to change them to a custom configuration, please contact us. We will review the reason for the change and determine whether it is possible
+  
 </div>
 
-You can override PHP configuration values to fit your website's needs. For example, if a site needs more resources, you can increase the **memory limit** for smoother performance.
-
-In **Developer Tools → PHP.ini Editor** (second block), click **Add Directive** to define a new value.
-
-<img width="844" height="166" alt="image" src="https://github.com/user-attachments/assets/5a06a9b1-01fb-42b8-9dfd-ee8a533fc05b" />
 
 A full list of available **PHP directives** can be found on the official PHP website: [php.net/manual/en/ini.list.php↗](https://www.php.net/manual/en/ini.list.php)
