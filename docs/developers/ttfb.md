@@ -4,7 +4,7 @@
 
 <br>
 
-<img width="750" height="216" alt="image" src="https://github.com/user-attachments/assets/7d68e47a-d50f-4a4a-b29b-37fca57632b3" />
+<img width="1654" height="477" alt="image" src="https://github.com/user-attachments/assets/8ba5d72a-2c20-403a-9de8-5c8f0731d542" />
 
 <br>
 
