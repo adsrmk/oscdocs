@@ -1,0 +1,31 @@
+# Bestanden beheren en uploaden
+
+Nadat je een nieuwe website hebt toegevoegd, open je de **Bestandsbeheerder** om al je webbestanden te beheren. Hiermee kun je eenvoudig bestanden uploaden, bewerken, comprimeren, downloaden en uitpakken.
+
+<br>
+
+## Mapstructuur
+
+- **`public_html/`** — De hoofdmap van je website. De `www`-vermelding is een snelkoppeling naar deze map, dus beide kunnen door elkaar worden gebruikt. WordPress installeert hier ook zijn kernbestanden (`wp-admin`, `wp-content`, `wp-includes`).
+- **Subdomeinen** — Elk subdomein heeft een eigen aparte map binnen de bestanden van het hoofddomein.
+
+<img width="913" height="240" alt="image" src="https://github.com/user-attachments/assets/e48ffb22-3d20-475c-a158-875b20221652" />
+
+<br>
+
+## Bestanden toevoegen
+
+Je kunt op twee manieren bestanden toevoegen:
+
+- **Sleep en zet ze neer** in de Bestandsbeheerder, of
+- Klik op de knop **Uploaden** rechtsboven.
+
+<img width="1263" height="761" alt="image" src="https://github.com/user-attachments/assets/7c31fc8d-0945-4ed4-9a5e-7432d8668c66" />
+
+<br>
+
+## Bestanden beheren
+
+Klik op het **kebab-menu** (drie verticale stippen) naast een bestand voor extra acties: **Rechten bewerken**, **Verwijderen**, **Comprimeren**, **Downloaden** en meer.
+
+<img width="929" height="577" alt="image" src="https://github.com/user-attachments/assets/13682603-2573-473f-920d-baac024253f0" />
