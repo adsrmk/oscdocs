@@ -2,7 +2,9 @@
 
 **Time to First Byte (TTFB)** is a foundational performance metric. It measures the time between the browser's request for a page and the arrival of the **first byte** of data from the server. While metrics like LCP focus on the front-end, TTFB is the primary indicator of **server responsiveness** and **network efficiency**.
 
-<img width="1102" height="336" alt="image" src="https://github.com/user-attachments/assets/a3938503-43db-4103-a0d1-b7c876b23d6b" />
+<br>
+
+<img width="1654" height="477" alt="image" src="https://github.com/user-attachments/assets/bef2626d-2ec1-48ae-840b-e87d9c441c4b" />
 
 <br>
 
