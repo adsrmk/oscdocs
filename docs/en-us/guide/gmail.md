@@ -39,7 +39,7 @@ Open Gmail, click the ⚙️ gear icon in the top-right corner, and select **See
 | --- | --- |
 | **Username** | Your full email address |
 | **Password** | The password for your email account |
-| **POP Server** | Found in your email settings (**Emails → Email Account → Email Client Settings**) |
+| **POP Server** | `mail.`<mark>`yourdomain.com`</mark> |
 | **Port** | `995` |
 
 <br>
