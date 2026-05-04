@@ -74,6 +74,5 @@ Wil je vanuit Gmail e-mails versturen vanaf je zakelijke adres? Kies dan **Ja, i
 
 ## Stap 6 — Bevestigen en afronden
 
-Gmail stuurt een verificatiecode naar je zakelijke e-mailadres. Voer deze code in om te bevestigen dat het account van jou is.
-
+Gmail stuurt een verificatielink naar je zakelijke e-mailadres, bevestig dat het account van jou is.
 Klaar — je zakelijke e-mailadres is nu gekoppeld aan Gmail. Je kunt vanaf nu berichten direct vanuit Gmail versturen en ontvangen.
