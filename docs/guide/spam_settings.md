@@ -24,4 +24,6 @@ Het systeem gebruikt een puntensysteem (meestal **1–10**) om te bepalen of een
 - **Whitelist** — Zorg dat vertrouwde afzenders of domeinen nooit worden geblokkeerd door het filter.
 - **Blacklist** — Blokkeer permanent specifieke e-mailadressen of hele domeinen.
 
-<img width="858" height="287" alt="image" src="https://github.com/user-attachments/assets/45f39257-749c-4adb-a3b2-15faed2ac5ef" />
+<br>
+
+<img width="1336" height="314" alt="image" src="https://github.com/user-attachments/assets/85213dd5-5773-4e8b-a66a-7717ced5d9ab" />
