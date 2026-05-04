@@ -9,7 +9,8 @@ Nadat je een nieuwe website hebt toegevoegd, open je de **Bestandsbeheerder** om
 - **`public_html/`** — De hoofdmap van je website. De `www`-vermelding is een snelkoppeling naar deze map, dus beide kunnen door elkaar worden gebruikt. WordPress installeert hier ook zijn kernbestanden (`wp-admin`, `wp-content`, `wp-includes`).
 - **Subdomeinen** — Elk subdomein heeft een eigen aparte map binnen de bestanden van het hoofddomein.
 
-<img width="913" height="240" alt="image" src="https://github.com/user-attachments/assets/e48ffb22-3d20-475c-a158-875b20221652" />
+<img width="1115" height="162" alt="image" src="https://github.com/user-attachments/assets/5198216e-b216-4b12-96a3-c161bde87d00" />
+
 
 <br>
 
