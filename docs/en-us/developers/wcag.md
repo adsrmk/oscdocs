@@ -27,7 +27,9 @@ WCAG is organised around four fundamental principles, known by the acronym **POU
 
 WCAG defines specific, testable success criteria across three levels of conformance. Each level builds on the previous one.
 
-<img width="648" height="431" alt="image" src="https://github.com/user-attachments/assets/8039a371-9606-4c3e-a428-d134f01fbd49" />
+<br>
+
+<img width="814" height="498" alt="image" src="https://github.com/user-attachments/assets/ca099500-ef12-4f86-905a-046301170c8b" />
 
 <br>
 
