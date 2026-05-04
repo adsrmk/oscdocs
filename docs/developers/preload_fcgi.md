@@ -88,7 +88,8 @@ Weet je niet zeker wat de UUID van je website is?
 2. Klik met de rechtermuisknop op een willekeurig bestand en kies **Info bekijken**.
 3. Kopieer de UUID uit het locatiepad van het bestand.
 
-<img width="755" height="333" alt="image" src="https://github.com/user-attachments/assets/c8d5c85e-e041-431d-b332-cf6aa1157b54" />
+<br>
+<img width="611" height="240" alt="image" src="https://github.com/user-attachments/assets/053c1860-954d-427e-b6df-a310fae1fcd2" />
 
 <br>
 
