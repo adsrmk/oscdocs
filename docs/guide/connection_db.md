@@ -68,7 +68,11 @@ Als de databasegegevens kloppen, ligt de oorzaak meestal bij het wachtwoord. Res
 2. Selecteer de gebruiker waarvan je de rechten wilt aanpassen onder **database users**
 4. Klik op het kebab-menu (drie verticale stippen) rechts en kies **Rechten bewerken**.
 
-<img width="1788" height="458" alt="image" src="https://github.com/user-attachments/assets/43bbb6bf-ba83-4a35-9a98-5d73c81d86d4" />
+<br>
+
+<img width="1329" height="390" alt="image" src="https://github.com/user-attachments/assets/6407579a-c60f-48a3-ab58-8c93290186ec" />
+
+<br>
 
 5. Vink het selectievakje **Alle databaserechten** aan.
 
