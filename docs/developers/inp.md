@@ -2,7 +2,6 @@
 
 [Interaction to Next Paint↗](https://web.dev/articles/inp) (**INP**) is een Core Web Vital die de algehele responsiviteit van een pagina meet. Sinds **maart 2024** heeft Google **FID (First Input Delay)** officieel vervangen door INP, om een vollediger beeld te geven van de gebruikerservaring.
 
-<img width="777" height="317" alt="image" src="https://github.com/user-attachments/assets/4af2b74f-70de-4183-8ee5-2f4dabb4b50a" />
 
 <br>
 
