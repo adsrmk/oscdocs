@@ -44,7 +44,12 @@ OS Cloud uses [Mailgun](https://www.mailgun.com/) for sending and receiving emai
 4. Scroll to **Email Authentication** and toggle **DKIM** to **On**.
 5. If you're using OS Cloud nameservers, wait for the validation to complete.
 
-<img width="870" height="213" alt="image" src="https://github.com/user-attachments/assets/d62f24e2-95d8-43e5-ac04-67ff99be261d" />
+<br>
+
+<img width="1338" height="229" alt="image" src="https://github.com/user-attachments/assets/e8651eba-8efa-470e-85a3-d0918575522a" />
+
+<br>
+
 
 <div class="info custom-block" style="padding-top: 8px">
 If your DNS is hosted elsewhere, follow the on-screen instructions and paste the generated DKIM key into your DNS provider. The record will look like this:
