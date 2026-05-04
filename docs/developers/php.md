@@ -12,7 +12,9 @@ We raden aan om de meest recente stabiele PHP-versie te gebruiken voor de beste 
 PHP-versies ouder dan 8.0 worden niet ondersteund vanwege beveiligings- en prestatieredenen. Heb je toch een oudere versie nodig? Dan kun je deze aanvragen — maar wij zijn <b>niet verantwoordelijk</b> voor problemen of kwetsbaarheden die voortkomen uit het gebruik van verouderde PHP-versies.
 </div>
 
-<img width="844" height="105" alt="image" src="https://github.com/user-attachments/assets/a52a0028-9a8b-4593-9e2e-14de3ad5c608" />
+<br>
+
+<img width="1323" height="221" alt="image" src="https://github.com/user-attachments/assets/82fe363e-0570-4485-82db-8fbc965cd781" />
 
 <br>
 
@@ -42,20 +44,18 @@ Je vindt het logbestand in de hoofdmap van je website onder de naam `php-error.l
 Sinds paneelversie <b>12.0+</b> kun je het logboek ook direct bekijken binnen het <b>PHP-onderdeel</b> in het paneel.
 </div>
 
-<img width="836" height="436" alt="image" src="https://github.com/user-attachments/assets/2e767c22-cd56-463e-aca0-dce89e52263d" />
+<br>
+
+<img width="1243" height="298" alt="image" src="https://github.com/user-attachments/assets/60b1e021-0586-4b17-83d6-c15660da4b13" />
 
 <br>
 
-## PHP.ini-editor  <Badge type="info" text="Enterprise" />
+## PHP.ini-editor  <Badge type="info" text="op aanvraag" />
 
 <div class="tip custom-block" style="padding-top: 8px">
-Deze functie is alleen beschikbaar voor Enterprise-klanten op het <b>Managed VPS</b>-pakket. De standaardwaarden zijn geoptimaliseerd voor de meeste gebruiksscenario's — pas ze alleen aan als je weet wat je doet.
+De standaardwaarden zijn afgestemd op optimale prestaties per server. Wil je deze aanpassen naar een eigen configuratie, neem dan contact met ons op. We beoordelen dan de reden van de wijziging en of deze mogelijk is.
+
 </div>
 
-Je kunt PHP-configuratiewaarden overschrijven om aan te sluiten bij de behoeften van jouw site. Heeft een site bijvoorbeeld meer resources nodig? Dan kun je het **geheugenlimiet** verhogen voor soepelere prestaties.
-
-Ga in **Ontwikkelaarstools → PHP.ini-editor** (tweede blok) en klik op **Directive toevoegen** om een nieuwe waarde te definiëren.
-
-<img width="844" height="166" alt="image" src="https://github.com/user-attachments/assets/5a06a9b1-01fb-42b8-9dfd-ee8a533fc05b" />
 
 Een volledige lijst met beschikbare **PHP-directives** vind je op de officiële PHP-website: [php.net/manual/en/ini.list.php↗](https://www.php.net/manual/en/ini.list.php)
