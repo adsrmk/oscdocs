@@ -6,7 +6,7 @@ FastCGI Cache slaat de output van PHP-pagina's op zodat herhaalde requests direc
 
 <br>
 
-<img width="1335" height="763" alt="image" src="https://github.com/user-attachments/assets/9d431971-ace7-4fc7-a53c-9d5dbbc2fc57" />
+<img width="1034" height="700" alt="image" src="https://github.com/user-attachments/assets/a535a34e-0d19-45e3-824b-1df265084f2f" />
 
 <br>
 
