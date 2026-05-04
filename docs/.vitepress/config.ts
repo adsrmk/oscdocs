@@ -232,6 +232,13 @@ export default defineConfig({
   themeConfig: {
     nav: navItems,
 
+    siteTitle: false,
+    logo: {
+      src: '/OSCLO.png',
+      alt: 'OSCloud Logo',
+      link: '/'
+    },
+
     sidebar: {
       '/guide/': { base: '/guide/', items: sidebarGuide() },
       '/developers/': { base: '/developers/', items: sidebarDevelopers() },
