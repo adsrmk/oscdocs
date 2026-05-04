@@ -4,7 +4,9 @@
 
 Het werkt door taken te tonen die voor mensen eenvoudig zijn, maar voor bots lastig — zoals het herkennen van vervormde tekst of het selecteren van specifieke afbeeldingen.
 
-<img width="367" height="118" alt="image" src="https://github.com/user-attachments/assets/e46366c8-125c-4ffe-9069-80c580b537f6" />
+<br>
+
+<img width="626" height="313" alt="image" src="https://github.com/user-attachments/assets/5b5a7dad-ff1e-4eb0-b0bc-264b49a27335" />
 
 <br>
 
