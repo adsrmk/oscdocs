@@ -76,3 +76,23 @@ Wil je vanuit Gmail e-mails versturen vanaf je zakelijke adres? Kies dan **Ja, i
 
 Gmail stuurt een verificatielink naar je zakelijke e-mailadres, bevestig dat het account van jou is.
 Klaar — je zakelijke e-mailadres is nu gekoppeld aan Gmail. Je kunt vanaf nu berichten direct vanuit Gmail versturen en ontvangen.
+
+
+<br>
+
+
+## Authenticatiefout bij Gmail-koppeling
+
+> Server returned error: `[AUTH] Authentication failed.`
+
+De meest voorkomende oorzaak van deze error is dat het **e-mailadres** of **wachtwoord** niet correct is ingevuld, waardoor de mailserver geen verbinding kan maken met Google.
+
+### Oplossing
+
+1. Controleer of het wachtwoord exact overeenkomt met wat je hebt ingesteld in het **OSCloud Panel**.
+2. Controleer of het volledige e-mailadres is gebruikt (inclusief domein, bijv. `naam@jouwdomein.nl`).
+3. Reset eventueel het wachtwoord in het OSCloud Panel en probeer opnieuw.
+
+::: tip
+Wachtwoorden zijn hoofdlettergevoelig. Kopieer en plak het wachtwoord rechtstreeks vanuit het OSCloud Panel om typefouten te voorkomen.
+:::
