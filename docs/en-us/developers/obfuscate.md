@@ -42,7 +42,9 @@ define('UPLOADS', 'assets/img');
 If you change these directories, make sure the actual folders on disk are renamed to match — otherwise WordPress won't be able to locate them.
 </div>
 
-<img width="1187" height="357" alt="image" src="https://github.com/user-attachments/assets/13c075ec-0f5c-4de4-b621-899b19ced371" />
+<br>
+
+<img width="1062" height="206" alt="image" src="https://github.com/user-attachments/assets/7d011018-9bc4-4f83-8f56-2b31ba5fb453" />
 
 <br>
 
