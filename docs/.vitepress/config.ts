@@ -105,7 +105,6 @@ function sidebarDevelopers(): DefaultTheme.SidebarItem[] {
     {
       text: 'General',
       items: [
-        // { text: 'Getting started', link: 'getting-started' },
         { text: 'WCAG', link: 'wcag' },
         { text: 'ARIA Roles', link: 'ARIA' },
         { text: 'Semantic HTML', link: 'semantic_html' },
