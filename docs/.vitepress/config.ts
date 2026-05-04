@@ -125,7 +125,6 @@ function sidebarDevelopers(): DefaultTheme.SidebarItem[] {
             { text: 'Caniuse', link: 'caniuse' },
             { text: 'Accessibility', link: 'accessibility' },
             { text: 'Pagespeed Insights', link: 'psi' },
-            { text: 'Image Compressing', link: 'compressor' },
             { text: 'Search console', link: 'search_console' },
             { text: 'MDN HTTP', link: 'mdn_http' }
           ]
