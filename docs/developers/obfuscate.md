@@ -42,7 +42,9 @@ define('UPLOADS', 'assets/img');
 Als je deze directories wijzigt, moet je de daadwerkelijke mappen op de schijf ook hernoemen — anders kan WordPress ze niet vinden.
 </div>
 
-<img width="1187" height="357" alt="image" src="https://github.com/user-attachments/assets/13c075ec-0f5c-4de4-b621-899b19ced371" />
+<br>
+
+<img width="1062" height="206" alt="image" src="https://github.com/user-attachments/assets/ede09d61-c6db-4697-9a1c-c4f0628b2b41" />
 
 <br>
 
