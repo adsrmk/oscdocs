@@ -71,7 +71,8 @@ Het optimaliseren van je afbeeldingen is essentieel voor moderne websites. Zware
 
 WordPress biedt plugins zoals **EWWW Image Optimizer**, **Smush**, **ShortPixel** en **Imagify** — maar wij raden aan om afbeeldingen al te comprimeren **voordat** ze in de database terechtkomen. Tools zoals [TinyPNG↗](https://tinypng.com/) en [Squoosh↗](https://squoosh.app/) verkleinen bestanden aanzienlijk zonder dat de visuele kwaliteit eronder lijdt.
 
-<img width="730" height="483" alt="image" src="https://github.com/user-attachments/assets/7ef3f41c-0861-45bf-a4df-2a02826fc92b" />
+<br>
+<img width="1036" height="557" alt="image" src="https://github.com/user-attachments/assets/bbc5c7db-1447-4513-9fad-8bcc419ebd6b" />
 
 <br>
 
