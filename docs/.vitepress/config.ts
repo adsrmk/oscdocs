@@ -117,7 +117,6 @@ function sidebarDevelopers(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'IonCube loader', link: 'ioncube' },
         { text: 'PHP', link: 'php' },
-        { text: 'FastCGI', link: 'fastcgi' },
         { text: 'Redis', link: 'redis' },
         {
           text: 'Web Dev Tools',
