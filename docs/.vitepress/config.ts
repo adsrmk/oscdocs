@@ -201,13 +201,14 @@ const navItems: DefaultTheme.NavItem[] = [
 
 // ─── Main Config ────────────────────────────────────────────────────────────
 
-export default defineConfig({
+export default withMermaid({
   title: 'OS Support',
   description: 'OSCloud Support Documentation',
   lang: 'nl-NL',
   cleanUrls: true,
   lastUpdated: true,
   appearance: false,
+
 
   locales: {
     root: {
