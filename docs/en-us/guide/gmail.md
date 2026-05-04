@@ -50,8 +50,7 @@ Open Gmail, click the ⚙️ gear icon in the top-right corner, and select **See
 
 ## Step 4 — Finalise the import setup
 
-Tick all checkboxes **except the last one**. If everything is configured correctly, Gmail will add your account and start importing your emails. Your configuration should look like this:
-
+Tick all checkboxes **except the last one**. If everything is configured correctly, Gmail will add your account and start importing your emails. 
 
 <br>
 
