@@ -14,7 +14,11 @@ WordPress-gebruikers zijn iets anders dan <b>samenwerkende gebruikers</b> in OS 
 - **Gegevens bewerken** — Wil je een bestaande gebruiker aanpassen (bijv. gebruikersnaam of e-mailadres)? Klik dan op het **kebab-menu** (drie verticale stippen) rechts op de regel van de gebruiker en kies **Bewerken**.
 - **Toegang verwijderen** — Verwijder een gebruiker definitief om hun toegang tot de WordPress-back-end in te trekken.
 
-<img width="819" height="144" alt="image" src="https://github.com/user-attachments/assets/7b349df6-3724-4880-b4bc-cad06ee66ec8" />
+<br>
+
+<img width="1338" height="375" alt="image" src="https://github.com/user-attachments/assets/a2fa3bdd-7b46-47a9-bb54-d5f99ed56a1b" />
+
+<br>
 
 <div class="warning custom-block" style="padding-top: 8px">
 Het verwijderen van een gebruiker is <b>onomkeerbaar</b>. Maak altijd eerst een back-up — zeker als de gebruiker gepubliceerde content heeft aangemaakt. Het verwijderen van het primaire admin-account kan delen van de site stukmaken als gerelateerde content niet correct wordt overgedragen.
