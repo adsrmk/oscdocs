@@ -39,7 +39,7 @@ Open Gmail, klik op het ⚙️ tandwiel-icoon rechtsboven en kies **Alle instell
 | --- | --- |
 | **Gebruikersnaam** | Je volledige e-mailadres |
 | **Wachtwoord** | Het wachtwoord van je e-mailaccount |
-| **POP-server** | Te vinden in je e-mailinstellingen (**E-mails → E-mailaccount → E-mailclient-instellingen**) |
+| **POP Server** | `mail.`<mark>`jedomein.nl`</mark> |
 | **Poort** | `995` |
 
 <br>
