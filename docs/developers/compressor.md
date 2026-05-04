@@ -10,4 +10,4 @@ Zodra je afbeeldingen zijn gecomprimeerd, is de volgende stap om hun formaat te 
 
 <br>
 
-<img width="726" height="461" alt="image" src="https://github.com/user-attachments/assets/92270ddc-7b53-4342-9595-064e42549a90" />
+<img width="1036" height="557" alt="image" src="https://github.com/user-attachments/assets/bbc5c7db-1447-4513-9fad-8bcc419ebd6b" />
