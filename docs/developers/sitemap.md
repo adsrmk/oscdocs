@@ -5,7 +5,7 @@ Een **XML-sitemap** is een bestand dat alle belangrijke URL's van je website ops
 Sinds WordPress 5.5 wordt er automatisch een basis-sitemap gegenereerd — maar voor optimale SEO-prestaties moeten ontwikkelaars deze output vaak aanpassen.
 
 <br>
-<img width="1124" height="325" alt="image" src="https://github.com/user-attachments/assets/73517bb0-7297-42ff-9d67-e59ef9538521" />
+<img width="600" height="173" alt="image" src="https://github.com/user-attachments/assets/9e98646d-debc-4b11-a3b5-79c8f7f19f2d" />
 
 <br>
 
