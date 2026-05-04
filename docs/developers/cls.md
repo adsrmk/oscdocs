@@ -4,7 +4,6 @@
 
 In tegenstelling tot LCP of INP wordt CLS niet in seconden gemeten. Het is een score, berekend op basis van de "impact fraction" en "distance fraction" van verschuivende elementen op de pagina.
 
-<img width="932" height="344" alt="cls_061" src="https://github.com/user-attachments/assets/dca11dd8-fded-4e51-87a2-d472e9a03c22" />
 
 <br>
 
