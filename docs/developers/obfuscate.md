@@ -66,7 +66,9 @@ Om te voorkomen dat WordPress mappen aanmaakt zoals `/2026/03/` binnen `uploads`
 3. Schakel **Organiseer mijn uploads in maand- en jaargebaseerde mappen** uit.
 4. Sla de wijzigingen op.
 
-<img width="552" height="130" alt="image" src="https://github.com/user-attachments/assets/7f4105aa-ab8a-4d8f-88d8-4e9ac4376e0a" />
+<br>
+
+<img width="589" height="208" alt="image" src="https://github.com/user-attachments/assets/cbc7c590-c504-4abd-b0f4-e5b3170c50a2" />
 
 <br>
 
