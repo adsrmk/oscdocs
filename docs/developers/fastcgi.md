@@ -4,31 +4,11 @@ FastCGI Cache slaat de output van PHP-pagina's op zodat herhaalde requests direc
 
 ## Hoe het werkt
 
-```mermaid
-flowchart LR
-    A([HTTP Request]) --> B[NGINX :80]
-    A2([HTTPS Request]) --> C[NGINX :443]
-    B -. redirect .-> C
-    C --> D{FastCGI<br/>Cache?}
-    D -- HIT --> E([HTTPS Response])
-    D -- MISS --> F[PHP-FPM]
-    F <--> G[(MariaDB)]
-    F --> E
+<br>
 
-    classDef entry fill:#bc3411,stroke:#8a2509,stroke-width:2px,color:#fff,rx:8,ry:8
-    classDef server fill:#1e293b,stroke:#0f172a,stroke-width:2px,color:#fff,rx:6,ry:6
-    classDef decision fill:#fef3c7,stroke:#bc3411,stroke-width:2px,color:#1e293b
-    classDef db fill:#334155,stroke:#1e293b,stroke-width:2px,color:#fff
-    classDef response fill:#bc3411,stroke:#8a2509,stroke-width:2px,color:#fff,rx:8,ry:8
+<img width="1335" height="763" alt="image" src="https://github.com/user-attachments/assets/9d431971-ace7-4fc7-a53c-9d5dbbc2fc57" />
 
-    class A,A2 entry
-    class B,C,F server
-    class D decision
-    class G db
-    class E response
-
-    linkStyle default stroke:#94a3b8,stroke-width:2px
-```
+<br>
 
 ::: tip Waarom is dit snel?
 Een cache HIT levert pagina's binnen milliseconden — geen PHP execution, geen database queries. Voor sites met hoge traffic kan dit het verschil zijn tussen een trage en een razendsnelle ervaring.
