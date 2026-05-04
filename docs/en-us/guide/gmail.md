@@ -15,13 +15,17 @@ Open Gmail, click the ⚙️ gear icon in the top-right corner, and select **See
 1. Go to the **Accounts and Import** tab.
 2. Under **Check mail from other accounts**, click **Add a mail account**.
 
-<img width="2326" height="1050" alt="image" src="https://github.com/user-attachments/assets/fa329301-454c-4135-9885-5ef2b89f62c4" />
+<br>
+
+<img width="1344" height="818" alt="image" src="https://github.com/user-attachments/assets/c264a0f9-53c7-4d9e-ade8-5d9504267c7d" />
 
 <br>
 
 3. Enter your business email address and click **Next →**.
 
-<img width="1102" height="920" alt="image" src="https://github.com/user-attachments/assets/20f7e93d-9a96-4098-b81b-d8cb433f44a6" />
+<br>
+
+<img width="551" height="184" alt="image" src="https://github.com/user-attachments/assets/65ccfff5-5f48-4d7a-aee4-bb0f953406bb" />
 
 <br>
 
@@ -38,7 +42,9 @@ Open Gmail, click the ⚙️ gear icon in the top-right corner, and select **See
 | **POP Server** | Found in your email settings (**Emails → Email Account → Email Client Settings**) |
 | **Port** | `995` |
 
-<img width="1674" height="448" alt="image" src="https://github.com/user-attachments/assets/da4c4f49-bd67-4043-93f6-de13ce33e4ab" />
+<br>
+
+<img width="593" height="373" alt="image" src="https://github.com/user-attachments/assets/2e5ff8e0-483e-4e31-b5a4-9a2da0f95d15" />
 
 <br>
 
@@ -46,7 +52,6 @@ Open Gmail, click the ⚙️ gear icon in the top-right corner, and select **See
 
 Tick all checkboxes **except the last one**. If everything is configured correctly, Gmail will add your account and start importing your emails. Your configuration should look like this:
 
-<img width="1100" height="916" alt="image" src="https://github.com/user-attachments/assets/239286ef-edf2-4fb2-a9d0-01686339468c" />
 
 <br>
 
@@ -62,7 +67,9 @@ To send emails from your business address through Gmail, select **Yes, I want to
 | **Port** | `587` |
 | **Secure Connection** | TLS |
 
-<img width="1098" height="918" alt="image" src="https://github.com/user-attachments/assets/e8c1e455-2045-41ce-8950-edc9477f3128" />
+<br>
+
+<img width="593" height="321" alt="image" src="https://github.com/user-attachments/assets/52a74de7-1fe9-41c5-957f-fa4dfa3cd227" />
 
 <br>
 
