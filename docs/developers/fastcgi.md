@@ -1,12 +1,46 @@
-# Wat is FastCGI Cache?
+# FastCGI Cache
 
-FastCGI Cache is een server-side cachingmechanisme op NGINX-niveau. In plaats van bij elk verzoek PHP en database-queries uit te voeren, slaat NGINX de volledig gerenderde HTML van een pagina op na het eerste bezoek.
+FastCGI Cache slaat de output van PHP-pagina's op zodat herhaalde requests direct vanaf NGINX worden geserveerd, zonder PHP of database opnieuw aan te roepen.
 
-Bij volgende bezoeken levert NGINX die gecachte HTML direct uit — PHP-FPM en de database worden volledig overgeslagen. Het resultaat: een veel lagere serverbelasting, snellere laadtijden en de mogelijkheid om veel meer gelijktijdige bezoekers te bedienen.
+## Hoe het werkt
 
-<img width="1296" height="748" alt="image" src="https://github.com/user-attachments/assets/ca7fdbfb-a17d-47b5-b875-d5944b880544" />
+```mermaid
+flowchart TD
+    A[HTTP Request] --> B[NGINX<br/>port 80]
+    B -->|redirect| C[NGINX<br/>port 443]
+    A2[HTTPS Request] --> C
+    C --> D{FastCGI Cache<br/>HIT?}
+    D -->|YES| E[HTTPS Response]
+    D -->|NO| F[PHP-FPM<br/>WordPress]
+    F <--> G[(MariaDB<br/>MySQL)]
+    F --> C
+    C --> E
+
+    style A fill:#22c55e,stroke:#15803d,color:#fff
+    style A2 fill:#22c55e,stroke:#15803d,color:#fff
+    style E fill:#22c55e,stroke:#15803d,color:#fff
+    style B fill:#1e293b,stroke:#0f172a,color:#fff
+    style C fill:#1e293b,stroke:#0f172a,color:#fff
+    style F fill:#1e293b,stroke:#0f172a,color:#fff
+    style G fill:#1e293b,stroke:#0f172a,color:#fff
+    style D fill:#f59e0b,stroke:#d97706,color:#fff
+```
+
+## De flow uitgelegd
+
+1. **HTTP requests** komen binnen op NGINX poort 80 en worden direct geredirect naar HTTPS.
+2. **HTTPS requests** worden afgehandeld door NGINX op poort 443.
+3. NGINX checkt of de pagina al **gecached** is in FastCGI Cache:
+   - **HIT** → de gecachte response wordt direct teruggestuurd. Snel, geen PHP nodig.
+   - **MISS** → de request gaat door naar PHP-FPM, die WordPress draait en eventueel de database raadpleegt.
+4. De gegenereerde response wordt via NGINX teruggestuurd én gecached voor volgende requests.
+
+::: tip Waarom is dit snel?
+Een cache HIT levert pagina's binnen milliseconden — geen PHP execution, geen database queries. Voor sites met hoge traffic kan dit het verschil zijn tussen een trage en een razendsnelle ervaring.
+:::
 
 <br>
+
 
 ## FastCGI Cache inschakelen
 
