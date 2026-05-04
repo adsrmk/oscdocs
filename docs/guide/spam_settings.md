@@ -13,7 +13,9 @@ Het systeem gebruikt een puntensysteem (meestal **1–10**) om te bepalen of een
 | **Strenger** (lagere score) | Vangt meer spam, maar vergroot de kans dat legitieme e-mails worden gemarkeerd. |
 | **Soepeler** (hogere score) | Verkleint de kans dat echte e-mails worden gemist, maar laat meer ongewenste berichten door. |
 
-<img width="847" height="666" alt="image" src="https://github.com/user-attachments/assets/c3cbec9c-6b0d-48cb-85a6-34cc9c0e2ee4" />
+<br>
+
+<img width="1360" height="690" alt="image" src="https://github.com/user-attachments/assets/de5b78f0-64a2-47f5-b1e7-d27c9dada1da" />
 
 <br>
 
