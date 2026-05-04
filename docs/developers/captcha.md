@@ -6,7 +6,7 @@ Het werkt door taken te tonen die voor mensen eenvoudig zijn, maar voor bots las
 
 <br>
 
-<img width="626" height="313" alt="image" src="https://github.com/user-attachments/assets/5b5a7dad-ff1e-4eb0-b0bc-264b49a27335" />
+<img width="645" height="186" alt="image" src="https://github.com/user-attachments/assets/1dabc341-a970-4f02-889d-ef859f7b23d6" />
 
 <br>
 
