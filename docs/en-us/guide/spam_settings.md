@@ -15,7 +15,7 @@ The system uses a point-based scoring system (typically **1–10**) to determine
 
 <br>
 
-<img width="1360" height="690" alt="image" src="https://github.com/user-attachments/assets/de5b78f0-64a2-47f5-b1e7-d27c9dada1da" />
+<img width="1332" height="683" alt="image" src="https://github.com/user-attachments/assets/4b72ab0b-19bf-4e66-ae17-98f721192980" />
 
 <br>
 
