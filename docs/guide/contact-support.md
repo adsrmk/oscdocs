@@ -1,7 +1,6 @@
 ---
 audience: customers
 description: Verzamel de juiste informatie en dien een veilige, complete supportaanvraag in.
-supportFooter: false
 ---
 
 # Contact opnemen met support

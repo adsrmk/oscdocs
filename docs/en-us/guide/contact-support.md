@@ -1,7 +1,6 @@
 ---
 audience: customers
 description: Collect the right information and submit a secure, complete support request.
-supportFooter: false
 ---
 
 # Contact support

@@ -5,6 +5,18 @@
 [build.environment]
   NODE_VERSION = "24"
 
+[[redirects]]
+  from = "/"
+  to = "/guide/getting-started"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en-us/"
+  to = "/en-us/guide/getting-started"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/assets/*"
   [headers.values]

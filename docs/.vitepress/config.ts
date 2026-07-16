@@ -395,7 +395,7 @@ export default defineConfig({
       label: 'Nederlands',
       lang: 'nl-NL',
       dir: 'ltr',
-      link: '/',
+      link: '/guide/getting-started',
       title: 'OS Support',
       description: 'Handleidingen, probleemoplossing en technische documentatie voor OS Cloud',
       themeConfig: {
@@ -410,7 +410,7 @@ export default defineConfig({
           '/guide/': { base: '/guide/', items: guideSidebarNl() },
           '/developers/': { base: '/developers/', items: developerSidebarNl() }
         },
-        logoLink: '/',
+        logoLink: '/guide/getting-started',
         outline: { level: [2, 3], label: 'Op deze pagina' },
         editLink: {
           pattern: 'https://github.com/adsrmk/oscdocs/edit/main/docs/:path',
@@ -438,7 +438,7 @@ export default defineConfig({
       label: 'English',
       lang: 'en-GB',
       dir: 'ltr',
-      link: '/en-us/',
+      link: '/en-us/guide/getting-started',
       title: 'OS Support',
       description: 'Guides, troubleshooting and technical documentation for OS Cloud',
       themeConfig: {
@@ -453,7 +453,7 @@ export default defineConfig({
           '/en-us/guide/': { base: '/en-us/guide/', items: guideSidebarEn() },
           '/en-us/developers/': { base: '/en-us/developers/', items: developerSidebarEn() }
         },
-        logoLink: '/en-us/',
+        logoLink: '/en-us/guide/getting-started',
         outline: { level: [2, 3], label: 'On this page' },
         editLink: {
           pattern: 'https://github.com/adsrmk/oscdocs/edit/main/docs/:path',

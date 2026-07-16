@@ -44,8 +44,6 @@ Likely failure modes and safe next steps.
 Required for changes that can affect availability, data or security.
 ```
 
-The theme automatically adds a standard support and security footer to guide and developer pages.
-
 ## Dutch and English
 
 - Dutch is the root locale (`nl-NL`).
