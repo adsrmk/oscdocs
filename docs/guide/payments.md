@@ -1,3 +1,8 @@
+---
+description: "We ondersteunen debet-/creditcards, SEPA-incasso en iDEAL via Mollie."
+audience: customers
+---
+
 # Betaalmethoden
 
 We ondersteunen **debet-/creditcards**, **SEPA-incasso** en **iDEAL** via [Mollie](https://www.mollie.com/).
@@ -11,8 +16,6 @@ Alle betalingen worden veilig verwerkt via Mollie. Afhankelijk van de dienst gaa
 Terugkerende betalingen worden geïncasseerd op de <b>eerste dag van elke maand</b>.
 </div>
 
-<br>
-
 ## Hoe werken betalingen?
 
 Nadat je een bestelling plaatst of een factuur ontvangt:
@@ -22,8 +25,6 @@ Nadat je een bestelling plaatst of een factuur ontvangt:
 3. Rond de betaling veilig af via Mollie.
 
 Voor abonnementen via SEPA-incasso worden toekomstige betalingen automatisch geïncasseerd — je hoeft hier verder niets voor te doen.
-
-<br>
 
 ## SEPA-incasso (automatische betalingen)
 

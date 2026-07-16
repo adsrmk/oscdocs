@@ -1,8 +1,11 @@
+---
+description: "De pagina /wp-login.php is de standaard \"voordeur\" van elke WordPress-site — en daarmee het belangrijkste doelwit voor hackers en geautomatiseerde bots."
+audience: developers
+---
+
 # wp-login backend beveiligen
 
 De pagina `/wp-login.php` is de standaard "voordeur" van elke WordPress-site — en daarmee het belangrijkste doelwit voor hackers en geautomatiseerde bots. Het beveiligen van deze pagina is een van de effectiefste stappen om je website te beschermen.
-
-<br>
 
 ## Waarom wp-login.php beveiligen?
 
@@ -13,8 +16,6 @@ Standaard is de loginpagina openbaar toegankelijk via `jouwdomein.nl/wp-login.ph
 
 Het goede nieuws: er zijn meerdere manieren om je loginpagina te beveiligen. Voor extra zekerheid kun je ze ook combineren.
 
-<br>
-
 ## Methode 1 — De login-URL wijzigen
 
 De eenvoudigste manier om "blinde" bots te stoppen is de deur verplaatsen. Kies in plaats van de standaard-URL iets unieks zoals `/prive-toegang` of `/mijn-geheime-ingang`.
@@ -23,16 +24,12 @@ De eenvoudigste manier om "blinde" bots te stoppen is de deur verplaatsen. Kies 
 
 **Voordeel:** Geen technische kennis vereist. Zodra de URL is gewijzigd, krijgt elke bot die `wp-login.php` probeert te bereiken een **404 Niet gevonden**-foutmelding.
 
-<br>
-
 ## Methode 2 — Een Web Application Firewall (WAF) gebruiken
 
 Een WAF filtert het verkeer tussen je site en de rest van het internet. Diensten zoals **Cloudflare** en **Sucuri**, of plugins zoals **Wordfence**, kunnen verdacht verkeer blokkeren voordat het je loginpagina überhaupt bereikt.
 
 - **Cloudflare** — Stel een *Page Rule* in die een JavaScript-uitdaging (managed challenge) activeert voor iedereen die `wp-login.php` bezoekt.
 - **Wordfence** — Onderhoudt een wereldwijde database van kwaadaardige IP-adressen en blokkeert automatisch bezoekers die zich bot-achtig gedragen.
-
-<br>
 
 ## Methode 3 — Toegang beperken op IP-adres
 
@@ -54,8 +51,6 @@ if (strpos($_SERVER['REQUEST_URI'], 'wp-login.php') !== false) {
     }
 }
 ```
-
-<br>
 
 ## Geldige gebruikersnamen verbergen
 

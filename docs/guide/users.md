@@ -1,10 +1,13 @@
+---
+description: "Je kunt ontwikkelaars, designers of andere teamleden uitnodigen om samen te werken aan een project binnen OS Cloud — of het nu gaat om een intern team, een extern bureau of zzp'ers."
+audience: customers
+---
+
 # Gebruikers
 
 Je kunt ontwikkelaars, designers of andere teamleden uitnodigen om samen te werken aan een project binnen OS Cloud — of het nu gaat om een intern team, een extern bureau of zzp'ers.
 
 Elke uitgenodigde gebruiker krijgt een specifieke rol en machtigingsniveau, zodat de toegang veilig en overzichtelijk blijft. De **accounteigenaar** behoudt altijd volledige administratieve controle en kan niet worden verwijderd.
-
-<br>
 
 ## Rollen en machtigingen
 
@@ -16,8 +19,6 @@ Er zijn twee beschikbare rollen, elk met een eigen toegangsniveau:
 | **Collaborator** | Beperkte toegang tot specifieke websites. Kan bestanden, databases, beveiligingsinstellingen en gerelateerde functies beheren, maar alleen voor de toegewezen site(s). |
 
 > De rol **Collaborator** is ideaal voor teams die meerdere projecten beheren onder één account.
-
-<br>
 
 ## Een gebruiker uitnodigen
 

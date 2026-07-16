@@ -1,3 +1,8 @@
+---
+description: "WordPress toont standaard zijn versienummer op meerdere plekken — in de site-header, RSS-feeds en asset-URL's."
+audience: developers
+---
+
 # WordPress-bestanden en -versie verbergen
 
 WordPress toont standaard zijn versienummer op meerdere plekken — in de site-header, RSS-feeds en asset-URL's. Aanvallers gebruiken die informatie om gerichte aanvallen uit te voeren op bekende kwetsbaarheden. De onderstaande code-snippets verbergen deze informatie zonder dat het de werking van je site beïnvloedt.
@@ -5,8 +10,6 @@ WordPress toont standaard zijn versienummer op meerdere plekken — in de site-h
 <div class="info custom-block" style="padding-top: 8px">
 Voeg de onderstaande snippets toe aan het <code>functions.php</code>-bestand van je actieve thema, direct onder de openings-tag <code>&lt;?php</code>.
 </div>
-
-<br>
 
 ## Versie verwijderen uit header & RSS-feeds
 
@@ -22,8 +25,6 @@ function remove_wp_version_rss() {
 }
 add_filter('the_generator', 'remove_wp_version_rss');
 ```
-
-<br>
 
 ## Versie verwijderen uit stylesheets & scripts
 

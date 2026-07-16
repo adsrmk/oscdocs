@@ -1,17 +1,38 @@
-# Email Client Settings
+---
+description: "Use these settings to add an OS Cloud mailbox manually to Outlook, Apple Mail, Thunderbird, Gmail or another email application."
+audience: customers
+---
 
-These are the credentials you'll need to manually connect your email account to third-party applications like Outlook, Apple Mail, or Gmail.
+# Email client settings
 
-<br>
+Use these settings to add an OS Cloud mailbox manually to Outlook, Apple Mail, Thunderbird, Gmail or another email application. Prefer **IMAP** because it keeps messages and folders synchronised across your devices.
 
-## Connection protocols
+## Required settings
 
-| Protocol | Server | Port | Encryption | Use case |
+Replace `yourdomain.com` with the domain used by your mailbox.
+
+| Function | Protocol | Server | Port | Security |
 | --- | --- | --- | --- | --- |
-| **IMAP** | [mail.yourdomein.com](http://mail.yourdomein.com) | `993` | SSL/TLS | Modern multi-device syncing |
-| **SMTP** | [mail.yourdomein.com](http://mail.yourdomein.com) | `465` (SSL/TLS) or `587` (STARTTLS) | SSL/TLS or STARTTLS | Outgoing mail |
-| **POP** | [mail.yourdomein.com](http://mail.yourdomein.com) | `995` | SSL/TLS | Simple message downloading |
+| Incoming email | IMAP | `mail.yourdomain.com` | `993` | SSL/TLS |
+| Outgoing email | SMTP | `mail.yourdomain.com` | `465` | SSL/TLS |
+| Outgoing email, alternative | SMTP | `mail.yourdomain.com` | `587` | STARTTLS |
+| Incoming email, download only | POP3 | `mail.yourdomain.com` | `995` | SSL/TLS |
 
-<br>
+Always use the **complete email address as the username**, for example `name@yourdomain.com`. Use the mailbox password, which is not necessarily the same as your OS Cloud account password. Enable authentication for the outgoing SMTP server.
 
-> **Username:** Always use your full email address (e.g. `admin@osworkspace.nl`) as the login.
+## Configure and test the account
+
+1. Add a new account in your email application and select **Manual configuration** if prompted.
+2. Enter the IMAP and SMTP settings from the table.
+3. Do not accept an invalid or untrusted certificate. If a certificate warning appears, check the server name and DNS configuration first.
+4. Send a test message to an external address and reply from that address.
+5. Confirm that the sent message and reply appear on every connected device.
+
+## Common problems
+
+- **Authentication failed:** check the complete email address and reset the [mailbox password](/en-us/guide/email_password) if necessary.
+- **Receiving works but sending fails:** check SMTP authentication, port and encryption.
+- **Connection timed out:** test without a VPN and confirm that the network permits the selected port.
+- **Certificate warning:** do not continue until the server name matches the certificate.
+
+Use POP3 only when you intentionally want to download messages instead of synchronising them. Depending on the email application, an incorrect POP3 configuration can store messages only locally or remove them from the server.

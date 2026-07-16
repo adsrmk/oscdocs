@@ -1,3 +1,8 @@
+---
+description: "Elk domein gebruikt het Domain Name System (DNS) om bezoekers naar de juiste server te leiden — het werkt als het adresboek van het internet."
+audience: customers
+---
+
 # DNS-records instellen
 
 Elk domein gebruikt het **Domain Name System (DNS)** om bezoekers naar de juiste server te leiden — het werkt als het adresboek van het internet. Wanneer je een domein registreert, verwijst het in eerste instantie naar de nameservers van je registrar. Om je domein volledig te laten werken met **OS Cloud**, kun je óf de nameservers aanpassen, óf de DNS-records handmatig configureren.
@@ -6,16 +11,12 @@ Elk domein gebruikt het **Domain Name System (DNS)** om bezoekers naar de juiste
 Je hebt <b>twee opties</b> om je domein aan OS Cloud te koppelen, afhankelijk van hoeveel controle je over je DNS wilt hebben.
 </div>
 
-<br>
-
 ## Welke optie kies je?
 
 | Optie | Geschikt voor |
 | --- | --- |
 | **1. Nameservers wijzigen** | Je wilt dat OS Cloud alles automatisch beheert (website, e-mail, subdomeinen). |
 | **2. DNS-records handmatig beheren** | Je wilt e-mail bij een andere provider houden (bijv. Google Workspace, Microsoft 365) en alleen je website hosten bij OS Cloud. |
-
-<br>
 
 ## Optie 1 — Nameservers wijzigen (aanbevolen)
 
@@ -30,8 +31,6 @@ ns2.oscloud.nl
 ```
 
 > De meeste registrars tonen vier invoervelden. Je hoeft er maar **twee** in te vullen — dat is voldoende voor een correcte configuratie.
-
-<br>
 
 ## Optie 2 — DNS-records handmatig beheren
 

@@ -1,3 +1,8 @@
+---
+description: "We support Debit/Credit Cards, SEPA Direct Debit, and iDEAL via Mollie."
+audience: customers
+---
+
 # Payment Methods
 
 We support **Debit/Credit Cards**, **SEPA Direct Debit**, and **iDEAL** via [Mollie](https://www.mollie.com/).
@@ -11,8 +16,6 @@ All payments are processed securely through Mollie. Depending on the service, pa
 Recurring charges are processed on the <b>first day of each month</b>.
 </div>
 
-<br>
-
 ## How payments work
 
 After placing an order or receiving an invoice:
@@ -22,8 +25,6 @@ After placing an order or receiving an invoice:
 3. Complete the payment securely via Mollie.
 
 For subscriptions paid via SEPA Direct Debit, future payments are collected automatically — no further action needed.
-
-<br>
 
 ## SEPA Direct Debit (automatic payments)
 

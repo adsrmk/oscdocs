@@ -1,8 +1,11 @@
+---
+description: "Praktische uitleg over BTW, met veilige stappen, controles en oplossingen voor veelvoorkomende problemen."
+audience: customers
+---
+
 # BTW
 
 In overeenstemming met de regionale belastingregelgeving brengen wij **btw (Belasting Toegevoegde Waarde)** in rekening bij klanten — zowel particulieren als bedrijven — die gevestigd zijn in de Europese Unie (EU) en het Verenigd Koninkrijk (VK).
-
-<br>
 
 ## Wat is btw?
 
@@ -11,8 +14,6 @@ Btw is een verbruiksbelasting die wordt geheven op de meeste goederen en dienste
 <div class="info custom-block" style="padding-top: 8px">
 Deze informatie is geen professioneel belastingadvies. Voor belastinggerelateerde vragen verwijzen we je naar je juridisch adviseur of lokale belastingdienst.
 </div>
-
-<br>
 
 ## Btw-tarieven
 
@@ -25,8 +26,6 @@ Tarieven kunnen door lokale overheden worden gewijzigd. Voor de meest actuele in
 
 > Ben je gevestigd in de EU of het VK? Dan zijn we wettelijk verplicht om over al je aankopen btw in rekening te brengen — tenzij er een geldige **vrijstelling** of **verleggingsregeling (Reverse Charge)** van toepassing is.
 
-<br>
-
 ## Belastingvrijstelling
 
 Afhankelijk van de juridische status of locatie van je organisatie kom je mogelijk in aanmerking voor een belastingvrijstelling. Veelvoorkomende kwalificerende organisaties zijn:
@@ -38,13 +37,8 @@ Afhankelijk van de juridische status of locatie van je organisatie kom je mogeli
 
 Sommige landen bieden daarnaast regelingen voor kleine ondernemers. Zo geldt in Nederland bijvoorbeeld de **Kleineondernemersregeling (KOR)** voor bedrijven die in Nederland zijn gevestigd en een jaaromzet hebben van minder dan **€20.000**.
 
-<br>
-
 ### Een belastingvrijstelling aanvragen
 
 1. **Verzamel je documenten** — Zorg voor een digitale kopie van je officiële vrijstellingscertificaat of goedkeuringsbrief van de overheid (bijv. KOR-bevestiging).
 2. **Neem contact op met support** — Stuur je documenten naar [support@originstudio.nl](mailto:support@originstudio.nl).
 3. **Verificatie** — Ons team controleert je documenten binnen **1–2 werkdagen**. Na goedkeuring wordt de btw van al je toekomstige facturen verwijderd.
-
-<br>
-

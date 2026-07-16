@@ -1,13 +1,15 @@
+---
+description: "An XML sitemap is a file that lists all the important URLs on your website, acting as a roadmap for search engine crawlers."
+audience: developers
+---
+
 # XML Sitemaps in WordPress
 
 An **XML sitemap** is a file that lists all the important URLs on your website, acting as a roadmap for search engine crawlers. It tells them which pages you consider important, when they were last updated, and how often they change.
 
 Since WordPress 5.5, the platform automatically generates a basic sitemap — but developers often need to customise the output for optimal SEO performance.
 
-<br>
-<img width="600" height="173" alt="image" src="https://github.com/user-attachments/assets/5077b5b0-ba03-4c3c-b4e8-2f2465434d41" />
-
-<br>
+<img width="600" height="173" alt="Screenshot of XML Sitemaps in WordPress" src="https://github.com/user-attachments/assets/5077b5b0-ba03-4c3c-b4e8-2f2465434d41" />
 
 ## Why the default sitemap isn't always enough
 
@@ -19,13 +21,9 @@ The default WordPress sitemap is a solid starting point, but it has a few limita
 
 A well-managed sitemap strategy focuses crawlers on high-value content, saves crawl budget, and prevents low-quality pages from being indexed.
 
-<br>
-
 ## Customising the core sitemap
 
 You can control the core sitemap programmatically using filters in your theme's `functions.php` or a custom plugin.
-
-<br>
 
 ### 1. Exclude an entire post type
 
@@ -43,8 +41,6 @@ function exclude_post_type_from_sitemap( $post_types ) {
     return $post_types;
 }
 ```
-
-<br>
 
 ### 2. Exclude a specific post by ID
 
@@ -67,8 +63,6 @@ function exclude_specific_post_from_sitemap( $args, $post_type ) {
     return $args;
 }
 ```
-
-<br>
 
 ### 3. Disable the core sitemap entirely
 

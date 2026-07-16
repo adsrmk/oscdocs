@@ -1,3 +1,8 @@
+---
+description: "WordPress exposes its version number in several places — the site header, RSS feeds, and asset URLs."
+audience: developers
+---
+
 # Obfuscate WordPress Files & Version
 
 WordPress exposes its version number in several places — the site header, RSS feeds, and asset URLs. Attackers use this information to target known vulnerabilities. The snippets below hide that information without affecting functionality.
@@ -5,8 +10,6 @@ WordPress exposes its version number in several places — the site header, RSS 
 <div class="info custom-block" style="padding-top: 8px">
 Add the snippets below to your active theme's <code>functions.php</code> file, directly under the opening <code>&lt;?php</code> tag.
 </div>
-
-<br>
 
 ## Remove version from header & RSS feeds
 
@@ -22,8 +25,6 @@ function remove_wp_version_rss() {
 }
 add_filter('the_generator', 'remove_wp_version_rss');
 ```
-
-<br>
 
 ## Remove version from styles & scripts
 

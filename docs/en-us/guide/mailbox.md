@@ -1,8 +1,11 @@
+---
+description: "A mailbox lets you send, receive, and manage email messages tied to your domain."
+audience: customers
+---
+
 # Mailbox
 
 A mailbox lets you send, receive, and manage email messages tied to your domain.
-
-<br>
 
 ## Create a mailbox
 
@@ -16,8 +19,6 @@ A mailbox lets you send, receive, and manage email messages tied to your domain.
 <div class="tip custom-block" style="padding-top: 8px">
 A 1 GB mailbox is enough for thousands of emails without attachments. The <b>Essential Plan</b> includes 3 mailboxes; higher plans include more. If your business frequently sends or receives large files, we recommend upgrading to Google Workspace or ProtonMail for additional storage and advanced features.
 </div>
-
-<br>
 
 ## Change the password
 

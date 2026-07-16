@@ -1,8 +1,11 @@
+---
+description: "Gebruik het onderdeel Afwezigheidsbericht om automatische antwoorden in te stellen wanneer je niet beschikbaar bent."
+audience: customers
+---
+
 # Afwezigheidsbericht
 
 Gebruik het onderdeel **Afwezigheidsbericht** om automatische antwoorden in te stellen wanneer je niet beschikbaar bent. Afzenders ontvangen je bericht direct terwijl jij offline bent.
-
-<br>
 
 ## Een auto-reply instellen
 

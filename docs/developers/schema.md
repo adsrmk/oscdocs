@@ -1,11 +1,13 @@
+---
+description: "Schema markup is een gestandaardiseerd microdata-vocabulaire dat je toevoegt aan je HTML, zodat zoekmachines de betekenis van je content beter begrijpen."
+audience: developers
+---
+
 # Schema Markup
 
 Schema markup is een gestandaardiseerd microdata-vocabulaire dat je toevoegt aan je HTML, zodat zoekmachines de **betekenis** van je content beter begrijpen. In plaats van alleen "een blok tekst" te zien, herkent Google dat de tekst een recept is, dat het getal `5` een sterrenscore is en dat de naam **"Jane Doe"** de auteur is.
 
 Deze extra context maakt het mogelijk dat zoekmachines je content tonen als een **Rich Snippet** in de zoekresultaten — wat doorgaans leidt tot een hogere doorklikratio.
-
-
-<br>
 
 Sommige SEO-plugins voegen automatisch basisschema toe, maar het meest waardevolle en specifieke schema vereist meestal maatwerk. Je moet de juiste **JSON-LD**-data programmatisch toevoegen op basis van de daadwerkelijke inhoud van elke pagina.
 

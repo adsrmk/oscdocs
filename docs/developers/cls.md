@@ -1,11 +1,13 @@
+---
+description: "Cumulative Layout Shift (CLS) meet hoeveel elementen op een pagina onverwacht bewegen tijdens het laden."
+audience: developers
+---
+
 # CLS
 
 **Cumulative Layout Shift (CLS)** meet hoeveel elementen op een pagina onverwacht bewegen tijdens het laden. Het kwantificeert "visuele schokken" — bijvoorbeeld wanneer je op het punt staat een link aan te klikken, maar er plotseling een advertentie bovenaan inlaadt waardoor de link naar beneden schuift en je iets verkeerds aanklikt.
 
 In tegenstelling tot LCP of INP wordt CLS niet in seconden gemeten. Het is een score, berekend op basis van de "impact fraction" en "distance fraction" van verschuivende elementen op de pagina.
-
-
-<br>
 
 ## Veelvoorkomende oorzaken van verschuivingen
 
@@ -13,8 +15,6 @@ In tegenstelling tot LCP of INP wordt CLS niet in seconden gemeten. Het is een s
 - **Advertenties en embeds** — Dynamische content die laat in de layout verschijnt.
 - **Webfonts** — Tekst "springt" wanneer een custom font een fallback-font vervangt.
 - **Geïnjecteerde content** — Banners of formulieren die via JavaScript boven bestaande content worden toegevoegd.
-
-<br>
 
 ## Hoe verlaag je CLS?
 

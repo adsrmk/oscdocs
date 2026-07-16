@@ -1,10 +1,13 @@
+---
+description: "Beyond firewalls and application-level security, you can give the browser specific instructions on how to handle your site's content."
+audience: developers
+---
+
 # HTTP Security Headers
 
 Beyond firewalls and application-level security, you can give the browser specific instructions on how to handle your site's content. **HTTP security headers** are sent with every server response and act as a set of policies the browser agrees to enforce.
 
 Implementing them is one of the fastest, highest-impact ways to protect your site against attacks like clickjacking, cross-site scripting (XSS), and protocol downgrade attacks.
-
-<br>
 
 ## Implementation methods
 
@@ -15,10 +18,8 @@ You can apply security headers in two main ways:
 Configure headers directly in your server's config files — `httpd.conf` (Apache) or `nginx.conf` (Nginx).
 
 <div class="tip custom-block" style="padding-top: 8px">
-If you host your website with <b>OS Cloud</b>, most of these headers are already configured at the Nginx level. Some security scanners may not detect them correctly though — in that case, you can also apply them via Option 2 (PHP-based) to make them visible to the scanner.
+If you host your website with <b>OS Cloud</b>, inspect the actual response headers first: many headers may already be configured at the Nginx level. Do not add the same header again through PHP merely to satisfy a scanner. Duplicate or conflicting headers can produce unpredictable behaviour.
 </div>
-
-<br>
 
 ### Option 2 — WordPress (PHP-based)
 
@@ -34,11 +35,13 @@ function add_security_headers() {
 }
 ```
 
-<br>
-
 ## 1. HTTP Strict Transport Security (HSTS)
 
 The most important header for any site using HTTPS. It tells the browser to only ever communicate with your site over a secure HTTPS connection.
+
+<div class="warning custom-block" style="padding-top: 8px">
+Enable <code>includeSubDomains</code> and <code>preload</code> only after every subdomain is permanently available over HTTPS. An incorrect HSTS policy can make a domain inaccessible for an extended period. Start with a short <code>max-age</code>, test the complete domain structure and increase the value gradually.
+</div>
 
 - **What it prevents:** SSL stripping and man-in-the-middle attacks, where an attacker tries to downgrade a user's connection from HTTPS to insecure HTTP.
 - **How it works:** After a user's first visit, the browser remembers the HSTS policy. For all future visits within the `max-age` window, the browser refuses HTTP and automatically upgrades requests to HTTPS — even if the user types `http://` or follows an insecure link.
@@ -49,8 +52,6 @@ The most important header for any site using HTTPS. It tells the browser to only
 // 'preload' is for submission to the HSTS preload list
 header('Strict-Transport-Security: max-age=31536000; includeSubDomains; preload');
 ```
-
-<br>
 
 ## 2. X-Frame-Options
 
@@ -67,8 +68,6 @@ header('X-Frame-Options: DENY');
 // header('X-Frame-Options: SAMEORIGIN');
 ```
 
-<br>
-
 ## 3. X-Content-Type-Options
 
 Forces the browser to respect the `Content-Type` sent by your server and disables **MIME-type sniffing**.
@@ -79,8 +78,6 @@ Forces the browser to respect the `Content-Type` sent by your server and disable
 ```php
 header('X-Content-Type-Options: nosniff');
 ```
-
-<br>
 
 ## 4. Referrer-Policy
 
@@ -97,8 +94,6 @@ Controls how much referrer information the browser sends when a user clicks a li
 header('Referrer-Policy: strict-origin-when-cross-origin');
 ```
 
-<br>
-
 ## 5. Content-Security-Policy (CSP)
 
 The most complex and powerful security header. CSP lets you define a whitelist of sources from which the browser is allowed to load assets — scripts, styles, images, fonts, and more.
@@ -113,7 +108,5 @@ A full CSP implementation requires careful auditing of every asset your site loa
 // Only allows scripts to be loaded from your own domain
 header("Content-Security-Policy: script-src 'self'");
 ```
-
-<br>
 
 There are many more security header options available, but these five offer the biggest gains with the smallest configuration effort.

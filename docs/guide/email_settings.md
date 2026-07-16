@@ -1,17 +1,38 @@
+---
+description: "Gebruik deze instellingen om een OS Cloud-mailbox handmatig toe te voegen aan Outlook, Apple Mail, Thunderbird, Gmail of een andere e-mailapp."
+audience: customers
+---
+
 # E-mailclient-instellingen
 
-Dit zijn de gegevens die je nodig hebt om je e-mailaccount handmatig te koppelen aan externe applicaties zoals Outlook, Apple Mail of Gmail.
+Gebruik deze instellingen om een OS Cloud-mailbox handmatig toe te voegen aan Outlook, Apple Mail, Thunderbird, Gmail of een andere e-mailapp. Kies bij voorkeur **IMAP**: daarmee blijven berichten en mappen op al je apparaten gesynchroniseerd.
 
-<br>
+## Benodigde gegevens
 
-## Verbindingsprotocollen
+Vervang `jouwdomein.nl` door het domein van je eigen mailbox.
 
-| Protocol | Server | Poort | Versleuteling | Gebruik |
+| Functie | Protocol | Server | Poort | Beveiliging |
 | --- | --- | --- | --- | --- |
-| **IMAP** | [mail.jouwdomein.nl](http://mail.jouwdomein.nl) | `993` | SSL/TLS | Moderne synchronisatie over meerdere apparaten |
-| **SMTP** | [mail.jouwdomein.nl](http://mail.jouwdomein.nl) | `465` (SSL/TLS) of `587` (STARTTLS) | SSL/TLS of STARTTLS | Uitgaande e-mail |
-| **POP** | [mail.jouwdomein.nl](http://mail.jouwdomein.nl) | `995` | SSL/TLS | Eenvoudig berichten downloaden |
+| Inkomende e-mail | IMAP | `mail.jouwdomein.nl` | `993` | SSL/TLS |
+| Uitgaande e-mail | SMTP | `mail.jouwdomein.nl` | `465` | SSL/TLS |
+| Uitgaande e-mail, alternatief | SMTP | `mail.jouwdomein.nl` | `587` | STARTTLS |
+| Inkomende e-mail, alleen downloaden | POP3 | `mail.jouwdomein.nl` | `995` | SSL/TLS |
 
-<br>
+Gebruik als **gebruikersnaam altijd het volledige e-mailadres**, bijvoorbeeld `naam@jouwdomein.nl`. Gebruik het wachtwoord van de mailbox, niet noodzakelijk het wachtwoord van je OS Cloud-account. Schakel authenticatie voor de uitgaande SMTP-server in.
 
-> **Gebruikersnaam:** Gebruik altijd je volledige e-mailadres (bijvoorbeeld `admin@osworkspace.nl`) als inlognaam.
+## Instellen en testen
+
+1. Voeg een nieuw account toe in je e-mailapp en kies indien nodig **Handmatige configuratie**.
+2. Vul de IMAP- en SMTP-gegevens uit de tabel in.
+3. Accepteer geen ongeldig of niet-vertrouwd certificaat. Controleer bij een certificaatmelding eerst de servernaam en DNS-configuratie.
+4. Verstuur een testbericht naar een extern adres en beantwoord dat bericht vanaf het externe adres.
+5. Controleer of verzonden berichten en het antwoord op alle gekoppelde apparaten zichtbaar zijn.
+
+## Veelvoorkomende problemen
+
+- **Authenticatie mislukt:** controleer het volledige e-mailadres en reset zo nodig het [mailboxwachtwoord](/guide/email_password).
+- **Ontvangen werkt, verzenden niet:** controleer SMTP-authenticatie, poort en versleuteling.
+- **Verbindingstime-out:** test zonder VPN en controleer of het netwerk de gebruikte poort toestaat.
+- **Certificaatwaarschuwing:** ga niet verder voordat de servernaam en het certificaat overeenkomen.
+
+Gebruik POP3 alleen als je bewust berichten wilt downloaden in plaats van synchroniseren. Een verkeerde POP3-configuratie kan berichten lokaal opslaan of van de server verwijderen, afhankelijk van de e-mailapp.

@@ -1,3 +1,8 @@
+---
+description: "Standaard verwerkt WordPress zijn geplande taken — zoals het controleren op updates of het publiceren van ingeplande berichten — via een script genaamd wp-cron.php."
+audience: customers
+---
+
 # WP Cron Jobs uitschakelen
 
 Standaard verwerkt WordPress zijn geplande taken — zoals het controleren op updates of het publiceren van ingeplande berichten — via een script genaamd `wp-cron.php`.
@@ -10,8 +15,6 @@ Dit "pseudo-cron"-systeem is handig, maar het werkt alleen wanneer iemand daadwe
 Daarnaast: als je site gebruikmaakt van **full-page caching** (bijvoorbeeld via Varnish of Cloudflare), krijgen bezoekers vaak een gecachte versie van de pagina te zien zonder dat WordPress zelf wordt aangesproken. In dat geval wordt `wp-cron.php` helemaal niet geactiveerd — een cron job op systeemniveau is dan essentieel.
 
 De oplossing is om de **interne WordPress-cron uit te schakelen** en deze te vervangen door een cron job op systeemniveau die op een vast tijdsinterval draait.
-
-<br>
 
 ## Stap 1 — De interne WordPress-cron uitschakelen
 
@@ -30,8 +33,6 @@ Om te voorkomen dat WordPress het cron-script bij elke paginalading uitvoert, mo
    ```
 6. Klik op **Wijzigingen opslaan**.
 
-<br>
-
 ## Stap 2 — Een cron job op systeemniveau instellen
 
 Nu de interne trigger is uitgeschakeld, moet je de server vertellen om het script handmatig op een vast tijdsinterval uit te voeren.
@@ -41,7 +42,5 @@ Nu de interne trigger is uitgeschakeld, moet je de server vertellen om het scrip
 3. Klik op **Cron Jobs** in de linkerzijbalk.
 4. Klik op **Cron Job toevoegen**.
 5. Vul het **uitvoeringstype** en het **interval** in en klik op opslaan.
-
-<br>
 
 > **Belangrijk:** Houd na het voltooien van deze instelling de werking van je site goed in de gaten om zeker te weten dat de geplande taken correct worden uitgevoerd. Je kunt het tijdsinterval op elk moment aanpassen via het onderdeel **Cron Jobs** in je paneel.

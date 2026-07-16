@@ -1,3 +1,8 @@
+---
+description: "Setting the right file and directory permissions is essential to prevent unauthorised access to — or modification of — your WordPress site."
+audience: customers
+---
+
 # Secure File and Directory Permissions
 
 Setting the right file and directory permissions is essential to prevent unauthorised access to — or modification of — your WordPress site. Incorrect permissions can allow attackers to overwrite files, inject malicious code, or even take full control of your website.
@@ -5,8 +10,6 @@ Setting the right file and directory permissions is essential to prevent unautho
 <div class="info custom-block" style="padding-top: 8px">
 The panel automatically assigns recommended permissions by default. For extra security, we recommend setting <code>wp-config.php</code> to <b>440</b>.
 </div>
-
-<br>
 
 ## Recommended permissions
 
@@ -21,42 +24,38 @@ The panel automatically assigns recommended permissions by default. For extra se
 
 Correct permissions help WordPress run smoothly while minimising the risk of unauthorised changes.
 
-<br>
+## Advanced: make core files temporarily read-only
 
-## Set WordPress core directories to 444
-
-Setting file permissions to `444` on the `wp-includes` directory is a simple but effective WordPress hardening step.
+Permission `444` makes files completely read-only. In a controlled recovery or investigation window this can prevent changes to core files, but it is **not a standard setting for routine WordPress management**.
 
 The `wp-includes` folder contains core libraries that WordPress needs to **read and execute** — but never modifies during normal operation. By making these files read-only, you prevent malicious code, vulnerable plugins, or compromised admin accounts from injecting or altering core functionality.
 
-This significantly reduces the risk of persistent malware infections and helps protect the integrity of your WordPress core files.
+Because WordPress and management tools can no longer write to these files, core updates and repairs may fail. Use this only temporarily, with a current backup and a documented rollback.
 
 <div class="warning custom-block" style="padding-top: 8px">
 Do <b>not</b> apply <code>444</code> to the <code>wp-includes</code> directory itself. Directories need the <i>execute</i> permission to be accessible. If you accidentally remove it, log in via SFTP and set the directory permissions back to <code>755</code>.
 </div>
 
-<br>
-
 **To set secure permissions across all wp-includes files:**
 
-1. Log in via [SSH](#).
+1. Connect using [SSH](/en-us/guide/SSH).
 2. Go to your main website directory:
-   ```ssh
+   ```bash
    cd public_html
    ```
 3. Run the following command:
-   ```ssh
+   ```bash
    find wp-admin wp-includes -type f -exec chmod 444 {} \;
    ```
 
-<br>
+Before a WordPress update or repair, return the files to the normal value:
+
+```bash
+find wp-admin wp-includes -type f -exec chmod 644 {} \;
+```
+
+Then test the website, administration area and update process. If you suspect malware, use file-integrity checks and restore from a known-clean source; changing permissions alone does not remove an infection.
 
 ## How to edit permissions
 
 You can change permissions on any file or folder by **right-clicking** it and selecting **Permissions** from the menu.
-
-<br>
-
-<img width="935" height="491" alt="image" src="https://github.com/user-attachments/assets/30334757-0643-425e-941d-27d0ad63e458" />
-
-<br>

@@ -1,10 +1,13 @@
+---
+description: "By default, a WordPress user session can last up to 14 days, depending on whether the user ticks the Remember Me box."
+audience: developers
+---
+
 # Idle Users & Session Timeout
 
 By default, a WordPress user session can last up to **14 days**, depending on whether the user ticks the **Remember Me** box. If someone logs in from a shared computer (a library, co-working space, etc.) and forgets to log out, their account stays accessible — and vulnerable.
 
 An **automatic idle session timeout** mitigates that risk. The setup below combines **JavaScript** for monitoring user activity with a small **PHP** snippet that loads the script and sets the correct logout URL.
-
-<br>
 
 ## Step 1 — Create the idle-logout script
 
@@ -82,8 +85,6 @@ Create a new JavaScript file at `/public_html/js/idle-logout.js`:
 })();
 ```
 
-<br>
-
 ## Step 2 — Load the script and set the logout URL
 
 Add the following to your active theme's `functions.php`:
@@ -119,8 +120,6 @@ function enqueue_idle_logout_script( $hook ) {
 <div class="info custom-block" style="padding-top: 8px">
 Update <code>$script_path</code> if your script isn't located under <code>public_html/js/</code>.
 </div>
-
-<br>
 
 ## How it works
 

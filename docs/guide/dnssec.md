@@ -1,13 +1,15 @@
+---
+description: "DNSSEC (Domain Name System Security Extensions) voegt een beveiligingslaag toe aan DNS door antwoorden digitaal te ondertekenen."
+audience: customers
+---
+
 # DNSSEC
 
 **DNSSEC (Domain Name System Security Extensions)** voegt een beveiligingslaag toe aan DNS door antwoorden digitaal te ondertekenen. Hiermee bescherm je je domein tegen aanvallen zoals cache poisoning, en weet je zeker dat bezoekers naar de échte server worden gestuurd — niet naar een vervalste.
 
-
 <div class="info custom-block" style="padding-top: 8px">
 DNSSEC moet worden ondersteund door je registrar en vereist extra configuratie aan hun kant voordat het geactiveerd kan worden.
 </div>
-
-<br>
 
 ## DNSSEC inschakelen
 

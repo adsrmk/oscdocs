@@ -1,8 +1,11 @@
+---
+description: "Modern web development is about balancing visual quality with performance."
+audience: developers
+---
+
 # Image Formatting
 
 Modern web development is about balancing visual quality with performance. Using next-gen image formats is one of the most effective ways to **reduce page weight**, improve **Largest Contentful Paint (LCP)**, and **save user bandwidth**.
-
-<br>
 
 ## Format comparison
 
@@ -13,8 +16,6 @@ Modern web development is about balancing visual quality with performance. Using
 | **JPEG XL** | `.jxl` | Progressive loading; lossless JPEG transcoding | Emerging (Safari, Chrome) |
 | **JPEG / PNG** | `.jpg` / `.png` | Universal compatibility | Legacy fallback |
 
-<br>
-
 ## Formats
 
 ### AVIF (AV1 Image File Format)
@@ -24,8 +25,6 @@ AVIF offers the most significant file-size savings — often **50% smaller than 
 - **Best for:** High-quality photography, hero banners, and complex graphics where file size is the priority.
 - **Cons:** Higher CPU usage for encoding/decoding; no progressive rendering (loads top-to-bottom or all at once).
 
-<br>
-
 ### WebP
 
 WebP is the industry workhorse. It supports lossy and lossless compression, as well as alpha transparency.
@@ -33,16 +32,12 @@ WebP is the industry workhorse. It supports lossy and lossless compression, as w
 - **Best for:** General UI elements, product thumbnails, and replacing transparent PNGs.
 - **Cons:** Better than JPEG, but typically outperformed by AVIF in high-detail scenarios.
 
-<br>
-
 ### JPEG XL (JXL)
 
 The newest standard, designed to eventually replace all previous formats.
 
 - **Best for:** Large image libraries (thanks to lossless JPEG transcoding) and responsive web design (thanks to superior progressive loading).
 - **New tech:** It can shrink existing JPEGs by ~35% with **no generation loss**, and you can reconstruct the original JPEG bit-for-bit if needed.
-
-<br>
 
 ## Implementation methods
 
@@ -53,8 +48,6 @@ Services like **Jetpack (Photon)**, **Cloudflare Polish**, and **Optimole** hand
 - **How it works:** You upload a standard JPEG. When a user visits your site, the CDN detects their browser. If they support AVIF, the CDN converts the image on the fly and serves it.
 - **Best for:** Larger sites that don't want to store five different copies of every image on their own server.
 
-<br>
-
 ### 2. Optimisation plugins
 
 For "set it and forget it" local optimisation, these are the current leaders:
@@ -63,18 +56,13 @@ For "set it and forget it" local optimisation, these are the current leaders:
 - **ShortPixel** — Excellent compression and supports `<picture>` tag rewriting.
 - **EWWW Image Optimizer** — Best for high-volume sites and server-level optimisation.
 
-<br>
-
 ## Image compression
 
 Optimising your images is essential for modern websites. Heavy, uncompressed images are one of the biggest causes of slow load times and a poor user experience.
 
 WordPress offers plugins like **EWWW Image Optimizer**, **Smush**, **ShortPixel**, and **Imagify** — but we prefer to compress images **before** they ever reach the database. Tools like [TinyPNG↗](https://tinypng.com/) and [Squoosh↗](https://squoosh.app/) significantly reduce file sizes while preserving visual quality.
 
-<br>
-<img width="1036" height="557" alt="image" src="https://github.com/user-attachments/assets/bbc5c7db-1447-4513-9fad-8bcc419ebd6b" />
-
-<br>
+<img width="1036" height="557" alt="Screenshot of Image compression" src="https://github.com/user-attachments/assets/bbc5c7db-1447-4513-9fad-8bcc419ebd6b" />
 
 ## Best-practice reminders
 

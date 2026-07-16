@@ -1,8 +1,11 @@
+---
+description: "The All-in-One WP Migration plugin lets you back up your entire WordPress website — including content, images, plugins, and themes — into a single file."
+audience: customers
+---
+
 # Save or Restore Your Website Data
 
 The **All-in-One WP Migration** plugin lets you back up your entire WordPress website — including content, images, plugins, and themes — into a single file. You can use this file to restore your website at any time.
-
-<br>
 
 ## Create a Backup
 
@@ -11,8 +14,6 @@ The **All-in-One WP Migration** plugin lets you back up your entire WordPress we
 3. Click **Create Backup** and wait for the process to complete.
 4. Download the backup file to your computer. We recommend also saving it to a cloud storage service (such as Google Drive or OneDrive) for safekeeping.
 
-<br>
-
 ## Restore a Backup
 
 1. In your WordPress Dashboard, go to **All-in-One WP Migration → Backups** in the left sidebar.
@@ -20,8 +21,6 @@ The **All-in-One WP Migration** plugin lets you back up your entire WordPress we
 3. Drag and drop your backup file into the upload area — or click **File** from the dropdown to browse and select the file from your computer.
 
 > **Note:** Our platform has a maximum upload limit of **100 MB**. If your file is larger, or if the upload gets stuck, use the SFTP method described below.
-
-<br>
 
 ## Upload via SFTP (for files larger than 100 MB)
 

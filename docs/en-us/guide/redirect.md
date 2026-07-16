@@ -1,8 +1,11 @@
+---
+description: "A redirect automatically sends visitors from one web address to another."
+audience: customers
+---
+
 # Redirects
 
 A **redirect** automatically sends visitors from one web address to another. They're commonly used when a page has been moved, renamed, or replaced — so users always end up on the correct content.
-
-<br>
 
 ## 301 vs 302 redirects
 
@@ -10,8 +13,6 @@ A **redirect** automatically sends visitors from one web address to another. The
 | --- | --- | --- |
 | **301** | Permanent redirect — the page has moved for good. | Transfers SEO value from the old URL to the new one. |
 | **302** | Temporary redirect — the move is not permanent. | Keeps SEO value tied to the original URL. |
-
-<br>
 
 ## Create a redirect
 

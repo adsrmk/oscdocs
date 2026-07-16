@@ -1,8 +1,11 @@
+---
+description: "The Plugins tab gives you a central overview of all extensions installed on your WordPress site."
+audience: customers
+---
+
 # Plugins
 
 The **Plugins** tab gives you a central overview of all extensions installed on your WordPress site. From here, you can update plugins and manage their activation state — without logging into the WordPress admin area. This is especially useful when a plugin is incompatible, broken, or causing crashes.
-
-<br>
 
 ## Plugin status
 
@@ -10,8 +13,6 @@ Each plugin shows a status badge that tells you its current state:
 
 - **Active** — The plugin is running and providing functionality to your site.
 - **Inactive** — The plugin is installed but not currently in use.
-
-<br>
 
 ## Available actions
 

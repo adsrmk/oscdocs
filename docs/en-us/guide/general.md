@@ -1,15 +1,16 @@
+---
+description: "The General tab is the main dashboard for your WordPress application."
+audience: customers
+---
+
 # General
 
 The **General** tab is the main dashboard for your WordPress application. It gives you an overview of your site's configuration — including your live URL, file structure, and core software updates.
-
-<br>
 
 ## Site details & file path
 
 - **Site URL** — The primary address WordPress uses to generate internal links and redirects. If you've recently changed your domain, make sure this matches your live environment.
 - **File Path** — The root directory of your WordPress installation (usually `public_html`). You'll need this path when configuring SFTP or managing files via the command line.
-
-<br>
 
 ## WordPress version
 
@@ -20,8 +21,6 @@ Keeping your site secure means keeping its software up to date. This section con
 <div class="tip custom-block" style="padding-top: 8px">
 We recommend enabling automatic updates only for minor versions, to avoid compatibility issues with plugins and themes.
 </div>
-
-<br>
 
 ## Maintenance mode
 

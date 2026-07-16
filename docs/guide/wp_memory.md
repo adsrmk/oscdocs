@@ -1,3 +1,8 @@
+---
+description: "WordPress kan af en toe geheugen tekortkomen — meestal bij sites met veel verkeer, veel functionaliteiten of veel plugins."
+audience: customers
+---
+
 # WordPress-geheugenlimiet verhogen
 
 WordPress kan af en toe geheugen tekortkomen — meestal bij sites met veel verkeer, veel functionaliteiten of veel plugins. Het kan ook voorkomen als een thema of plugin problematische code bevat.
@@ -14,8 +19,6 @@ Soms bevat de foutmelding ook de specifieke functie of het bestand dat de fout v
 We raden aan om je site te draaien op de <b>nieuwste ondersteunde PHP-versie</b>, samen met de actuele versies van WordPress core, thema's en plugins. Dat voorkomt veel geheugenproblemen al meteen.
 </div>
 
-<br>
-
 ## Stap 1 — Controleer je huidige geheugenlimieten
 
 WordPress 5.0+ bevat een ingebouwde **Site Health**-tool. Open deze via **Gereedschap → Site-status → Info** in je WordPress-dashboard.
@@ -31,16 +34,12 @@ Er zijn twee limieten waarmee je rekening moet houden:
 Op shared hosting staat de server PHP-limiet vast op <b>168 MB</b> voor alle klanten. Op een <b>Managed VPS</b> kunnen we de PHP-instellingen op maat aanpassen aan jouw behoeften.
 </div>
 
-<br>
-
 ## Stap 2 — De WordPress-constanten begrijpen
 
 Onder **WordPress-constanten** vind je twee waarden:
 
 - **`WP_MEMORY_LIMIT`** — De geheugenlimiet voor de **front-end** van je site. Dit is meestal de waarde die je wilt verhogen wanneer bezoekers fatale fouten zien.
 - **`WP_MAX_MEMORY_LIMIT`** — De geheugenlimiet voor het **adminpaneel**. Mag hoger worden ingesteld dan `WP_MEMORY_LIMIT`, omdat admintaken (zoals paginabouwers) vaak meer geheugen nodig hebben.
-
-<br>
 
 ## Stap 3 — Verhoog de geheugenlimieten
 

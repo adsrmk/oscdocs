@@ -1,10 +1,13 @@
+---
+description: "Standaard kan een WordPress-gebruikerssessie tot wel 14 dagen duren, afhankelijk van of de gebruiker het vakje Onthoud mij aanvinkt."
+audience: developers
+---
+
 # Inactieve gebruikers & sessie-timeout
 
 Standaard kan een WordPress-gebruikerssessie tot wel **14 dagen** duren, afhankelijk van of de gebruiker het vakje **Onthoud mij** aanvinkt. Logt iemand in vanaf een gedeelde computer (bibliotheek, co-workingspace, etc.) en vergeet uit te loggen? Dan blijft het account toegankelijk — en kwetsbaar.
 
 Met een **automatische idle session-timeout** beperk je dat risico. De onderstaande opzet combineert **JavaScript** voor het monitoren van gebruikersactiviteit met een kleine **PHP**-snippet die het script inlaadt en de juiste logout-URL meegeeft.
-
-<br>
 
 ## Stap 1 — Maak het idle-logout-script aan
 
@@ -82,8 +85,6 @@ Maak een nieuw JavaScript-bestand aan op `/public_html/js/idle-logout.js`:
 })();
 ```
 
-<br>
-
 ## Stap 2 — Laad het script en stel de logout-URL in
 
 Voeg het volgende toe aan het `functions.php`-bestand van je actieve thema:
@@ -119,8 +120,6 @@ function enqueue_idle_logout_script( $hook ) {
 <div class="info custom-block" style="padding-top: 8px">
 Pas <code>$script_path</code> aan als je script niet onder <code>public_html/js/</code> staat.
 </div>
-
-<br>
 
 ## Hoe werkt het?
 

@@ -1,3 +1,8 @@
+---
+description: "As a developer, you have precise tools to control how search engine bots (like Googlebot) crawl and index your website."
+audience: developers
+---
+
 # Indexing
 
 As a developer, you have precise tools to control how search engine bots (like Googlebot) crawl and index your website. Just creating content isn't enough — you also need to actively guide search engines so they focus on **high-value pages** and ignore irrelevant ones. This saves crawl budget and prevents messy search results.
@@ -7,8 +12,6 @@ There are three main tools available, each with its own purpose:
 1. **`robots.txt`** — Broad instructions for which areas bots should crawl.
 2. **`<meta name="robots">`** — Per-page indexing instructions inside HTML.
 3. **`X-Robots-Tag`** — HTTP header for files that aren't HTML (PDFs, images, etc.).
-
-<br>
 
 ## 1. The `robots.txt` file
 
@@ -23,8 +26,6 @@ There are three main tools available, each with its own purpose:
 <div class="warning custom-block" style="padding-top: 8px">
 <code>robots.txt</code> is a <b>directive, not a firewall</b>. Malicious bots will ignore it. If a disallowed page is linked from elsewhere on the web, Google may still index it (without its content) and show it in search results as <i>"No information is available for this page."</i> To truly hide a page from search, use the <code>noindex</code> meta tag instead.
 </div>
-
-<br>
 
 **Recommended `robots.txt` for WordPress:**
 
@@ -47,8 +48,6 @@ Disallow: /search/
 Sitemap: https://www.yourdomain.com/sitemap_index.xml
 ```
 
-<br>
-
 ## 2. The `<meta name="robots">` tag
 
 The meta robots tag is an HTML element placed in the `<head>` of a specific page. It gives crawlers explicit instructions on how to treat that one URL — a far more reliable way than `robots.txt` to keep specific content out of search results.
@@ -64,8 +63,6 @@ The meta robots tag is an HTML element placed in the `<head>` of a specific page
 
 - **`noindex, follow`** — "Don't index this page, but you can follow its links to find other good pages." The most common combination for low-value pages like paginated archives, author pages on single-author blogs, or "Thank You" pages.
 - **`noindex, nofollow`** — "Don't index this page, and don't trust any of its links." Useful for pages with user-generated content you don't want to endorse.
-
-<br>
 
 ### Implementation in WordPress
 
@@ -84,8 +81,6 @@ function noindex_paginated_archives() {
     }
 }
 ```
-
-<br>
 
 ## 3. The `X-Robots-Tag` HTTP header
 
@@ -110,8 +105,6 @@ function block_pdf_indexing() {
     }
 }
 ```
-
-<br>
 
 ## Quick reference
 

@@ -1,11 +1,13 @@
+---
+description: "Cumulative Layout Shift (CLS) measures how much elements on a page move around unexpectedly while loading."
+audience: developers
+---
+
 # CLS
 
 **Cumulative Layout Shift (CLS)** measures how much elements on a page move around unexpectedly while loading. It quantifies "visual jitter" — for example, when you're about to click a link, but an ad suddenly loads at the top and pushes the link down, causing you to click the wrong thing.
 
 Unlike LCP or INP, CLS isn't measured in seconds. It's a score calculated from the "impact fraction" and "distance fraction" of shifting elements on the page.
-
-
-<br>
 
 ## Common causes of shifting
 
@@ -13,8 +15,6 @@ Unlike LCP or INP, CLS isn't measured in seconds. It's a score calculated from t
 - **Ads and embeds** — Dynamic content that pops into the layout late.
 - **Web fonts** — Text "jumps" when a custom font swaps in over a fallback font.
 - **Injected content** — Banners or forms added via JavaScript above existing content.
-
-<br>
 
 ## How to reduce CLS
 

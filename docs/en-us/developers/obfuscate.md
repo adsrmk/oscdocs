@@ -1,3 +1,8 @@
+---
+description: "You can hide WordPress's default folder structure for extra protection against automated scanners and basic attacks."
+audience: developers
+---
+
 # Obfuscate WordPress Structure
 
 You can hide WordPress's default folder structure for extra protection against automated scanners and basic attacks. This changes the directories and structural paths WordPress uses.
@@ -5,8 +10,6 @@ You can hide WordPress's default folder structure for extra protection against a
 <div class="warning custom-block" style="padding-top: 8px">
 This is <b>not a security feature</b> on its own. It only obscures WordPress-specific paths and fingerprints. Proper security measures — updates, firewalls, authentication hardening, etc. — are still required.
 </div>
-
-<br>
 
 ## Rewrite the `wp-content` directory
 
@@ -17,8 +20,6 @@ define('WP_CONTENT_DIR', dirname(__FILE__) . '/assets');
 define('WP_CONTENT_URL', '/assets');
 ```
 
-<br>
-
 ### Rewrite the plugins directory
 
 You can also rewrite the `/plugins` directory. Make sure the path matches the directory you defined above (`assets/...`):
@@ -27,8 +28,6 @@ You can also rewrite the `/plugins` directory. Make sure the path matches the di
 define('WP_PLUGIN_DIR', dirname(__FILE__) . '/assets/lib');
 define('WP_PLUGIN_URL', '/assets/lib');
 ```
-
-<br>
 
 ### Move the uploads directory
 
@@ -42,11 +41,7 @@ define('UPLOADS', 'assets/img');
 If you change these directories, make sure the actual folders on disk are renamed to match — otherwise WordPress won't be able to locate them.
 </div>
 
-<br>
-
-<img width="1062" height="206" alt="image" src="https://github.com/user-attachments/assets/7d011018-9bc4-4f83-8f56-2b31ba5fb453" />
-
-<br>
+<img width="1062" height="206" alt="Screenshot of Move the uploads directory" src="https://github.com/user-attachments/assets/7d011018-9bc4-4f83-8f56-2b31ba5fb453" />
 
 **Example mapping:**
 
@@ -57,8 +52,6 @@ If you change these directories, make sure the actual folders on disk are rename
 | `themes` | `/assets/core` |
 | `uploads` | `/assets/img` |
 
-<br>
-
 ### (Optional) Disable month/year upload folders
 
 To stop WordPress from creating folders like `/2026/03/` inside `uploads`:
@@ -68,11 +61,7 @@ To stop WordPress from creating folders like `/2026/03/` inside `uploads`:
 3. Disable **Organize my uploads into month- and year-based folders**.
 4. Save changes.
 
-<br>
-
-<img width="589" height="208" alt="image" src="https://github.com/user-attachments/assets/cbc7c590-c504-4abd-b0f4-e5b3170c50a2" />
-
-<br>
+<img width="589" height="208" alt="Screenshot of (Optional) Disable month/year upload folders (2)" src="https://github.com/user-attachments/assets/cbc7c590-c504-4abd-b0f4-e5b3170c50a2" />
 
 ## Rename the theme directory
 
@@ -92,8 +81,6 @@ add_filter('theme_root_uri', function () {
     return WP_CONTENT_URL . '/core';
 });
 ```
-
-<br>
 
 ## NGINX security & performance rules
 

@@ -1,3 +1,8 @@
+---
+description: "By default, WordPress handles its scheduled tasks — like checking for updates or publishing scheduled posts — through a script called wp-cron.php."
+audience: customers
+---
+
 # Disable WP Cron Jobs
 
 By default, WordPress handles its scheduled tasks — like checking for updates or publishing scheduled posts — through a script called `wp-cron.php`.
@@ -10,8 +15,6 @@ This "pseudo-cron" system is convenient, but it only runs when someone actually 
 In addition, if your site uses **full-page caching** (such as Varnish or Cloudflare), visitors may receive a cached version of the page without ever "hitting" WordPress. When that happens, `wp-cron.php` won't trigger at all — making a system-level cron job essential.
 
 The solution is to **disable the internal WordPress cron** and replace it with a system-based cron job that runs on a fixed schedule.
-
-<br>
 
 ## Step 1 — Disable the internal WordPress cron
 
@@ -30,8 +33,6 @@ To stop WordPress from running the cron script on every page load, you need to e
    ```
 6. Click **Save Changes**.
 
-<br>
-
 ## Step 2 — Set up a system cron job
 
 Now that the internal trigger is disabled, you'll need to tell the server to run the script manually on a fixed schedule.
@@ -41,7 +42,5 @@ Now that the internal trigger is disabled, you'll need to tell the server to run
 3. Click **Cron Jobs** in the left-hand sidebar.
 4. Click **Add Cron Job**.
 5. Set the **Execution Type** and **Interval**, then save.
-
-<br>
 
 > **Important:** After completing this setup, keep an eye on your site's functionality to make sure scheduled tasks are running as expected. You can adjust the schedule at any time from the **Cron Jobs** management area in your panel.

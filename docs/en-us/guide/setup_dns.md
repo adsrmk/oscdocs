@@ -1,3 +1,8 @@
+---
+description: "Every domain relies on the Domain Name System (DNS) to connect visitors to the right server — it acts as the internet's address book."
+audience: customers
+---
+
 # Set Up DNS Records
 
 Every domain relies on the **Domain Name System (DNS)** to connect visitors to the right server — it acts as the internet's address book. When you register a domain, it initially points to your registrar's nameservers. To make your domain fully work with **OS Cloud**, you can either update the nameservers or configure the DNS records manually.
@@ -6,16 +11,12 @@ Every domain relies on the **Domain Name System (DNS)** to connect visitors to t
 You have <b>two options</b> to connect your domain to OS Cloud, depending on how much DNS control you want.
 </div>
 
-<br>
-
 ## Which option should you pick?
 
 | Option | Best for |
 | --- | --- |
 | **1. Change nameservers** | You want OS Cloud to manage everything (website, email, subdomains) automatically. |
 | **2. Manage DNS records manually** | You want to keep email with another provider (e.g. Google Workspace, Microsoft 365) while hosting your site with OS Cloud. |
-
-<br>
 
 ## Option 1 — Change nameservers (recommended)
 
@@ -30,8 +31,6 @@ ns2.oscloud.nl
 ```
 
 > Most registrars show four input fields. You only need to fill in **two** — that's enough for proper configuration.
-
-<br>
 
 ## Option 2 — Manage DNS records manually
 

@@ -1,12 +1,13 @@
+---
+description: "SSH-sleutels zijn een veilige manier om verbinding te maken met je server zonder wachtwoord."
+audience: customers
+---
+
 # Verbinden met je workspace via SSH-sleutels
 
 SSH-sleutels zijn een veilige manier om verbinding te maken met je server zonder wachtwoord. Ze werken met een **publiek/privé-sleutelpaar**: de privésleutel blijft op je apparaat, terwijl de publieke sleutel op de server wordt toegevoegd. Alleen iemand met de bijbehorende privésleutel kan verbinden — dat maakt logins veiliger én sneller. Bovendien kun je zo tools als **WP-CLI** of **Composer** gebruiken zonder je wachtwoord prijs te geven.
 
-<br>
-
 In deze handleiding gebruiken we de [Termius-applicatie↗](https://termius.com/index.html) om een SSH-sleutel te genereren. Termius is een veelgebruikte SSH-client met een overzichtelijke interface voor het beheren van meerdere serververbindingen.
-
-<br>
 
 ## Stap 1 — Genereer een sleutelpaar in Termius
 
@@ -14,37 +15,24 @@ In deze handleiding gebruiken we de [Termius-applicatie↗](https://termius.com/
 2. Selecteer **Keychains**.
 3. Klik op **Keys** en kies **Generate Key** in het dropdown-menu.
 
-<br>
-
-<img width="925" height="331" alt="image" src="https://github.com/user-attachments/assets/78f0f8bf-a685-4013-b9d7-5f9463193a6d" />
-
-<br>
+<img width="925" height="331" alt="Schermafbeelding van Stap 1 — Genereer een sleutelpaar in Termius" src="https://github.com/user-attachments/assets/78f0f8bf-a685-4013-b9d7-5f9463193a6d" />
 
 4. Kies **ED25519** als sleuteltype en voeg (optioneel) een label toe voor eenvoudige herkenning.
    
-<br>
 
-<img width="329" height="149" alt="image" src="https://github.com/user-attachments/assets/3bd5e4ed-d83d-44d6-8108-404b97f4bd14" />
-
-<br>
+<img width="329" height="149" alt="Schermafbeelding van Stap 1 — Genereer een sleutelpaar in Termius (2)" src="https://github.com/user-attachments/assets/3bd5e4ed-d83d-44d6-8108-404b97f4bd14" />
 
 5. Voeg een **wachtwoordzin (passphrase)** toe voor extra beveiliging. Mocht iemand toegang krijgen tot je apparaat, dan is de wachtwoordzin nog steeds nodig om verbinding te maken.
 6. Klik op **Generate & Save**.
 7. Je ziet nu zowel een privé- als publieke sleutel. **Kopieer de publieke sleutel** — die plak je in de volgende stap in het OS Cloud-paneel.
 
-<br>
-
-<img width="304" height="459" alt="image" src="https://github.com/user-attachments/assets/5c0b97c9-cfc5-49c5-ab5d-5e1c1d8fb9df" />
-
-<br>
+<img width="304" height="459" alt="Schermafbeelding van Stap 1 — Genereer een sleutelpaar in Termius (3)" src="https://github.com/user-attachments/assets/5c0b97c9-cfc5-49c5-ab5d-5e1c1d8fb9df" />
 
 ## Stap 2 — Voeg de publieke sleutel toe aan OS Cloud
 
 1. Ga in je OS Cloud-paneel naar **Websites → [je website] → Geavanceerd → Ontwikkelaarstools → SSH-sleutelbeheer** en klik op **Toevoegen**.
 
-<img width="773" height="454" alt="image" src="https://github.com/user-attachments/assets/f1ed393e-2f26-42bc-a0cc-bfa11d1f062c" />
-
-<br>
+<img width="773" height="454" alt="Schermafbeelding van Stap 2 — Voeg de publieke sleutel toe aan OS Cloud (4)" src="https://github.com/user-attachments/assets/f1ed393e-2f26-42bc-a0cc-bfa11d1f062c" />
 
 2. Geef de sleutel een naam en plak de publieke sleutel.
 

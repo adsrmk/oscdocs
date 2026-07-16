@@ -1,8 +1,11 @@
+---
+description: "By default, WordPress loads several styles and scripts that your site may not actually use."
+audience: developers
+---
+
 # Dequeue Scripts and Styles
 
 By default, WordPress loads several styles and scripts that your site may not actually use. These extra assets **slow down your page load** unnecessarily. You can prevent WordPress from loading them by **dequeuing** them.
-
-<br>
 
 ## Example: dequeue Gutenberg
 
@@ -23,8 +26,6 @@ function dequeue_gutenberg_assets() {
 }
 add_action('wp_enqueue_scripts', 'dequeue_gutenberg_assets', 100);
 ```
-
-<br>
 
 ## How it works
 

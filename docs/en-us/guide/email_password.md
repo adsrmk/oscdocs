@@ -1,16 +1,25 @@
-# Changing Your Email Password
+---
+description: "Change a mailbox password if you have forgotten it, believe it may have been exposed, or need to revoke access from an old device."
+audience: customers
+---
 
-<div class="warning custom-block" style="padding-top: 8px">
-If your email is set up on other devices (phone, tablet, mail client), update the password there as well. Otherwise, you'll stop receiving new emails on those devices.
-</div>
+# Change an email password
 
-<br>
+Change a mailbox password if you have forgotten it, believe it may have been exposed, or need to revoke access from an old device. After the change, update the password in every email application that uses the mailbox.
 
-1. Go to your mailbox in the [Emails↗](https://oscloud.nl/emails) section and click **Reset**.
-2. Enter your new password. It must meet these requirements:
-   - At least one lowercase letter
-   - At least one uppercase letter
-   - At least one number
-   - At least one special character
-   - Minimum of 10 characters
-3. Click **Save** to apply the change.
+## Change the password
+
+1. Open the mailbox in [Emails](https://oscloud.nl/emails) and select **Reset**.
+2. Set a unique password of at least ten characters containing a lowercase letter, uppercase letter, number and special character.
+3. Store the password in a trusted password manager.
+4. Select **Save**.
+5. Update the password immediately in Outlook, Apple Mail, Gmail, phones, tablets, scanners and other connected systems.
+6. Send and receive a test message.
+
+::: warning Prevent temporary blocks
+Devices that retain the old password may make repeated failed sign-in attempts. Update every client within a short period or temporarily remove the account from devices you cannot update immediately.
+:::
+
+Do not share the password with colleagues or support. Where possible, give each employee a personal mailbox or appropriate shared access.
+
+If the new password does not work, confirm that the username is the complete email address and compare the client with [Email client settings](/en-us/guide/email_settings).

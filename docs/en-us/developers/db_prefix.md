@@ -1,3 +1,8 @@
+---
+description: "By default, WordPress uses wp as the prefix for all database tables."
+audience: developers
+---
+
 # Change Database Prefix
 
 By default, WordPress uses `wp_` as the prefix for all database tables. Changing it to a unique, random prefix improves security by blocking automated SQL injection attacks that specifically target the default prefix.
@@ -7,8 +12,6 @@ This guide walks you through the process in **four steps**.
 <div class="warning custom-block" style="padding-top: 8px">
 This is a <b>sensitive database operation</b>. Always create a full backup of your database before you begin — a single mistake can bring your entire site down. We also recommend performing this procedure during a low-traffic period.
 </div>
-
-<br>
 
 ## Step 1 — Update your `wp-config.php`
 
@@ -31,8 +34,6 @@ This is a <b>sensitive database operation</b>. Always create a full backup of yo
 <div class="info custom-block" style="padding-top: 8px">
 At this point your site will be broken and show a database connection error. This is expected — we'll fix it in the next steps by renaming the database tables to match.
 </div>
-
-<br>
 
 ## Step 2 — Rename all database tables
 
@@ -72,8 +73,6 @@ Now rename the core WordPress tables (and any plugin tables) that still use the 
 
 After running these commands, your site should start working again — but there are still two places where the old prefix is stored.
 
-<br>
-
 ## Step 3 — Update the `wp_options` table
 
 The `wp_options` table (now renamed to `wp_a7d3f8_options`) contains a field called `wp_user_roles`. This field name is based on the old prefix and must also be updated.
@@ -90,8 +89,6 @@ WHERE option_name = 'wp_user_roles';
 
 This ensures WordPress can still correctly identify user roles and permissions. If you skip this step, all users — including administrators — may lose their permissions.
 
-<br>
-
 ## Step 4 — Update the `wp_usermeta` table
 
 The `wp_usermeta` table contains multiple rows that use the old prefix as part of the `meta_key`. These also need to be updated.
@@ -104,8 +101,6 @@ SET meta_key = REPLACE(meta_key, 'wp_', 'wp_a7d3f8_');
 ```
 
 This finds every occurrence of the old prefix in the `meta_key` column and replaces it with the new one. It restores user capabilities, dashboard settings, and other user-specific metadata.
-
-<br>
 
 ## Final check
 

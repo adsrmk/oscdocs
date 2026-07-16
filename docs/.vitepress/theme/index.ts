@@ -1,5 +1,12 @@
-import Theme from 'vitepress/theme'
-// import 'virtual:group-icons.css'
-import './styles.css'
+import DefaultTheme from 'vitepress/theme'
+import { h } from 'vue'
+import SupportFooter from './SupportFooter.vue'
+import './custom.css'
 
-export default Theme
+export default {
+  extends: DefaultTheme,
+  Layout: () =>
+    h(DefaultTheme.Layout, null, {
+      'doc-after': () => h(SupportFooter)
+    })
+}

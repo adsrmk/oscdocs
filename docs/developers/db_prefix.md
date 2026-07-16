@@ -1,3 +1,8 @@
+---
+description: "Standaard gebruikt WordPress wp als prefix voor alle databasetabellen."
+audience: developers
+---
+
 # Database-prefix wijzigen
 
 Standaard gebruikt WordPress `wp_` als prefix voor alle databasetabellen. Door deze prefix te wijzigen naar een unieke, willekeurige waarde verhoog je de beveiliging — zo blokkeer je geautomatiseerde SQL-injectie-aanvallen die zich specifiek richten op de standaardprefix.
@@ -7,8 +12,6 @@ Deze handleiding loopt in **vier stappen** door het proces heen.
 <div class="warning custom-block" style="padding-top: 8px">
 Dit is een <b>gevoelige database-operatie</b>. Maak altijd eerst een volledige back-up van je database — één foutje kan je hele site offline halen. We raden ook aan om dit proces tijdens rustige uren uit te voeren.
 </div>
-
-<br>
 
 ## Stap 1 — Werk je `wp-config.php` bij
 
@@ -31,8 +34,6 @@ Dit is een <b>gevoelige database-operatie</b>. Maak altijd eerst een volledige b
 <div class="info custom-block" style="padding-top: 8px">
 Op dit moment is je site stuk en zie je een databaseverbindingsfout. Dat is normaal — we lossen dit op in de volgende stappen door de databasetabellen te hernoemen.
 </div>
-
-<br>
 
 ## Stap 2 — Hernoem alle databasetabellen
 
@@ -72,8 +73,6 @@ Nu hernoem je de WordPress-kerntabellen (en eventuele plugintabellen) die nog de
 
 Nadat je deze opdrachten hebt uitgevoerd, zou je site weer moeten werken — maar er zijn nog twee plekken waar de oude prefix staat opgeslagen.
 
-<br>
-
 ## Stap 3 — Werk de `wp_options`-tabel bij
 
 De `wp_options`-tabel (nu hernoemd naar `wp_a7d3f8_options`) bevat een veld genaamd `wp_user_roles`. Deze veldnaam is gebaseerd op de oude prefix en moet ook worden bijgewerkt.
@@ -90,8 +89,6 @@ WHERE option_name = 'wp_user_roles';
 
 Hierdoor blijft WordPress de gebruikersrollen en -rechten correct herkennen. Sla je deze stap over, dan kunnen alle gebruikers — inclusief beheerders — hun rechten verliezen.
 
-<br>
-
 ## Stap 4 — Werk de `wp_usermeta`-tabel bij
 
 De `wp_usermeta`-tabel bevat meerdere rijen waarin de oude prefix is gebruikt als onderdeel van de `meta_key`. Ook deze moeten worden bijgewerkt.
@@ -104,8 +101,6 @@ SET meta_key = REPLACE(meta_key, 'wp_', 'wp_a7d3f8_');
 ```
 
 Dit zoekt elk voorkomen van de oude prefix in de kolom `meta_key` en vervangt het door de nieuwe. Hiermee herstel je gebruikersrechten, dashboard-instellingen en andere gebruikersspecifieke metadata.
-
-<br>
 
 ## Eindcontrole
 
