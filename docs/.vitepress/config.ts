@@ -8,6 +8,7 @@ function guideSidebarNl(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'Start hier', link: 'getting-started' },
         { text: 'Domein of website toevoegen', link: 'add_domain' },
+        { text: 'Domein verhuizen zonder downtime', link: 'domain_migration' },
         { text: 'DNS-records instellen', link: 'setup_dns' },
         { text: 'Taal instellen', link: 'language' },
         { text: 'Gebruikers en rollen', link: 'users' },
@@ -19,6 +20,7 @@ function guideSidebarNl(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         { text: 'Algemeen overzicht', link: 'general' },
+        { text: 'PHP-versie veilig wijzigen', link: 'change_php_version' },
         { text: 'Bestandsbeheer', link: 'file_manager' },
         { text: 'Redirects', link: 'redirect' },
         { text: 'SSH-sleutels', link: 'SSH' },
@@ -43,6 +45,8 @@ function guideSidebarNl(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'E-mail-DNS instellen', link: 'setup_mail_records' },
         { text: 'E-mailclient-instellingen', link: 'email_settings' },
+        { text: 'E-mailaflevering oplossen', link: 'email_delivery' },
+        { text: 'E-mail migreren', link: 'email_migration' },
         { text: 'Mailbox beheren', link: 'mailbox' },
         { text: 'E-mailwachtwoord wijzigen', link: 'email_password' },
         { text: 'Doorstuuradressen', link: 'forwarders' },
@@ -62,6 +66,7 @@ function guideSidebarNl(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         { text: 'Tweestapsverificatie (2FA)', link: '2fa' },
+        { text: 'Website gehackt: eerste hulp', link: 'hacked_website' },
         { text: 'DNSSEC', link: 'dnssec' },
         { text: 'DDoS-bescherming', link: 'DDoS' },
         { text: 'Gebruikers-enumeratie blokkeren', link: 'block_user_enum' },
@@ -91,6 +96,7 @@ function guideSidebarNl(): DefaultTheme.SidebarItem[] {
       text: 'Problemen oplossen',
       collapsed: false,
       items: [
+        { text: 'HTTP 403, 404, 500 en 504', link: 'http_errors' },
         { text: 'ERR_CONNECTION_REFUSED', link: 'ERR_CONNECTION_REFUSED' },
         { text: 'ERR_NAME_NOT_RESOLVED', link: 'ERR_NAME_NOT_RESOLVED' },
         { text: 'ERR_SSL_PROTOCOL_ERROR', link: 'ERR_SSL_PROTOCOL_ERROR' },
@@ -117,6 +123,7 @@ function guideSidebarEn(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'Start here', link: 'getting-started' },
         { text: 'Add a domain or website', link: 'add_domain' },
+        { text: 'Move a domain without downtime', link: 'domain_migration' },
         { text: 'Configure DNS records', link: 'setup_dns' },
         { text: 'Change the language', link: 'language' },
         { text: 'Users and roles', link: 'users' },
@@ -128,6 +135,7 @@ function guideSidebarEn(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         { text: 'General overview', link: 'general' },
+        { text: 'Change the PHP version safely', link: 'change_php_version' },
         { text: 'File Manager', link: 'file_manager' },
         { text: 'Redirects', link: 'redirect' },
         { text: 'SSH keys', link: 'SSH' },
@@ -152,6 +160,8 @@ function guideSidebarEn(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'Configure email DNS', link: 'setup_mail_records' },
         { text: 'Email client settings', link: 'email_settings' },
+        { text: 'Troubleshoot email delivery', link: 'email_delivery' },
+        { text: 'Migrate email', link: 'email_migration' },
         { text: 'Manage a mailbox', link: 'mailbox' },
         { text: 'Change an email password', link: 'email_password' },
         { text: 'Forwarders', link: 'forwarders' },
@@ -171,6 +181,7 @@ function guideSidebarEn(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         { text: 'Two-factor authentication (2FA)', link: '2fa' },
+        { text: 'Hacked website: first response', link: 'hacked_website' },
         { text: 'DNSSEC', link: 'dnssec' },
         { text: 'DDoS protection', link: 'DDoS' },
         { text: 'Block user enumeration', link: 'block_user_enum' },
@@ -200,6 +211,7 @@ function guideSidebarEn(): DefaultTheme.SidebarItem[] {
       text: 'Troubleshooting',
       collapsed: false,
       items: [
+        { text: 'HTTP 403, 404, 500 and 504', link: 'http_errors' },
         { text: 'ERR_CONNECTION_REFUSED', link: 'ERR_CONNECTION_REFUSED' },
         { text: 'ERR_NAME_NOT_RESOLVED', link: 'ERR_NAME_NOT_RESOLVED' },
         { text: 'ERR_SSL_PROTOCOL_ERROR', link: 'ERR_SSL_PROTOCOL_ERROR' },
