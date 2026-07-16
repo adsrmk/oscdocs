@@ -1,3 +1,8 @@
+---
+description: "Je kunt de standaard mapstructuur van WordPress verbergen voor extra bescherming tegen geautomatiseerde scanners en eenvoudige aanvallen."
+audience: developers
+---
+
 # WordPress-structuur verbergen
 
 Je kunt de standaard mapstructuur van WordPress verbergen voor extra bescherming tegen geautomatiseerde scanners en eenvoudige aanvallen. Dit wijzigt de directories en structurele paden die WordPress gebruikt.
@@ -5,8 +10,6 @@ Je kunt de standaard mapstructuur van WordPress verbergen voor extra bescherming
 <div class="warning custom-block" style="padding-top: 8px">
 Dit is op zichzelf <b>geen beveiligingsmaatregel</b>. Het maskeert alleen WordPress-specifieke paden en fingerprints. Reguliere beveiligingsmaatregelen — updates, firewalls, authenticatie-hardening, enzovoort — blijven onmisbaar.
 </div>
-
-<br>
 
 ## De `wp-content`-map herschrijven
 
@@ -17,8 +20,6 @@ define('WP_CONTENT_DIR', dirname(__FILE__) . '/assets');
 define('WP_CONTENT_URL', '/assets');
 ```
 
-<br>
-
 ### De plugins-map herschrijven
 
 Ook de `/plugins`-map kun je herschrijven. Zorg dat het pad overeenkomt met de map die je hierboven hebt gedefinieerd (`assets/...`):
@@ -27,8 +28,6 @@ Ook de `/plugins`-map kun je herschrijven. Zorg dat het pad overeenkomt met de m
 define('WP_PLUGIN_DIR', dirname(__FILE__) . '/assets/lib');
 define('WP_PLUGIN_URL', '/assets/lib');
 ```
-
-<br>
 
 ### De uploads-map verplaatsen
 
@@ -42,11 +41,7 @@ define('UPLOADS', 'assets/img');
 Als je deze directories wijzigt, moet je de daadwerkelijke mappen op de schijf ook hernoemen — anders kan WordPress ze niet vinden.
 </div>
 
-<br>
-
-<img width="1062" height="206" alt="image" src="https://github.com/user-attachments/assets/bb0ed1a9-9ed1-4aa1-abd7-16394eec0cda" />
-
-<br>
+<img width="1062" height="206" alt="Schermafbeelding van De uploads-map verplaatsen" src="https://github.com/user-attachments/assets/bb0ed1a9-9ed1-4aa1-abd7-16394eec0cda" />
 
 **Voorbeeld-mapping:**
 
@@ -57,8 +52,6 @@ Als je deze directories wijzigt, moet je de daadwerkelijke mappen op de schijf o
 | `themes` | `/assets/core` |
 | `uploads` | `/assets/img` |
 
-<br>
-
 ### (Optioneel) Maand/jaar-uploadmappen uitschakelen
 
 Om te voorkomen dat WordPress mappen aanmaakt zoals `/2026/03/` binnen `uploads`:
@@ -68,11 +61,7 @@ Om te voorkomen dat WordPress mappen aanmaakt zoals `/2026/03/` binnen `uploads`
 3. Schakel **Organiseer mijn uploads in maand- en jaargebaseerde mappen** uit.
 4. Sla de wijzigingen op.
 
-<br>
-
-<img width="589" height="208" alt="image" src="https://github.com/user-attachments/assets/cbc7c590-c504-4abd-b0f4-e5b3170c50a2" />
-
-<br>
+<img width="589" height="208" alt="Schermafbeelding van (Optioneel) Maand/jaar-uploadmappen uitschakelen (2)" src="https://github.com/user-attachments/assets/cbc7c590-c504-4abd-b0f4-e5b3170c50a2" />
 
 ## De thema-map hernoemen
 
@@ -92,8 +81,6 @@ add_filter('theme_root_uri', function () {
     return WP_CONTENT_URL . '/core';
 });
 ```
-
-<br>
 
 ## NGINX-beveiligings- & prestatie-regels
 

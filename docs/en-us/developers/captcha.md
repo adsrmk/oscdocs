@@ -1,14 +1,15 @@
+---
+description: "CAPTCHA is a security tool used on websites to tell the difference between humans and automated bots."
+audience: developers
+---
+
 # CAPTCHA
 
 CAPTCHA is a security tool used on websites to tell the difference between humans and automated bots. Its goal is to block spam and malicious bots from using your forms while letting real people through easily.
 
 It challenges users with tasks that are easy for humans but hard for bots, such as recognizing distorted text or selecting certain images. Bots typically cannot process these tasks effectively.
 
-<br>
-
-<img width="645" height="186" alt="image" src="https://github.com/user-attachments/assets/4bdc7339-8f5d-467d-a033-03b5bf441bb1" />
-
-<br>
+<img width="645" height="186" alt="Screenshot of CAPTCHA" src="https://github.com/user-attachments/assets/4bdc7339-8f5d-467d-a033-03b5bf441bb1" />
 
 ## Risks Without CAPTCHA
 
@@ -21,9 +22,6 @@ Without CAPTCHA, bots can attack your website by:
 
 These attacks can slow down your site, fill your database with junk, and create security risks.
 
-<br>
-
-
 ## Types of CAPTCHA
 
 Below is a quick comparison of common CAPTCHA types, highlighting how they work, what the user experience is like, and their level of security
@@ -33,8 +31,6 @@ Below is a quick comparison of common CAPTCHA types, highlighting how they work,
 | **Text/Image** | You type distorted letters/numbers.        | **Bad.** Annoying and often hard to read.                        | **Low.** Modern bots can easily solve these.                   |
 | **Checkbox**   | You click an "I'm not a robot" box.        | **Good.** Simple for humans, but may ask for an image challenge. | **High.** Very effective at stopping most bots.                |
 | **Invisible**  | Works in the background, no clicks needed. | **Excellent.** Completely frictionless for users.                | **Very High.** The modern standard for security and usability. |
-
-<br>
 
 ## Install
 
@@ -56,9 +52,3 @@ The best method for most websites is using a service like Google reCAPTCHA (v3, 
 **For Custom Websites:**
 1. Add a code snippet from Google to your website's HTML.
 2. Use your **Secret Key** in your backend code to verify users when they submit a form.
-
-
-
-
-
-

@@ -1,10 +1,13 @@
+---
+description: "Link preloading is a performance technique that tells the browser to download a resource — like a script, stylesheet, or image — as early as possible because it will be needed soon."
+audience: developers
+---
+
 # Link Preloading
 
 Link preloading is a performance technique that tells the browser to download a resource — *like a script, stylesheet, or image* — as early as possible because it will be needed soon. Initiating the fetch earlier in the page lifecycle can significantly reduce **Largest Contentful Paint (LCP)** and improve the overall user experience.
 
 There are several ways to "hint" to the browser about what to fetch or prepare. The right choice depends on **when** and **where** the resource will be used.
-
-<br>
 
 ## Available directives
 
@@ -14,8 +17,6 @@ There are several ways to "hint" to the browser about what to fetch or prepare. 
 | **`prefetch`** | Low-priority fetch for the **next** navigation. |
 | **`preconnect`** | Establishes a connection (DNS + TCP + TLS) to a domain. |
 | **`dns-prefetch`** | Resolves the DNS for a domain only. |
-
-<br>
 
 ## 1. `rel="preload"`
 
@@ -33,8 +34,6 @@ Use `preload` for **critical assets** that the browser's discovery scanner might
 - **`crossorigin`** *(required for fonts)* — Even on the same domain, fonts must be fetched using anonymous CORS mode.
 - **`type`** *(optional)* — Lets the browser skip formats it doesn't support (e.g. `type="image/webp"`).
 
-<br>
-
 ## 2. `rel="prefetch"`
 
 Use `prefetch` for resources you'll likely need on the **next** page a user visits. The browser downloads them at low priority while idle.
@@ -46,8 +45,6 @@ Use `prefetch` for resources you'll likely need on the **next** page a user visi
 <div class="warning custom-block" style="padding-top: 8px">
 Don't use <code>prefetch</code> for critical current-page assets — it competes for bandwidth with more urgent resources and may slow things down.
 </div>
-
-<br>
 
 ## 3. `rel="preconnect"`
 
@@ -63,7 +60,5 @@ Don't use <code>prefetch</code> for critical current-page assets — it competes
 - **Third-party fonts** — Connecting to Google Fonts or Adobe Fonts.
 - **CDN assets** — When you know you'll need images or scripts from a specific edge domain.
 - **Streaming media** — Preparing the connection for a video player.
-
-<br>
 
 There are more advanced options if you want to dig deeper into link preloading. You can learn more on [web.dev↗](https://web.dev/articles/preload-critical-assets).

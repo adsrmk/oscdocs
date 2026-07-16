@@ -1,13 +1,15 @@
+---
+description: "Een XML-sitemap is een bestand dat alle belangrijke URL's van je website opsomt en fungeert als routekaart voor zoekmachine-crawlers."
+audience: developers
+---
+
 # XML-sitemaps in WordPress
 
 Een **XML-sitemap** is een bestand dat alle belangrijke URL's van je website opsomt en fungeert als routekaart voor zoekmachine-crawlers. Het laat ze weten welke pagina's belangrijk zijn, wanneer ze het laatst zijn bijgewerkt en hoe vaak ze veranderen.
 
 Sinds WordPress 5.5 wordt er automatisch een basis-sitemap gegenereerd — maar voor optimale SEO-prestaties moeten ontwikkelaars deze output vaak aanpassen.
 
-<br>
-<img width="600" height="173" alt="image" src="https://github.com/user-attachments/assets/9e98646d-debc-4b11-a3b5-79c8f7f19f2d" />
-
-<br>
+<img width="600" height="173" alt="Schermafbeelding van XML-sitemaps in WordPress" src="https://github.com/user-attachments/assets/9e98646d-debc-4b11-a3b5-79c8f7f19f2d" />
 
 ## Waarom de standaard-sitemap niet altijd voldoet
 
@@ -19,13 +21,9 @@ De standaard WordPress-sitemap is een prima vertrekpunt, maar heeft enkele beper
 
 Een goed beheerde sitemap-strategie richt crawlers op waardevolle content, bespaart crawl-budget en voorkomt dat laagwaardige pagina's worden geïndexeerd.
 
-<br>
-
 ## De core-sitemap aanpassen
 
 Je kunt de core-sitemap programmatisch aansturen met filters in het `functions.php`-bestand van je thema, of via een eigen plugin.
-
-<br>
 
 ### 1. Een hele post type uitsluiten
 
@@ -43,8 +41,6 @@ function exclude_post_type_from_sitemap( $post_types ) {
     return $post_types;
 }
 ```
-
-<br>
 
 ### 2. Een specifiek bericht op ID uitsluiten
 
@@ -67,8 +63,6 @@ function exclude_specific_post_from_sitemap( $args, $post_type ) {
     return $args;
 }
 ```
-
-<br>
 
 ### 3. De core-sitemap volledig uitschakelen
 

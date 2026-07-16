@@ -1,8 +1,11 @@
+---
+description: "The /wp-login.php page is the default \"front door\" of every WordPress site — and the primary target for hackers and automated bots."
+audience: developers
+---
+
 # Secure the wp-login Backend
 
 The `/wp-login.php` page is the default "front door" of every WordPress site — and the primary target for hackers and automated bots. Securing it is one of the most effective steps you can take to protect your website.
-
-<br>
 
 ## Why secure wp-login.php?
 
@@ -13,17 +16,13 @@ By default, the login page is publicly accessible at `yourdomain.com/wp-login.ph
 
 The good news: there are several ways to harden your login page. You can also combine them for layered protection.
 
-<br>
-
 ## Method 1 — Change the login URL
 
 The simplest way to stop "blind" bots is to move the door. Instead of the standard URL, choose something unique like `/private-access` or `/my-secret-entry`.
 
-**How:** Install the lightweight [WPS Hide Login↗](https://nl.wordpress.org/plugins/wps-hide-login/) plugin.
+**How:** Install the lightweight [WPS Hide Login↗](https://en-gb.wordpress.org/plugins/wps-hide-login/) plugin.
 
 **Benefit:** No technical knowledge required. Once changed, any bot trying to reach `wp-login.php` will receive a **404 Not Found** error.
-
-<br>
 
 ## Method 2 — Use a Web Application Firewall (WAF)
 
@@ -31,8 +30,6 @@ A WAF filters traffic between your site and the rest of the internet. Services l
 
 - **Cloudflare** — Set up a *Page Rule* to trigger a JavaScript challenge (managed challenge) for anyone visiting `wp-login.php`.
 - **Wordfence** — Maintains a global database of malicious IP addresses and blocks visitors that show bot-like behaviour automatically.
-
-<br>
 
 ## Method 3 — Restrict access by IP
 
@@ -54,8 +51,6 @@ if (strpos($_SERVER['REQUEST_URI'], 'wp-login.php') !== false) {
     }
 }
 ```
-
-<br>
 
 ## Hide valid usernames
 

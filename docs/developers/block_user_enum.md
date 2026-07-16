@@ -1,32 +1,39 @@
-# Gebruikers-enumeratie blokkeren
+---
+description: "WordPress kan gebruikersinformatie via meerdere openbare routes beschikbaar maken, waaronder auteursarchieven en bepaalde REST API-responses."
+audience: developers
+---
 
-Gebruikers-enumeratie is een veelgebruikte techniek waarmee aanvallers geldige WordPress-gebruikersnamen kunnen achterhalen. Standaard kan WordPress gebruikersnamen blootgeven via auteursarchief-URL's zoals `?author=1`. Zodra een geldige gebruikersnaam bekend is, kunnen aanvallers veel gerichter brute-force- of credential-stuffing-aanvallen uitvoeren.
+# Gebruikers-enumeratie beperken
 
-<br>
+WordPress kan gebruikersinformatie via meerdere openbare routes beschikbaar maken, waaronder auteursarchieven en bepaalde REST API-responses. Beperk alleen de routes die je applicatie niet nodig heeft en test redactionele functies, headless clients en integraties na iedere wijziging.
 
-## Waarom gebruikers-enumeratie blokkeren?
+## Dreigingsmodel
 
-Als gebruikers-enumeratie ingeschakeld blijft, kunnen aanvallers:
+Een gevonden gebruikersnaam geeft op zichzelf geen toegang. De maatregel verlaagt vooral de hoeveelheid informatie voor gerichte brute-force- en credential-stuffing-aanvallen. Sterke unieke wachtwoorden, 2FA, rate limiting en monitoring blijven belangrijker.
 
-- Geldige gebruikersnamen op je site identificeren
-- De tijd die nodig is om accounts te kraken aanzienlijk verkorten
-- Beheerders heel gericht aanvallen
+## `?author=`-enumeratie blokkeren
 
-Door dit gedrag te blokkeren, beperk je de informatie die zichtbaar is voor anonieme bezoekers en verhoog je de algehele veiligheid van je site.
+Plaats de code in een site-specifieke plugin. Gebruik `functions.php` alleen als de beveiliging bewust aan het actieve thema gekoppeld mag zijn.
 
-<br>
-
-## Hoe schakel je deze bescherming in?
-
-Voeg de onderstaande code toe aan je `wp-config.php`-bestand:
-
-```php [/public_html/wp-config.php]
-if (isset($_SERVER['QUERY_STRING']) &&
-    preg_match('/author=([0-9]*)/i', $_SERVER['QUERY_STRING'])
-) {
-    header('HTTP/1.1 403 Forbidden');
-    exit('Access denied');
-}
+```php
+add_action('template_redirect', function () {
+    if (!is_admin() && isset($_GET['author']) && ctype_digit((string) $_GET['author'])) {
+        status_header(404);
+        nocache_headers();
+        exit;
+    }
+});
 ```
 
-Zodra de code is toegevoegd, krijgt elke bezoeker die een auteursarchief-URL zoals `jouwdomein.nl/?author=1` probeert te openen een **403 Forbidden**-respons — in plaats van de bijbehorende gebruikersnaam.
+Deze code voorkomt de gebruikelijke redirect van een numerieke `author`-query. Hij blokkeert niet automatisch gebruikersinformatie in de REST API, feeds, sitemaps of bestaande caches.
+
+## Valideren
+
+1. Test `/?author=1` als uitgelogde bezoeker.
+2. Test bestaande auteurspagina's, zoekfuncties en redactionele workflows.
+3. Controleer de relevante REST-routes van de applicatie.
+4. Bekijk applicatielogs op onverwachte 404-responses.
+
+## Rollback
+
+Schakel de site-specifieke plugin uit of verwijder de snippet, leeg alle caches en herhaal de tests. Leg de wijziging en testresultaten vast voor toekomstig beheer.

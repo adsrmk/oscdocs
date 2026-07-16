@@ -1,29 +1,37 @@
-# Gebruikers-enumeratie blokkeren
+---
+description: "Met gebruikers-enumeratie proberen aanvallers geldige WordPress-gebruikersnamen te achterhalen via openbare auteursarchieven of API-responses."
+audience: customers
+---
 
-Gebruikers-enumeratie is een veelgebruikte techniek waarmee aanvallers geldige WordPress-gebruikersnamen kunnen achterhalen. Standaard kan WordPress gebruikersnamen blootgeven via auteursarchief-URL's zoals `?author=1`. Zodra een geldige gebruikersnaam bekend is, kunnen aanvallers veel gerichter brute-force- of credential-stuffing-aanvallen uitvoeren.
+# Gebruikers-enumeratie beperken
 
-<br>
+Met gebruikers-enumeratie proberen aanvallers geldige WordPress-gebruikersnamen te achterhalen via openbare auteursarchieven of API-responses. Een gebruikersnaam is geen geheim zoals een wachtwoord, maar kan gerichte wachtwoordaanvallen eenvoudiger maken.
 
-## Waarom gebruikers-enumeratie blokkeren?
+## Belangrijk om te weten
 
-Als gebruikers-enumeratie ingeschakeld blijft, kunnen aanvallers:
+Het blokkeren van één methode verwijdert geen namen die al zichtbaar zijn in auteursnamen, feeds, caches of externe zoekresultaten. Zie dit daarom als aanvullende beveiliging en combineer de maatregel met unieke wachtwoorden, [tweestapsverificatie](/guide/2fa) en bescherming tegen herhaalde inlogpogingen.
 
-- Geldige gebruikersnamen op je site identificeren
-- De tijd die nodig is om accounts te kraken aanzienlijk verkorten
-- Beheerders heel gericht aanvallen
+Gebruik je auteursarchieven, een redactionele workflow of integraties die openbare gebruikersgegevens lezen? Test de wijziging dan eerst in een stagingomgeving.
 
-Door dit gedrag te blokkeren, beperk je de informatie die zichtbaar is voor anonieme bezoekers en verhoog je de algehele veiligheid van je site.
+## Querymethode blokkeren
 
-<br>
+Voeg de volgende code toe aan een kleine site-specifieke plugin of een child theme. Een site-specifieke plugin heeft de voorkeur, omdat een thema-update of themawissel de beveiliging dan niet verwijdert.
 
-## Hoe schakel je deze bescherming in?
-
-Voeg de onderstaande code toe aan het `functions.php`-bestand van je actieve thema:
-
-```php [/public_html/wp-content/themes/jouw-thema/functions.php]
-if (!is_admin() && preg_match('/author=([0-9]*)/i', $_SERVER['QUERY_STRING'])) {
-    wp_die('Toegang geweigerd');
-}
+```php
+add_action('template_redirect', function () {
+    if (!is_admin() && isset($_GET['author']) && ctype_digit((string) $_GET['author'])) {
+        status_header(404);
+        nocache_headers();
+        exit;
+    }
+});
 ```
 
-Zodra de code is toegevoegd, krijgt elke bezoeker die een auteursarchief-URL zoals `jouwdomein.nl/?author=1` probeert te openen de melding **Toegang geweigerd** te zien — in plaats van de bijbehorende gebruikersnaam.
+## Testen en terugdraaien
+
+1. Open `https://jouwdomein.nl/?author=1` in een privévenster.
+2. Controleer dat het verzoek niet meer naar een auteursarchief doorstuurt.
+3. Test legitieme auteurspagina's en redactionele functies.
+4. Controleer de REST API afzonderlijk; deze code behandelt alleen de `?author=`-query.
+
+Verwijder de code en leeg de paginacache om de wijziging terug te draaien.

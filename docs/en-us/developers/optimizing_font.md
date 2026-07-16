@@ -1,8 +1,11 @@
+---
+description: "In 2026, web fonts are no longer the \"performance killers\" they once were — provided you use modern techniques."
+audience: developers
+---
+
 # Optimised Font Delivery
 
 In 2026, web fonts are no longer the "performance killers" they once were — provided you use modern techniques. Poor font implementation typically causes two major issues: **FOIT (Flash of Invisible Text)** and **CLS (Cumulative Layout Shift)**.
-
-<br>
 
 ## Use WOFF2 only
 
@@ -17,8 +20,6 @@ Forget `.ttf`, `.otf`, and the original `.woff`. **WOFF2** is the only format yo
 }
 ```
 
-<br>
-
 ## Avoid FOIT with `font-display`
 
 The `font-display` property controls how the browser behaves while a font file is still downloading.
@@ -29,8 +30,6 @@ The `font-display` property controls how the browser behaves while a font file i
 | **`fallback`** | Brief invisibility (~100 ms), then system font, then swap. | A balanced trade-off between UX and performance. |
 | **`optional`** | If the font isn't ready within ~100 ms, the browser never swaps. | Best for performance and CLS — prevents layout jank. |
 | **`block`** | Hides the text until the font is ready (up to 3 s). | Avoid — unless the font is an icon set. |
-
-<br>
 
 ## Self-host your fonts
 

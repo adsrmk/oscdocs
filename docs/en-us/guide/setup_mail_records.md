@@ -1,3 +1,8 @@
+---
+description: "Email DNS records ensure your messages are delivered correctly, securely, and reliably."
+audience: customers
+---
+
 # Set Up Mail DNS
 
 Email DNS records ensure your messages are delivered correctly, securely, and reliably. Just like for your website, the right DNS records need to be in place — otherwise emails may fail to deliver or land in spam.
@@ -8,8 +13,6 @@ The records below are the four essentials: **A**, **SPF**, **DKIM**, and **DMARC
 If you're using OS Cloud's nameservers, you can skip these steps. For improved deliverability, we still recommend enabling <b>DKIM</b> and adding a <b>DMARC</b> record.
 </div>
 
-<br>
-
 ## A record (IPv4)
 
 The **A record** points your mail subdomain to your mail server's IPv4 address. You can find this IP in the OS Cloud panel under **"At a glance"** or under your domain settings.
@@ -17,8 +20,6 @@ The **A record** points your mail subdomain to your mail server's IPv4 address. 
 | Type | Hostname | Value |
 | --- | --- | --- |
 | **A** | `mail.yourdomain.com` | Mail server IP from the panel |
-
-<br>
 
 ## SPF
 
@@ -29,8 +30,6 @@ OS Cloud uses [Mailgun](https://www.mailgun.com/) for sending and receiving emai
 | Type | Hostname | Value |
 | --- | --- | --- |
 | **TXT** | `@` | `v=spf1 include:mailgun.org ~all` |
-
-<br>
 
 ## DKIM
 
@@ -44,12 +43,7 @@ OS Cloud uses [Mailgun](https://www.mailgun.com/) for sending and receiving emai
 4. Scroll to **Email Authentication** and toggle **DKIM** to **On**.
 5. If you're using OS Cloud nameservers, wait for the validation to complete.
 
-<br>
-
-<img width="1338" height="229" alt="image" src="https://github.com/user-attachments/assets/e8651eba-8efa-470e-85a3-d0918575522a" />
-
-<br>
-
+<img width="1338" height="229" alt="Screenshot of Enable DKIM in OS Cloud" src="https://github.com/user-attachments/assets/e8651eba-8efa-470e-85a3-d0918575522a" />
 
 <div class="info custom-block" style="padding-top: 8px">
 If your DNS is hosted elsewhere, follow the on-screen instructions and paste the generated DKIM key into your DNS provider. The record will look like this:
@@ -58,8 +52,6 @@ If your DNS is hosted elsewhere, follow the on-screen instructions and paste the
 | Type | Hostname | Value |
 | --- | --- | --- |
 | **TXT** | `hostingcp._domainkey` | *Generated DKIM key* |
-
-<br>
 
 ## DMARC
 

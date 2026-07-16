@@ -1,19 +1,30 @@
-# Catch-All
+---
+description: "Een catch-all-adres ontvangt berichten die naar een niet-bestaand adres op je domein zijn gestuurd."
+audience: customers
+---
 
-Een **catch-all**-e-mailadres ontvangt alle berichten die worden verstuurd naar niet-bestaande e-mailadressen op jouw domein. Zo voorkom je dat e-mails worden geweigerd wanneer er een onjuist of onbekend adres wordt gebruikt.
+# Catch-all e-mail instellen
 
-Bijvoorbeeld: als er geen specifieke mailboxen bestaan voor `info@`, `sales@` of `willekeurig@jouwdomein.nl`, worden alle berichten naar die adressen automatisch in je catch-all-mailbox afgeleverd.
+Een catch-all-adres ontvangt berichten die naar een niet-bestaand adres op je domein zijn gestuurd. Zo kan een typefout als `sales@jouwdomein.nl` alsnog worden opgevangen wanneer die mailbox niet bestaat.
 
-<br>
+## Wanneer een catch-all geschikt is
 
-## Functionaliteiten
+Gebruik een catch-all alleen als je bewust alle onbekende adressen wilt verwerken. Voor belangrijke adressen zoals `facturen@` of `support@` is een echte mailbox, alias of doorstuuradres duidelijker en beter controleerbaar.
 
-- Voorkom dat e-mails verloren gaan door typefouten
-- Vang berichten op die naar onbekende of tijdelijke adressen worden gestuurd
-- Bundel alle inkomende e-mail van je domein in één centrale mailbox
+## Instellen
 
-<br>
+1. Open **E-mails** in het OS Cloud-paneel.
+2. Selecteer het betreffende domein en open de catch-all-instelling.
+3. Kies een bestaande mailbox als bestemming.
+4. Sla de wijziging op.
+5. Test vanaf een extern adres met een willekeurig, niet-bestaand adres op je domein.
 
-<div class="warning custom-block" style="padding-top: 8px">
-Een catch-all-mailbox kan veel spam ontvangen, omdat alle binnenkomende e-mails worden geaccepteerd. We raden aan om strikte spamfiltering in te schakelen wanneer je deze functie activeert.
-</div>
+## Risico's en beheer
+
+- Een catch-all ontvangt doorgaans meer spam en phishing omdat ieder willekeurig adres wordt geaccepteerd.
+- Gebruik strikte [spaminstellingen](/guide/spam_settings) en controleer de spammap regelmatig.
+- Beperk toegang tot de bestemmingsmailbox en leg vast wie deze beheert.
+- Controleer periodiek of de catch-all nog nodig is.
+- Gebruik de catch-all niet als vervanging voor goed beheerde mailboxen en aliassen.
+
+Schakel de functie uit als het spamvolume niet beheersbaar is of wanneer onbekende adressen bewust moeten worden geweigerd.

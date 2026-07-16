@@ -1,8 +1,11 @@
+---
+description: "Use the Out of Office section to set up automatic email replies when you're away or unavailable."
+audience: customers
+---
+
 # Out of Office
 
 Use the **Out of Office** section to set up automatic email replies when you're away or unavailable. Senders will receive your reply instantly while you're offline.
-
-<br>
 
 ## Set up an auto-response
 

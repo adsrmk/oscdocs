@@ -1,3 +1,8 @@
+---
+description: "De WordPress REST-API maakt het mogelijk dat externe applicaties en diensten programmatisch met je site communiceren."
+audience: developers
+---
+
 # REST-API uitschakelen
 
 De WordPress REST-API maakt het mogelijk dat externe applicaties en diensten programmatisch met je site communiceren. Krachtig — maar als de toegang niet wordt beperkt, kan dit data blootstellen aan anonieme gebruikers. Voor de meeste brochure-sites of klassieke CMS-websites is publieke REST-toegang overbodig en vergroot het alleen het aanvalsoppervlak.
@@ -5,8 +10,6 @@ De WordPress REST-API maakt het mogelijk dat externe applicaties en diensten pro
 <div class="warning custom-block" style="padding-top: 8px">
 Beperk de REST-API <b>niet</b> als je site gebruikmaakt van Headless WordPress, mobiele apps, geavanceerde paginabouwers of externe integraties zoals WooCommerce. Dit kan namelijk functionaliteit breken.
 </div>
-
-<br>
 
 ## Waarom beperken?
 
@@ -17,8 +20,6 @@ Standaard zijn delen van de REST-API toegankelijk voor anonieme bezoekers. Aanva
 - Endpoints aftasten op kwetsbaarheden
 
 Door de toegang te beperken zorg je ervoor dat alleen ingelogde gebruikers of vertrouwde diensten met de API kunnen communiceren.
-
-<br>
 
 ## Hoe schakel je deze bescherming in?
 

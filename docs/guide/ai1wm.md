@@ -1,8 +1,11 @@
+---
+description: "Met de plugin All-in-One WP Migration maak je eenvoudig een volledige back-up van je WordPress-website — inclusief inhoud, afbeeldingen, plugins en thema's — in één bestand."
+audience: customers
+---
+
 # Websitedata opslaan of herstellen
 
 Met de plugin **All-in-One WP Migration** maak je eenvoudig een volledige back-up van je WordPress-website — inclusief inhoud, afbeeldingen, plugins en thema's — in één bestand. Dit bestand kun je op elk moment gebruiken om je website te herstellen.
-
-<br>
 
 ## Een back-up maken
 
@@ -11,8 +14,6 @@ Met de plugin **All-in-One WP Migration** maak je eenvoudig een volledige back-u
 3. Klik op **Back-up maken** en wacht tot het proces is voltooid.
 4. Download het back-upbestand naar je computer. We raden aan het ook op te slaan in een clouddienst (zoals Google Drive of OneDrive) als extra beveiliging.
 
-<br>
-
 ## Een back-up terugzetten
 
 1. Ga in je WordPress-dashboard naar **All-in-One WP Migration → Back-ups** in de linkerzijbalk.
@@ -20,8 +21,6 @@ Met de plugin **All-in-One WP Migration** maak je eenvoudig een volledige back-u
 3. Sleep je back-upbestand naar het uploadgebied — of klik op **Bestand** in het dropdown-menu om het bestand op je computer op te zoeken.
 
 > **Let op:** Ons platform heeft een maximale uploadlimiet van **100 MB**. Is je bestand groter, of loopt de upload vast? Gebruik dan de SFTP-methode hieronder.
-
-<br>
 
 ## Uploaden via SFTP (voor bestanden groter dan 100 MB)
 

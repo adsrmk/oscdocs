@@ -1,10 +1,13 @@
+---
+description: "Some customers run into issues when requesting an SSL certificate for their website — most often shortly after transferring a domain or updating nameservers/DNS records."
+audience: customers
+---
+
 # Requesting SSL Certificates
 
 Some customers run into issues when requesting an SSL certificate for their website — most often shortly after transferring a domain or updating nameservers/DNS records.
 
 Below are the most common errors and how to fix them.
-
-<br>
 
 ## Error 400 — Timeout during connect
 
@@ -19,9 +22,6 @@ Timeout during connect (likely firewall problem)") })
 This error usually means the firewall (**ModSecurity**) is blocking the request from reaching the Web Application Firewall (WAF).
 
 **Solution:** This issue rarely occurs nowadays. Since version v12.04, MODSEC has been disabled due to its limited added value and the high number of internal blockages.
-
-
-<br>
 
 ## Error 403 — Unauthorized
 
@@ -40,8 +40,6 @@ Usually appears shortly after adding a domain to the panel or updating nameserve
 2. Open the **Security** tab.
 3. Try disabling **Force HTTPS**, then request the certificate again.
 
-<br>
-
 ## Error 429 — Rate limited
 
 ```
@@ -54,8 +52,6 @@ last 168h0m0s, retry after 2025-09-18 09:13:16 UTC: see https://letsencrypt.org/
 If you request more than a few certificates in a short period, Let's Encrypt will temporarily block further requests for your domain. This restriction is temporary and lifts automatically after a few hours.
 
 **Fix:** Wait until the cooldown period has passed before trying again. The exact retry time is shown in the error message.
-
-<br>
 
 <div class="tip custom-block" style="padding-top: 8px">
 If you run into a different error code, please contact us. We'll help resolve the issue and add it to this documentation for future reference.

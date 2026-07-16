@@ -1,3 +1,8 @@
+---
+description: "WordPress can occasionally run out of memory — usually on sites with heavy traffic, lots of features, or many plugins."
+audience: customers
+---
+
 # Increase WordPress Memory Limit
 
 WordPress can occasionally run out of memory — usually on sites with heavy traffic, lots of features, or many plugins. It can also happen when a theme or plugin has problematic code.
@@ -14,8 +19,6 @@ Sometimes the error includes the specific file or function that triggered it, wh
 We recommend running your site on the <b>latest supported PHP version</b>, along with up-to-date WordPress core, themes, and plugins. This avoids many memory issues out of the box.
 </div>
 
-<br>
-
 ## Step 1 — Check your current memory limits
 
 WordPress 5.0+ includes a built-in **Site Health** tool. Open it via **Tools → Site Health → Info** in your WordPress dashboard.
@@ -31,16 +34,12 @@ There are two limits to be aware of:
 On shared hosting, the server PHP limit is fixed at <b>168 MB</b> for all customers. On <b>Managed VPS</b>, we can customise the PHP settings for your server to meet your specific needs.
 </div>
 
-<br>
-
 ## Step 2 — Understand the WordPress constants
 
 Within the **WordPress Constants** section, you'll find two values:
 
 - **`WP_MEMORY_LIMIT`** — Memory limit for the **front-end** of your site. This is usually the value to raise when visitors are hitting fatal errors.
 - **`WP_MAX_MEMORY_LIMIT`** — Memory limit for the **admin area**. Can be set higher than `WP_MEMORY_LIMIT` since admin tasks (like page builders) often need more memory.
-
-<br>
 
 ## Step 3 — Increase the memory limits
 

@@ -1,10 +1,13 @@
+---
+description: "Sommige klanten lopen tegen problemen aan bij het aanvragen van een SSL-certificaat voor hun website — meestal kort na een domeinoverdracht of na het wijzigen van nameservers/DNS-records."
+audience: customers
+---
+
 # SSL-certificaten aanvragen
 
 Sommige klanten lopen tegen problemen aan bij het aanvragen van een SSL-certificaat voor hun website — meestal kort na een domeinoverdracht of na het wijzigen van nameservers/DNS-records.
 
 Hieronder vind je de meest voorkomende fouten en hun oplossingen.
-
-<br>
 
 ## Error 400 — Timeout during connect
 
@@ -19,9 +22,6 @@ Timeout during connect (likely firewall problem)") })
 Deze fout betekent meestal dat de firewall (**ModSecurity**) het verzoek tegenhoudt voordat het de Web Application Firewall (WAF) bereikt.
 
 **Oplossing:** Deze fout komt tegenwoordig vrijwel niet meer voor. Sinds v12.04 is MODSEC uitgeschakeld vanwege de minimale meerwaarde en het hoge aantal interne blokkades.
-
-
-<br>
 
 ## Error 403 — Unauthorized
 
@@ -40,8 +40,6 @@ Komt meestal voor kort nadat je een domein hebt toegevoegd aan het paneel of je 
 2. Open het tabblad **Beveiliging**.
 3. Probeer **Force HTTPS** uit te schakelen en vraag het certificaat opnieuw aan.
 
-<br>
-
 ## Error 429 — Rate limited
 
 ```
@@ -54,8 +52,6 @@ last 168h0m0s, retry after 2025-09-18 09:13:16 UTC: see https://letsencrypt.org/
 Als je in korte tijd meerdere certificaten aanvraagt, blokkeert Let's Encrypt tijdelijk verdere verzoeken voor jouw domein. Deze beperking is tijdelijk en wordt automatisch opgeheven na een aantal uur.
 
 **Oplossing:** Wacht tot de cooldown-periode voorbij is voordat je het opnieuw probeert. Het exacte tijdstip waarop je weer mag, staat in de foutmelding.
-
-<br>
 
 <div class="tip custom-block" style="padding-top: 8px">
 Krijg je een andere foutcode? Neem dan contact met ons op. We helpen je het probleem oplossen en voegen het toe aan deze documentatie zodat anderen er in de toekomst van kunnen profiteren.

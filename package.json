@@ -5,12 +5,12 @@
   "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev docs",
+    "docs:audit": "node scripts/audit-docs.mjs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "docs:check": "npm run docs:audit && npm run docs:build"
   },
   "devDependencies": {
-    "vitepress": "^1.6.3",
-    "vitepress-plugin-mermaid": "^2.0.17",
-    "mermaid": "^11.4.1"
+    "vitepress": "^1.6.3"
   }
 }

@@ -1,10 +1,13 @@
+---
+description: "You can invite developers, designers, or other team members to collaborate on a project within OS Cloud — whether it's an in-house team, an external agency, or independent freelancers."
+audience: customers
+---
+
 # Users
 
 You can invite developers, designers, or other team members to collaborate on a project within OS Cloud — whether it's an in-house team, an external agency, or independent freelancers.
 
 Each invited user gets a specific role and permission level, so access stays secure and well-organised. The **account owner** always retains full administrative control and cannot be removed.
-
-<br>
 
 ## Roles and permissions
 
@@ -16,8 +19,6 @@ There are two available roles. Each has its own level of access:
 | **Collaborator** | Restricted access to specific websites. Can manage files, databases, security settings, and related functions, but only for the assigned site(s). |
 
 > The **Collaborator** role is ideal for teams managing multiple projects under a single account.
-
-<br>
 
 ## Invite a user
 

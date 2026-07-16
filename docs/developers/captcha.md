@@ -1,14 +1,15 @@
+---
+description: "CAPTCHA is een beveiligingstool die het verschil tussen mensen en geautomatiseerde bots herkent."
+audience: developers
+---
+
 # CAPTCHA
 
 **CAPTCHA** is een beveiligingstool die het verschil tussen mensen en geautomatiseerde bots herkent. Het doel: spam en kwaadaardige bots tegenhouden bij je formulieren — terwijl echte gebruikers er moeiteloos doorheen komen.
 
 Het werkt door taken te tonen die voor mensen eenvoudig zijn, maar voor bots lastig — zoals het herkennen van vervormde tekst of het selecteren van specifieke afbeeldingen.
 
-<br>
-
-<img width="645" height="186" alt="image" src="https://github.com/user-attachments/assets/1dabc341-a970-4f02-889d-ef859f7b23d6" />
-
-<br>
+<img width="645" height="186" alt="Schermafbeelding van CAPTCHA" src="https://github.com/user-attachments/assets/1dabc341-a970-4f02-889d-ef859f7b23d6" />
 
 ## Risico's zonder CAPTCHA
 
@@ -21,8 +22,6 @@ Zonder CAPTCHA kunnen bots je website misbruiken door:
 
 Deze aanvallen kunnen je site vertragen, je database vullen met junkdata en serieuze beveiligingsrisico's veroorzaken.
 
-<br>
-
 ## Soorten CAPTCHA
 
 | Type | Hoe het werkt | Gebruikerservaring | Beveiliging |
@@ -31,21 +30,15 @@ Deze aanvallen kunnen je site vertragen, je database vullen met junkdata en seri
 | **Checkbox** | Je vinkt een "Ik ben geen robot"-vakje aan. | **Goed** — eenvoudig voor mensen; soms verschijnt er een afbeeldingstest. | **Hoog** — effectief tegen de meeste bots. |
 | **Invisible** | Werkt op de achtergrond, geen kliks nodig. | **Uitstekend** — volledig drempelloos. | **Zeer hoog** — de huidige standaard voor veiligheid en gebruiksgemak. |
 
-<br>
-
 ## CAPTCHA installeren
 
 Voor de meeste websites is **Google reCAPTCHA v3 (Invisible)** de beste keuze.
-
-<br>
 
 ### Stap 1 — Vraag je sleutels aan bij Google
 
 1. Ga naar de [Google reCAPTCHA-website↗](https://www.google.com/recaptcha/).
 2. Registreer je site en kies **reCAPTCHA v3**.
 3. Google geeft je twee sleutels: een **Site Key** en een **Secret Key**.
-
-<br>
 
 ### Stap 2 — Voeg CAPTCHA toe aan je site
 

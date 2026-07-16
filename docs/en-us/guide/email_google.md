@@ -1,14 +1,15 @@
+---
+description: "Link your business email to Gmail so you can send and receive messages without switching between platforms."
+audience: customers
+---
+
 # Add Your Email Account to Google
 
 Link your business email to Gmail so you can send and receive messages without switching between platforms.
 
-<br>
-
 ## Step 1 — Open Gmail settings
 
 Open Gmail, click the ⚙️ gear icon in the top-right corner, and select **See all settings**.
-
-<br>
 
 ## Step 2 — Add your email account
 
@@ -16,8 +17,6 @@ Open Gmail, click the ⚙️ gear icon in the top-right corner, and select **See
 2. Under **Check mail from other accounts**, click **Add a mail account**.
 3. Enter your business email address and click **Next →**.
 4. Select **Import emails from my other account (POP3)** and click **Next**.
-
-<br>
 
 ## Step 3 — Enter the incoming mail (POP3) settings
 
@@ -28,8 +27,6 @@ Open Gmail, click the ⚙️ gear icon in the top-right corner, and select **See
 | **POP Server** | Found in your email settings (**Emails → Email Account → Email Client Settings**) |
 | **Port** | `995` |
 
-<br>
-
 ## Step 4 — Enter the outgoing mail (SMTP) settings
 
 | Setting | Value |
@@ -39,8 +36,6 @@ Open Gmail, click the ⚙️ gear icon in the top-right corner, and select **See
 | **Password** | The password for your email account |
 | **Port** | `587` |
 | **Secure Connection** | TLS |
-
-<br>
 
 ## Step 5 — Verify and finish
 

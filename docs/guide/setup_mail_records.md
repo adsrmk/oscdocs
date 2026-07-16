@@ -1,3 +1,8 @@
+---
+description: "E-mail-DNS-records zorgen ervoor dat je berichten correct, veilig en betrouwbaar worden afgeleverd."
+audience: customers
+---
+
 # Mail-DNS instellen
 
 E-mail-DNS-records zorgen ervoor dat je berichten correct, veilig en betrouwbaar worden afgeleverd. Net als bij je website moeten de juiste DNS-records worden ingesteld — anders kunnen e-mails niet aankomen of in de spam belanden.
@@ -8,8 +13,6 @@ De vier essentiële records zijn: **A**, **SPF**, **DKIM** en **DMARC**.
 Gebruik je de nameservers van OS Cloud? Dan kun je deze stappen overslaan. Voor optimale aflevering raden we alsnog aan om <b>DKIM</b> in te schakelen en een <b>DMARC</b>-record toe te voegen.
 </div>
 
-<br>
-
 ## A-record (IPv4)
 
 Het **A-record** koppelt je mail-subdomein aan het IPv4-adres van je mailserver. Je vindt dit IP-adres in het OS Cloud-paneel onder **"At a glance"** of in de domeininstellingen.
@@ -17,8 +20,6 @@ Het **A-record** koppelt je mail-subdomein aan het IPv4-adres van je mailserver.
 | Type | Hostnaam | Waarde |
 | --- | --- | --- |
 | **A** | `mail.jouwdomein.nl` | Mailserver-IP uit het paneel |
-
-<br>
 
 ## SPF
 
@@ -29,8 +30,6 @@ OS Cloud gebruikt [Mailgun](https://www.mailgun.com/) voor het verzenden en ontv
 | Type | Hostnaam | Waarde |
 | --- | --- | --- |
 | **TXT** | `@` | `v=spf1 include:mailgun.org ~all` |
-
-<br>
 
 ## DKIM
 
@@ -44,11 +43,7 @@ OS Cloud gebruikt [Mailgun](https://www.mailgun.com/) voor het verzenden en ontv
 4. Scrol naar **E-mailauthenticatie** en zet **DKIM** op **Aan**.
 5. Gebruik je OS Cloud-nameservers? Wacht dan tot de validatie is voltooid.
 
-<br>
-
-<img width="1338" height="229" alt="image" src="https://github.com/user-attachments/assets/e8651eba-8efa-470e-85a3-d0918575522a" />
-
-<br>
+<img width="1338" height="229" alt="Schermafbeelding van DKIM inschakelen in OS Cloud" src="https://github.com/user-attachments/assets/e8651eba-8efa-470e-85a3-d0918575522a" />
 
 <div class="info custom-block" style="padding-top: 8px">
 Wordt je DNS elders gehost? Volg dan de instructies op het scherm en plak de gegenereerde DKIM-sleutel in je DNS-provider. Het record ziet er ongeveer zo uit:
@@ -57,8 +52,6 @@ Wordt je DNS elders gehost? Volg dan de instructies op het scherm en plak de geg
 | Type | Hostnaam | Waarde |
 | --- | --- | --- |
 | **TXT** | `hostingcp._domainkey` | *Gegenereerde DKIM-sleutel* |
-
-<br>
 
 ## DMARC
 

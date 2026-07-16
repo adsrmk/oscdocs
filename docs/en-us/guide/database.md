@@ -1,8 +1,11 @@
+---
+description: "WordPress stores all your content, users, and settings in a database — posts, pages, comments, and configuration data."
+audience: customers
+---
+
 # Databases
 
 WordPress stores all your content, users, and settings in a database — posts, pages, comments, and configuration data. Managing this database gives you control over how that information is stored and accessed.
-
-<br>
 
 ## Create a database
 
@@ -15,8 +18,6 @@ If you use our automated WordPress installer, a database is created and configur
 3. *(Optional)* Create a new database user or assign existing users and permissions.
 4. Click **Add**. Your database will appear in the list.
 
-<br>
-
 ## Manage a database
 
 To manage your data directly, open the database list, select your database, and click **phpMyAdmin**.
@@ -25,8 +26,6 @@ To manage your data directly, open the database list, select your database, and 
 phpMyAdmin is an advanced tool — recommended for experienced users only. Incorrect changes can break your site. Make sure your site has been working correctly within the last 24 hours before editing the database. If something goes wrong, use the backup feature to restore it.
 </div>
 
-<br>
-
 ### Manage users
 
 1. Select your database from the list.
@@ -34,16 +33,12 @@ phpMyAdmin is an advanced tool — recommended for experienced users only. Incor
 3. Select an existing user from the dropdown or create a new one.
 4. Set specific privileges or grant **Full Access**.
 
-<br>
-
 ### Import an SQL file
 
 Supported formats: `.sql`, `.gz`, `.zip`. Maximum upload size: **500 MB**.
 
 1. Click the **Upload** icon.
 2. Select the SQL file from your computer and confirm.
-
-<br>
 
 ### Export an SQL file
 
@@ -54,13 +49,9 @@ Exports are downloaded as a compressed `.sql.gz` file.
 
 > Periodic manual exports are a good extra safety net alongside our automated backups.
 
-<br>
-
 ## Database user management
 
 Database users interact with your data based on **privileges** — you decide whether they can only read data, or also insert, modify, or delete records.
-
-<br>
 
 ### Add a new user
 
@@ -70,16 +61,12 @@ Database users interact with your data based on **privileges** — you decide wh
 4. Toggle **All Database Privileges** or select specific roles.
 5. Click **Add** to save.
 
-<br>
-
 ### Edit privileges or revoke access
 
 1. Go to the **Users** tab.
 2. Find the user and click the **kebab menu** (three vertical dots) on the right of their row.
 3. Choose **Edit Privileges** to adjust permissions, or **Revoke Access** to remove the user from a database.
 4. To set custom rights, uncheck **All Database Privileges** and select specific ones (e.g. `SELECT`, `INSERT`, `UPDATE`).
-
-<br>
 
 ### Delete a database or user
 
@@ -90,5 +77,3 @@ Database users interact with your data based on **privileges** — you decide wh
 <div class="warning custom-block" style="padding-top: 8px">
 This action is permanent. Once deleted, all associated data is purged from the server and cannot be recovered.
 </div>
-
-<br>

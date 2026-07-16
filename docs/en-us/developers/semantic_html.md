@@ -1,22 +1,21 @@
+---
+description: "Semantic HTML means using HTML elements based on their purpose rather than their appearance."
+audience: developers
+---
+
 # Semantic HTML
 
 Semantic HTML means using HTML elements based on their **purpose** rather than their appearance. Instead of relying on generic `<div>` and `<span>` tags, you use HTML5's rich vocabulary of elements to describe what the content actually is.
 
 This results in code that is more readable for developers, better understood by search engines (SEO), and — most importantly — much more accessible for people using assistive technologies like screen readers.
 
-<br>
-
-<img width="1200" height="800" alt="image" src="https://github.com/user-attachments/assets/e95f5fe9-0443-438f-916a-74c73d672235" />
-
-<br>
+<img width="1200" height="800" alt="Screenshot of Semantic HTML" src="https://github.com/user-attachments/assets/e95f5fe9-0443-438f-916a-74c73d672235" />
 
 ## Why does it matter?
 
 - **Accessibility** — Screen readers use HTML structure to navigate a page. A user can ask their screen reader to list all headings or jump to the main navigation. With a `<div>` styled to look like a button, that context is lost. A real `<button>` element provides built-in keyboard accessibility and tells the screen reader exactly what it is.
 - **Readability & maintainability** — Code becomes easier for other developers to read and maintain. `<header>`, `<nav>`, `<main>`, and `<footer>` are instantly recognisable.
 - **SEO** — Search engines can better interpret your content's structure and importance, which can improve rankings.
-
-<br>
 
 ## The "div soup" problem
 
@@ -57,8 +56,6 @@ HTML5 provides a wide range of elements to structure a page properly:
 
 <footer>...</footer>
 ```
-
-<br>
 
 ## Key semantic elements
 

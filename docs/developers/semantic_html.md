@@ -1,22 +1,21 @@
+---
+description: "Semantische HTML betekent dat je HTML-elementen gebruikt op basis van hun doel, niet op basis van hoe ze eruitzien."
+audience: developers
+---
+
 # Semantische HTML
 
 Semantische HTML betekent dat je HTML-elementen gebruikt op basis van hun **doel**, niet op basis van hoe ze eruitzien. In plaats van overal generieke `<div>`- en `<span>`-tags te gebruiken, maak je gebruik van het rijke vocabulaire aan HTML5-elementen om te beschrijven wat de content daadwerkelijk is.
 
 Dat resulteert in code die voor ontwikkelaars beter leesbaar is, door zoekmachines beter wordt begrepen (SEO), en — het allerbelangrijkst — veel toegankelijker is voor mensen die gebruikmaken van hulptechnologieën zoals screenreaders.
 
-<br>
-
-<img width="1200" height="800" alt="image" src="https://github.com/user-attachments/assets/2b6b129b-5855-410b-907b-0a8cb3b76ff3" />
-
-<br>
+<img width="1200" height="800" alt="Schermafbeelding van Semantische HTML" src="https://github.com/user-attachments/assets/2b6b129b-5855-410b-907b-0a8cb3b76ff3" />
 
 ## Waarom is dit belangrijk?
 
 - **Toegankelijkheid** — Screenreaders gebruiken de HTML-structuur om door een pagina te navigeren. Een gebruiker kan z'n screenreader vragen om alle headings op te sommen of direct naar de hoofdnavigatie te springen. Bij een `<div>` die als knop is opgemaakt, gaat die context verloren. Een echt `<button>`-element biedt standaard toetsenbordtoegankelijkheid en vertelt de screenreader meteen wat het is.
 - **Leesbaarheid & onderhoudbaarheid** — Andere ontwikkelaars kunnen de code makkelijker lezen en onderhouden. `<header>`, `<nav>`, `<main>` en `<footer>` zijn meteen herkenbaar.
 - **SEO** — Zoekmachines kunnen de structuur en het belang van je content beter interpreteren, wat de rankings ten goede kan komen.
-
-<br>
 
 ## Het "div soup"-probleem
 
@@ -57,8 +56,6 @@ HTML5 biedt veel elementen om een pagina goed te structureren:
 
 <footer>...</footer>
 ```
-
-<br>
 
 ## Belangrijke semantische elementen
 

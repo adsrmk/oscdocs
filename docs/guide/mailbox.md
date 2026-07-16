@@ -1,8 +1,11 @@
+---
+description: "Met een mailbox kun je e-mailberichten versturen, ontvangen en beheren onder je eigen domein."
+audience: customers
+---
+
 # Mailbox
 
 Met een mailbox kun je e-mailberichten versturen, ontvangen en beheren onder je eigen domein.
-
-<br>
 
 ## Een mailbox aanmaken
 
@@ -16,8 +19,6 @@ Met een mailbox kun je e-mailberichten versturen, ontvangen en beheren onder je 
 <div class="tip custom-block" style="padding-top: 8px">
 Een mailbox van 1 GB biedt ruimte voor duizenden e-mails zonder bijlagen. Het <b>Essential-pakket</b> bevat 3 mailboxen; hogere pakketten hebben er meer. Verstuurt of ontvangt jouw bedrijf regelmatig grote bestanden? Dan raden we aan over te stappen op Google Workspace of ProtonMail voor extra opslag en meer functionaliteiten.
 </div>
-
-<br>
 
 ## Wachtwoord wijzigen
 

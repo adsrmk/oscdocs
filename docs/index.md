@@ -1,22 +1,50 @@
+---
+layout: home
+title: OS Support
+titleTemplate: false
+supportFooter: false
+description: Professionele OS Cloud-handleidingen voor websites, e-mail, DNS, beveiliging en probleemoplossing.
+audience: customers
 
-<img width="780" height="200" alt="image" src="https://i.8upload.com/image/52753d79ddecb195/support.png" />
+hero:
+  name: OS Support
+  text: Duidelijke antwoorden. Betrouwbare oplossingen.
+  tagline: Professionele handleidingen en technische documentatie voor ondernemers, teams en ontwikkelaars die met OS Cloud werken.
+  image:
+    src: /OSCLO.png
+    alt: OS Cloud
+  actions:
+    - theme: brand
+      text: Start met OS Cloud
+      link: /guide/getting-started
+    - theme: alt
+      text: Probleem oplossen
+      link: /guide/ERR_CONNECTION_REFUSED
+    - theme: alt
+      text: Contact met support
+      link: /guide/contact-support
 
+features:
+  - title: Platform en websitebeheer
+    details: Voeg domeinen toe, beheer bestanden en databases, maak back-ups en configureer je WordPress-omgeving.
+    link: /guide/getting-started
+    linkText: Bekijk de handleidingen
+  - title: E-mail en DNS
+    details: Stel mailboxen, mailclients, DNS-records, doorstuuradressen en beveiligde e-mailbezorging correct in.
+    link: /guide/setup_mail_records
+    linkText: Configureer e-mail
+  - title: Problemen oplossen
+    details: Werk doelgericht van foutmelding naar oorzaak en herstel veelvoorkomende website-, DNS-, SSL- en e-mailproblemen.
+    link: /guide/ERR_NAME_NOT_RESOLVED
+    linkText: Zoek een oplossing
+  - title: Voor ontwikkelaars
+    details: Verdiep je in prestaties, beveiliging, toegankelijkheid, SEO en betrouwbaar WordPress-beheer.
+    link: /developers/
+    linkText: Naar de developerssectie
+---
 
-<br>
+## Eén centrale plek voor OS Cloud-support
 
-OS Support is de centrale documentatie voor alles rondom het OSCloud-platform.
+OS Support helpt je om zelfstandig en veilig met het OS Cloud-platform te werken. Iedere handleiding beschrijft wat je gaat doen, welke aandachtspunten gelden en hoe je controleert of de wijziging is gelukt.
 
-Je vindt hier duidelijke oplossingen voor problemen en praktische handleidingen voor het instellen en beheren van je website, e-mail en andere diensten.
-
-Daarnaast bevat OS Support een developerssectie met concrete tips om je website sneller, veiliger en beter vindbaar te maken. Ideaal voor ontwikkelaars die aan je project werken — of voor iedereen die gewoon toegang wil tot heldere, technische documentatie. De docs zijn volledig openbaar.
-
-
-<div class="tip custom-block" style="padding-top: 8px">
-Nieuw bij OS Cloud? Begin met onze <a href="/guide/getting-started">Getting Started</a>-handleiding, of duik direct in de categorie die bij jouw vraag past.
-</div>
-
-<br>
-
-## Niet gevonden wat je zoekt?
-
-Ons team helpt je graag verder. Neem contact op via [support@originstudio.nl](mailto:support@originstudio.nl) en we reageren zo snel mogelijk.
+Kun je het antwoord niet vinden? Controleer de [actuele servicestatus](https://status.oscloud.nl/) of [bereid een supportaanvraag voor](/guide/contact-support), zodat ons team je snel en gericht kan helpen.

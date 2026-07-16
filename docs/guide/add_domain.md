@@ -1,15 +1,24 @@
-# Domein/website toevoegen
+---
+description: "Met een domein koppel je een herkenbaar webadres aan je website. Zorg na het toevoegen dat je DNS-configuratie naar de juiste OS Cloud-server verwijst."
+audience: customers
+---
 
-Het toevoegen van een domein is vrij eenvoudig. Zorg ervoor dat je [DNS-configuratie](#) is ingesteld om je website(s) aan de juiste server(s) te koppelen.
+# Domein of website toevoegen
 
-<br>
+Met een domein koppel je een herkenbaar webadres aan je website. Zorg na het toevoegen dat je [DNS-configuratie](/guide/setup_dns) naar de juiste OS Cloud-server verwijst.
 
 1. Ga in het paneel naar **Websites**.
-2. Selecteer in de rechterbovenhoek **Add new website**.
-3. Kies uit de opties **blank, app of clone website**.
+2. Selecteer rechtsboven **Add new website**.
+3. Kies het type website dat bij je situatie past:
 
-- **Blank** → Maakt een domein en webruimte aan onder public_html zonder bestanden (meest gebruikt voor standaard HTML/CSS/JS websites).
-- **App** → Installeert WordPress met geconfigureerde waarden voor het beheerdersaccount. *Op dit moment ondersteunen we alleen WordPress en Joomla, maar apps zoals Magento, Laravel en PrestaShop worden in de toekomst toegevoegd.*
-- **Clone website (alleen Business-pakket)** → Kopieert een bestaande website met een nieuwe database. Zorg ervoor dat **"Perform a WordPress search and replace"** is *ingeschakeld*.
+- **Blank** — Maakt lege webruimte aan onder `public_html`. Gebruik dit voor een eigen deployment of een statische HTML-, CSS- of JavaScript-site.
+- **App** — Installeert een applicatie met de opgegeven beheerdersgegevens. Het actuele aanbod staat in het paneel; beschikbaarheid kan per pakket veranderen.
+- **Clone website** — Kopieert een bestaande website en maakt een nieuwe database aan. Deze optie is alleen zichtbaar bij ondersteunde pakketten. Schakel bij WordPress **Perform a WordPress search and replace** in, zodat interne URL's naar het nieuwe domein worden aangepast.
 
 4. Vul je domein in en volg de stappen om het proces te voltooien.
+5. Noteer het toegewezen IP-adres en configureer daarna de [DNS-records](/guide/setup_dns).
+6. Vraag zodra DNS correct verwijst een [SSL-certificaat](/guide/SSL) aan en controleer de website via HTTPS.
+
+::: warning
+Kloon je een productiewebsite, controleer dan vóór ingebruikname formulieren, betaalproviders, geplande taken, uitgaande e-mail en zoekmachine-indexering. Een kloon kan anders onbedoeld echte acties uitvoeren.
+:::

@@ -1,10 +1,13 @@
+---
+description: "FastCGI Cache is fast and efficient, but it has one limitation: cached content is only generated after an actual user requests a page — and entries expire after about an hour."
+audience: developers
+---
+
 # Preload FastCGI Cache
 
 FastCGI Cache is fast and efficient, but it has one limitation: cached content is only generated **after** an actual user requests a page — and entries expire after about an hour. That means the first visitor to a fresh page never benefits from the cache.
 
 A **cache warm-up** process solves this by periodically requesting your website's URLs in advance, so cached content is always ready before real visitors arrive.
-
-<br>
 
 ## Step 1 — Create the preload script
 
@@ -64,8 +67,6 @@ foreach ($urls as $url) {
 echo "Done!";
 ```
 
-<br>
-
 ## Step 2 — Schedule the script as a cron job
 
 In **Developer Tools**, create a new cron job using the command below. Replace the UUID with your website's directory name (the example below uses `5e43c690-1937-47aa-9ff5-e1c2d7daebb7`):
@@ -78,8 +79,6 @@ In **Developer Tools**, create a new cron job using the command below. Replace t
 Because cached files expire after one hour, set the execution interval to <b>1 hour</b>. Running the cron more frequently has no effect, and longer intervals leave gaps where visitors hit uncached pages.
 </div>
 
-<br>
-
 ### Find your website's UUID
 
 If you're not sure what your site's UUID is:
@@ -87,10 +86,6 @@ If you're not sure what your site's UUID is:
 1. Go to the **File Manager**.
 2. Right-click any file and select **Get Info**.
 3. Copy the UUID from the file's location path.
-
-<img width="755" height="333" alt="image" src="https://github.com/user-attachments/assets/c8d5c85e-e041-431d-b332-cf6aa1157b54" />
-
-<br>
 
 ## Step 3 — Verify it works
 

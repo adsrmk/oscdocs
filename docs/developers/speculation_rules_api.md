@@ -1,3 +1,8 @@
+---
+description: "Technische uitleg over Speculation Rules API, inclusief implementatie, verificatie, risico's en rollback."
+audience: developers
+---
+
 # Speculation Rules API
 
 De **Speculation Rules API** is een JSON-gebaseerde configuratie waarmee ontwikkelaars de browser programmatisch kunnen vertellen om specifieke URL's te **prefetchen** (resources downloaden) of te **prerenderen** (de hele pagina op de achtergrond renderen).
@@ -7,8 +12,6 @@ In tegenstelling tot het oudere link-preloading biedt deze API granulaire contro
 <div class="warning custom-block" style="padding-top: 8px">
 De Speculation Rules API wordt momenteel alleen ondersteund in <b>Chromium-gebaseerde browsers</b> (Chrome, Edge, Opera). Andere browsers zoals Safari en Firefox negeren deze regels volledig.
 </div>
-
-<br>
 
 ## Basisimplementatie
 
@@ -28,8 +31,6 @@ De eenvoudigste manier om de API te gebruiken is door een lijst met specifieke U
 </script>
 ```
 
-<br>
-
 ### Belangrijkste concepten
 
 | Actie | Beschrijving |
@@ -37,16 +38,12 @@ De eenvoudigste manier om de API te gebruiken is door een lijst met specifieke U
 | **`prefetch`** | Downloadt de HTML en assets in de cache. |
 | **`prerender`** | Downloadt de pagina, voert JavaScript uit en bouwt de DOM op in een onzichtbaar tabblad. |
 
-<br>
-
 **Eagerness-niveaus:**
 
 - **`immediate`** — Zodra de regel is verwerkt.
 - **`eager`** — Bij de minste hint van intentie (zoals de muis die richting een link beweegt).
 - **`moderate`** — Bij `pointerdown` — het moment waarop de gebruiker klikt, vóór het loslaten.
 - **`conservative`** — Alleen bij hover of mouse-down.
-
-<br>
 
 ## Document-gebaseerde regels
 
@@ -74,8 +71,6 @@ In plaats van elke URL handmatig op te sommen kun je **Document Rules** gebruike
 
 - **`href_matches`** — Gebruikt glob-patronen om paden in of uit te sluiten.
 - **`selector_matches`** — Sluit specifieke links uit op basis van CSS-selectors — handig om te voorkomen dat bijvoorbeeld de uitlog-knop op de achtergrond wordt "geklikt".
-
-<br>
 
 ## Waar plaats je de regels?
 

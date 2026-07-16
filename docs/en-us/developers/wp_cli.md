@@ -1,3 +1,8 @@
+---
+description: "Reinstalling the WordPress core files via WP-CLI is a fast way to fix corrupted core files or remove suspicious code from your installation."
+audience: developers
+---
+
 # Reinstall WordPress Core via CLI
 
 Reinstalling the WordPress core files via WP-CLI is a fast way to fix corrupted core files or remove suspicious code from your installation.
@@ -6,11 +11,9 @@ Reinstalling the WordPress core files via WP-CLI is a fast way to fix corrupted 
 Always create a <b>backup</b> of your website before proceeding. Reinstalling core files cannot be undone.
 </div>
 
-<br>
-
 ## Reinstall the core files
 
-1. Log in to your server via SSH. If you're not sure how, [follow this guide](#).
+1. Connect to your server using [SSH](/en-us/guide/SSH).
 2. Navigate to the root directory of your WordPress installation:
 
    ```bash

@@ -1,10 +1,13 @@
+---
+description: "Naast firewalls en beveiliging op applicatieniveau kun je de browser ook directe instructies geven over hoe hij met de inhoud van je site moet omgaan."
+audience: developers
+---
+
 # HTTP-beveiligingsheaders
 
 Naast firewalls en beveiliging op applicatieniveau kun je de browser ook directe instructies geven over hoe hij met de inhoud van je site moet omgaan. **HTTP-beveiligingsheaders** worden bij elke serverrespons meegestuurd en fungeren als beveiligingsregels die de browser afdwingt.
 
 Het implementeren ervan is een van de snelste en effectiefste manieren om je site te beschermen tegen aanvallen zoals clickjacking, cross-site scripting (XSS) en protocol-downgrade-aanvallen.
-
-<br>
 
 ## Implementatiemethoden
 
@@ -15,10 +18,8 @@ Je kunt beveiligingsheaders op twee manieren toepassen:
 Configureer de headers direct in je serverconfiguratiebestanden — `httpd.conf` (Apache) of `nginx.conf` (Nginx).
 
 <div class="tip custom-block" style="padding-top: 8px">
-Host je je website bij <b>OS Cloud</b>? Dan zijn de meeste van deze headers al op Nginx-niveau geconfigureerd. Sommige beveiligingsscanners detecteren ze echter niet altijd correct — in dat geval kun je ze ook via Optie 2 (PHP-based) toepassen, zodat ze zichtbaar zijn voor de scanner.
+Host je je website bij <b>OS Cloud</b>? Controleer dan eerst de daadwerkelijke responseheaders: veel headers kunnen al op Nginx-niveau zijn ingesteld. Voeg dezelfde header niet nogmaals via PHP toe om alleen een scanner tevreden te stellen. Dubbele of conflicterende headers kunnen onvoorspelbaar gedrag veroorzaken.
 </div>
-
-<br>
 
 ### Optie 2 — WordPress (PHP-based)
 
@@ -34,11 +35,13 @@ function add_security_headers() {
 }
 ```
 
-<br>
-
 ## 1. HTTP Strict Transport Security (HSTS)
 
 De belangrijkste header voor elke site die HTTPS gebruikt. Hij vertelt de browser om alleen via een veilige HTTPS-verbinding met je site te communiceren.
+
+<div class="warning custom-block" style="padding-top: 8px">
+Activeer <code>includeSubDomains</code> en <code>preload</code> pas nadat alle subdomeinen blijvend via HTTPS bereikbaar zijn. Een onjuiste HSTS-configuratie kan een domein langdurig onbereikbaar maken. Begin met een korte <code>max-age</code>, test de volledige domeinstructuur en verhoog de waarde stapsgewijs.
+</div>
 
 - **Wat het voorkomt:** SSL stripping en man-in-the-middle-aanvallen, waarbij een aanvaller probeert de verbinding van een gebruiker te downgraden van HTTPS naar onveilig HTTP.
 - **Hoe het werkt:** Na het eerste bezoek onthoudt de browser het HSTS-beleid. Bij alle volgende bezoeken binnen de `max-age`-periode weigert de browser HTTP en upgrade hij verzoeken automatisch naar HTTPS — zelfs als de gebruiker `http://` typt of een onveilige link aanklikt.
@@ -49,8 +52,6 @@ De belangrijkste header voor elke site die HTTPS gebruikt. Hij vertelt de browse
 // 'preload' is voor opname in de HSTS preload-lijst
 header('Strict-Transport-Security: max-age=31536000; includeSubDomains; preload');
 ```
-
-<br>
 
 ## 2. X-Frame-Options
 
@@ -67,8 +68,6 @@ header('X-Frame-Options: DENY');
 // header('X-Frame-Options: SAMEORIGIN');
 ```
 
-<br>
-
 ## 3. X-Content-Type-Options
 
 Dwingt de browser de `Content-Type` van je server te respecteren en schakelt **MIME-type sniffing** uit.
@@ -79,8 +78,6 @@ Dwingt de browser de `Content-Type` van je server te respecteren en schakelt **M
 ```php
 header('X-Content-Type-Options: nosniff');
 ```
-
-<br>
 
 ## 4. Referrer-Policy
 
@@ -97,8 +94,6 @@ Bepaalt hoeveel verwijzingsinformatie (referrer) de browser meestuurt wanneer ee
 header('Referrer-Policy: strict-origin-when-cross-origin');
 ```
 
-<br>
-
 ## 5. Content-Security-Policy (CSP)
 
 De meest complexe en krachtigste beveiligingsheader. Met CSP definieer je een whitelist van bronnen waarvan de browser assets mag laden — scripts, stijlen, afbeeldingen, fonts en meer.
@@ -113,7 +108,5 @@ Een volledige CSP-implementatie vereist een zorgvuldige audit van alle assets di
 // Staat alleen scripts toe vanaf je eigen domein
 header("Content-Security-Policy: script-src 'self'");
 ```
-
-<br>
 
 Er zijn nog veel meer beveiligingsheaders beschikbaar, maar deze vijf bieden de grootste winst met de minste configuratie.

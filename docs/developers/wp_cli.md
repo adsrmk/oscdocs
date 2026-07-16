@@ -1,3 +1,8 @@
+---
+description: "Het opnieuw installeren van de WordPress core-bestanden via WP-CLI is een snelle manier om beschadigde kernbestanden te herstellen of verdachte code uit je installatie te verwijderen."
+audience: developers
+---
+
 # WordPress core opnieuw installeren via CLI
 
 Het opnieuw installeren van de WordPress core-bestanden via WP-CLI is een snelle manier om beschadigde kernbestanden te herstellen of verdachte code uit je installatie te verwijderen.
@@ -6,11 +11,9 @@ Het opnieuw installeren van de WordPress core-bestanden via WP-CLI is een snelle
 Maak altijd eerst een <b>back-up</b> van je website voordat je verdergaat. Het opnieuw installeren van core-bestanden kan niet ongedaan worden gemaakt.
 </div>
 
-<br>
-
 ## Core-bestanden opnieuw installeren
 
-1. Log in op je server via SSH. Weet je niet hoe? [Volg dan deze handleiding](#).
+1. Maak verbinding met je server via [SSH](/guide/SSH).
 2. Ga naar de hoofdmap van je WordPress-installatie:
 
    ```bash

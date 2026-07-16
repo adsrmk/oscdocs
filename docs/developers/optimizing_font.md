@@ -1,8 +1,11 @@
+---
+description: "In 2026 zijn webfonts niet langer de \"performance killers\" die ze ooit waren — mits je gebruikmaakt van moderne technieken."
+audience: developers
+---
+
 # Geoptimaliseerde font-aflevering
 
 In 2026 zijn webfonts niet langer de "performance killers" die ze ooit waren — mits je gebruikmaakt van moderne technieken. Slechte font-implementatie leidt typisch tot twee grote problemen: **FOIT (Flash of Invisible Text)** en **CLS (Cumulative Layout Shift)**.
-
-<br>
 
 ## Gebruik alleen WOFF2
 
@@ -17,8 +20,6 @@ Vergeet `.ttf`, `.otf` en het originele `.woff`. **WOFF2** is tegenwoordig het e
 }
 ```
 
-<br>
-
 ## Voorkom FOIT met `font-display`
 
 De `font-display`-property bepaalt hoe de browser zich gedraagt terwijl een font-bestand nog wordt gedownload.
@@ -29,8 +30,6 @@ De `font-display`-property bepaalt hoe de browser zich gedraagt terwijl een font
 | **`fallback`** | Korte onzichtbaarheid (~100 ms), daarna systeemfont, daarna swap. | Een balans tussen UX en prestaties. |
 | **`optional`** | Als het font niet binnen ~100 ms klaar is, wisselt de browser nooit meer. | Beste voor prestaties en CLS — voorkomt layout-schokken. |
 | **`block`** | Verbergt de tekst tot het font klaar is (tot 3 s). | Vermijden — tenzij het font een icon-set is. |
-
-<br>
 
 ## Host je fonts zelf
 

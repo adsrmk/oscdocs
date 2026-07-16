@@ -1,13 +1,13 @@
+---
+description: "Interaction to Next Paint↗ (INP) is een Core Web Vital die de algehele responsiviteit van een pagina meet."
+audience: developers
+---
+
 # INP
 
 [Interaction to Next Paint↗](https://web.dev/articles/inp) (**INP**) is een Core Web Vital die de algehele responsiviteit van een pagina meet. Sinds **maart 2024** heeft Google **FID (First Input Delay)** officieel vervangen door INP, om een vollediger beeld te geven van de gebruikerservaring.
 
-
-<br>
-
 Waar FID alleen de vertraging van de **eerste** interactie meet, meet INP hoe lang het duurt voordat de pagina visueel reageert op **elke** klik, tap en toetsenbordinvoer tijdens een sessie.
-
-<br>
 
 ## Streefwaarden
 
@@ -18,8 +18,6 @@ Voor een soepele gebruikerservaring streef je naar de volgende INP-scores:
 | **≤ 200 ms** | Goed |
 | **200 – 500 ms** | Voor verbetering vatbaar |
 | **> 500 ms** | Slecht |
-
-<br>
 
 ## INP optimaliseren
 

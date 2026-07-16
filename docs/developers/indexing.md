@@ -1,3 +1,8 @@
+---
+description: "Als ontwikkelaar heb je nauwkeurige tools om te bepalen hoe zoekmachine-bots (zoals Googlebot) je site crawlen en indexeren."
+audience: developers
+---
+
 # Indexering
 
 Als ontwikkelaar heb je nauwkeurige tools om te bepalen hoe zoekmachine-bots (zoals Googlebot) je site crawlen en indexeren. Alleen content maken is niet voldoende — je moet zoekmachines ook actief sturen, zodat ze zich richten op **waardevolle pagina's** en irrelevante negeren. Dat bespaart crawl-budget en voorkomt rommelige zoekresultaten.
@@ -7,8 +12,6 @@ Er zijn drie hoofdtools beschikbaar, elk met een eigen doel:
 1. **`robots.txt`** — Globale instructies voor welke gebieden bots mogen crawlen.
 2. **`<meta name="robots">`** — Per-pagina indexeringsinstructies binnen HTML.
 3. **`X-Robots-Tag`** — HTTP-header voor bestanden die geen HTML zijn (PDF's, afbeeldingen, etc.).
-
-<br>
 
 ## 1. Het `robots.txt`-bestand
 
@@ -23,8 +26,6 @@ Er zijn drie hoofdtools beschikbaar, elk met een eigen doel:
 <div class="warning custom-block" style="padding-top: 8px">
 <code>robots.txt</code> is een <b>richtlijn, geen firewall</b>. Kwaadaardige bots negeren het. Als een geblokkeerde pagina ergens anders op het web wordt gelinkt, kan Google deze alsnog indexeren (zonder de inhoud) en weergeven in zoekresultaten met de melding <i>"Er is geen informatie beschikbaar voor deze pagina."</i> Wil je een pagina écht uit de zoekresultaten houden? Gebruik dan de <code>noindex</code>-metatag.
 </div>
-
-<br>
 
 **Aanbevolen `robots.txt` voor WordPress:**
 
@@ -47,8 +48,6 @@ Disallow: /search/
 Sitemap: https://www.jouwdomein.nl/sitemap_index.xml
 ```
 
-<br>
-
 ## 2. De `<meta name="robots">`-tag
 
 De meta-robots-tag is een HTML-element in de `<head>` van een specifieke pagina. Het geeft crawlers expliciete instructies over hoe ze met die ene URL moeten omgaan — een veel betrouwbaardere manier dan `robots.txt` om specifieke content uit zoekresultaten te houden.
@@ -64,8 +63,6 @@ De meta-robots-tag is een HTML-element in de `<head>` van een specifieke pagina.
 
 - **`noindex, follow`** — "Indexeer deze pagina niet, maar volg wel de links erop om andere waardevolle pagina's te vinden." De meest gebruikte combinatie voor laagwaardige pagina's zoals gepagineerde archieven, auteurspagina's op blogs met één auteur of "Bedankt"-pagina's.
 - **`noindex, nofollow`** — "Indexeer deze pagina niet en volg geen links." Handig voor pagina's met user-generated content die je niet wilt onderschrijven.
-
-<br>
 
 ### Implementatie in WordPress
 
@@ -84,8 +81,6 @@ function noindex_paginated_archives() {
     }
 }
 ```
-
-<br>
 
 ## 3. De `X-Robots-Tag`-HTTP-header
 
@@ -110,8 +105,6 @@ function block_pdf_indexing() {
     }
 }
 ```
-
-<br>
 
 ## Quick reference
 

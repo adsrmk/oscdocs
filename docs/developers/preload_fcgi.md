@@ -1,10 +1,13 @@
+---
+description: "FastCGI Cache is snel en efficiënt, maar heeft één beperking: gecachte content wordt pas gegenereerd nadat een echte bezoeker een pagina opvraagt — en verloopt na ongeveer een uur."
+audience: developers
+---
+
 # FastCGI Cache preloaden
 
 FastCGI Cache is snel en efficiënt, maar heeft één beperking: gecachte content wordt pas gegenereerd **nadat** een echte bezoeker een pagina opvraagt — en verloopt na ongeveer een uur. Dat betekent dat de eerste bezoeker van een verse pagina nooit profiteert van de cache.
 
 Met een **cache warm-up** los je dit op door vooraf periodiek de URL's van je site op te vragen, zodat de gecachte versie al klaarstaat voordat een echte bezoeker arriveert.
-
-<br>
 
 ## Stap 1 — Maak het preload-script aan
 
@@ -64,8 +67,6 @@ foreach ($urls as $url) {
 echo "Done!";
 ```
 
-<br>
-
 ## Stap 2 — Plan het script als cron job
 
 Maak in **Ontwikkelaarstools** een nieuwe cron job aan met de onderstaande opdracht. Vervang de UUID door de mapnaam van je website (in dit voorbeeld: `5e43c690-1937-47aa-9ff5-e1c2d7daebb7`):
@@ -78,8 +79,6 @@ Maak in **Ontwikkelaarstools** een nieuwe cron job aan met de onderstaande opdra
 Omdat gecachte bestanden na één uur verlopen, raden we aan het uitvoeringsinterval op <b>1 uur</b> te zetten. Vaker uitvoeren heeft geen effect, en langere intervallen zorgen ervoor dat bezoekers alsnog op een niet-gecachte pagina terechtkomen.
 </div>
 
-<br>
-
 ### Je UUID vinden
 
 Weet je niet zeker wat de UUID van je website is?
@@ -88,10 +87,7 @@ Weet je niet zeker wat de UUID van je website is?
 2. Klik met de rechtermuisknop op een willekeurig bestand en kies **Info bekijken**.
 3. Kopieer de UUID uit het locatiepad van het bestand.
 
-<br>
-<img width="611" height="240" alt="image" src="https://github.com/user-attachments/assets/053c1860-954d-427e-b6df-a310fae1fcd2" />
-
-<br>
+<img width="611" height="240" alt="Schermafbeelding van Je UUID vinden" src="https://github.com/user-attachments/assets/053c1860-954d-427e-b6df-a310fae1fcd2" />
 
 ## Stap 3 — Controleer of het werkt
 

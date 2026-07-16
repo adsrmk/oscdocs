@@ -1,24 +1,23 @@
+---
+description: "To enable your website to send and receive emails — for example from contact or order forms — you'll need to configure SMTP (Simple Mail Transfer Protocol)."
+audience: customers
+---
+
 # Configure Email for WordPress
 
 To enable your website to send and receive emails — for example from contact or order forms — you'll need to configure **SMTP (Simple Mail Transfer Protocol)**.
 
 Several plugins make this easy. In this guide, we'll use [WP Mail SMTP↗](https://wordpress.org/plugins/wp-mail-smtp/).
 
-<br>
-
 ## Why SMTP matters
 
 By default, WordPress sends emails using the PHP `mail()` function. Many providers block or limit this function, which often leads to delivery issues. SMTP routes your emails through a trusted mail server — improving deliverability and ensuring messages are properly authenticated.
-
-<br>
 
 ## Step 1 — Install and activate the plugin
 
 1. Install and activate **WP Mail SMTP** from the WordPress plugin library.
 2. In your WordPress dashboard, go to **WP Mail SMTP → Settings**.
 3. Scroll to the **Mailer** section and select **Other SMTP** (bottom-right corner).
-
-<br>
 
 ## Step 2 — Enter your SMTP details
 
@@ -34,8 +33,6 @@ You'll find the values below in the **Email Client Settings** of your **OS Cloud
 | **SMTP Password** | Your email password |
 
 In the final two fields (**Name** and **Email**), set how you want customers to see your emails (the "from" name and address).
-
-<br>
 
 ## Step 3 — Finish and send a test email
 

@@ -1,8 +1,11 @@
+---
+description: "Standaard laadt WordPress diverse stijlen en scripts die je site mogelijk helemaal niet gebruikt."
+audience: developers
+---
+
 # Scripts en stijlen verwijderen (dequeue)
 
 Standaard laadt WordPress diverse stijlen en scripts die je site mogelijk helemaal niet gebruikt. Deze extra bestanden **vertragen je laadtijd** onnodig. Je kunt voorkomen dat WordPress ze laadt door ze te **dequeuen**.
-
-<br>
 
 ## Voorbeeld: Gutenberg dequeuen
 
@@ -23,8 +26,6 @@ function dequeue_gutenberg_assets() {
 }
 add_action('wp_enqueue_scripts', 'dequeue_gutenberg_assets', 100);
 ```
-
-<br>
 
 ## Hoe werkt het?
 

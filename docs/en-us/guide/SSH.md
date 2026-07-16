@@ -1,12 +1,13 @@
+---
+description: "SSH keys are a secure way to connect to your server without using passwords."
+audience: customers
+---
+
 # Connect to Your Workspace with SSH Keys
 
 SSH keys are a secure way to connect to your server without using passwords. They work as a **public/private key pair**: the private key stays on your device, while the public key is added to your server. Only someone with the matching private key can connect, which makes logins both safer and faster — and lets you use tools like **WP-CLI** or **Composer** without exposing a password.
 
-<br>
-
 In this guide we'll use the [Termius application↗](https://termius.com/index.html) to generate an SSH key. Termius is a widely-used SSH client with an intuitive interface for managing multiple server connections.
-
-<br>
 
 ## Step 1 — Generate a key pair in Termius
 
@@ -14,42 +15,25 @@ In this guide we'll use the [Termius application↗](https://termius.com/index.h
 2. Select **Keychains**.
 3. Click **Keys** and choose **Generate Key** from the dropdown.
 
-<img width="925" height="331" alt="image" src="https://github.com/user-attachments/assets/78f0f8bf-a685-4013-b9d7-5f9463193a6d" />
-
-
-<br>
+<img width="925" height="331" alt="Screenshot of Step 1 — Generate a key pair in Termius" src="https://github.com/user-attachments/assets/78f0f8bf-a685-4013-b9d7-5f9463193a6d" />
 
 4. Choose **ED25519** as the key type and (optionally) add a label for easy reference.
 
-<img width="329" height="149" alt="image" src="https://github.com/user-attachments/assets/3bd5e4ed-d83d-44d6-8108-404b97f4bd14" />
-
-
-<br>
-
+<img width="329" height="149" alt="Screenshot of Step 1 — Generate a key pair in Termius (2)" src="https://github.com/user-attachments/assets/3bd5e4ed-d83d-44d6-8108-404b97f4bd14" />
 
 5. Add a **passphrase** for extra security. This way, if someone gets access to your device, they'll still need the passphrase to connect.
 6. Click **Generate & Save**.
 7. You'll now see both a private and a public key. **Copy the public key** — you'll paste it into the OS Cloud panel in the next step.
 
    
-<br>
 
-
-<img width="304" height="459" alt="image" src="https://github.com/user-attachments/assets/5c0b97c9-cfc5-49c5-ab5d-5e1c1d8fb9df" />
-
-
-<br>
-
+<img width="304" height="459" alt="Screenshot of Step 1 — Generate a key pair in Termius (3)" src="https://github.com/user-attachments/assets/5c0b97c9-cfc5-49c5-ab5d-5e1c1d8fb9df" />
 
 ## Step 2 — Add the public key to OS Cloud
 
 1. In your OS Cloud panel, go to **Websites → [your website] → Advanced → Developer Tools → SSH Key Manager** and click **Add**.
 
-<img width="773" height="454" alt="image" src="https://github.com/user-attachments/assets/f1ed393e-2f26-42bc-a0cc-bfa11d1f062c" />
-
-
-<br>
-
+<img width="773" height="454" alt="Screenshot of Step 2 — Add the public key to OS Cloud (4)" src="https://github.com/user-attachments/assets/f1ed393e-2f26-42bc-a0cc-bfa11d1f062c" />
 
 2. Give the key a name and paste the public key.
 

@@ -1,4 +1,9 @@
- # Back-ups
+---
+description: "Onze systemen maken automatisch dagelijks back-ups van al je resources — waaronder e-mailaccounts, websites en databases (indien van toepassing)."
+audience: customers
+---
+
+# Back-ups
 
 Onze systemen maken automatisch dagelijks back-ups van al je resources — waaronder e-mailaccounts, websites en databases (indien van toepassing). Zo zijn je gegevens altijd beschermd en eenvoudig te herstellen.
 Alle back-ups worden veilig opgeslagen op een extern S3-objectopslagplatform.
@@ -7,8 +12,6 @@ Alle back-ups worden veilig opgeslagen op een extern S3-objectopslagplatform.
 Back-ups van eerdere versies worden <b>maximaal 7 dagen bewaard</b>. Oudere back-ups worden automatisch overschreven door nieuwere versies, waarbij er maximaal 7 back-ups tegelijk worden bewaard.
 Dit beleid houdt onze opslagservers beheersbaar en voorkomt dat ongebruikte data zich gedurende maanden of jaren ophoopt.
 </div>
-
-<br>
 
 ## Herstellen of terugzetten
 
